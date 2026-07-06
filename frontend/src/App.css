@@ -1,0 +1,172 @@
+#root {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.app-loading,
+.app-error {
+  padding: 48px 16px;
+}
+
+.mode-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 480px;
+}
+
+.mode-select button,
+.game-done button,
+.game-screen button,
+.reveal-panel button {
+  font: inherit;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--accent-bg);
+  color: var(--text-h);
+  cursor: pointer;
+}
+
+.mode-select button:hover,
+.game-screen button:not(:disabled):hover,
+.reveal-panel button:hover {
+  border-color: var(--accent-border);
+}
+
+.game-screen,
+.game-done {
+  width: 100%;
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.round-card {
+  width: 100%;
+  text-align: center;
+}
+
+.round-card-progress {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.round-card-image {
+  max-width: 100%;
+  max-height: 360px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.round-card-medium {
+  font-style: italic;
+  color: var(--text);
+}
+
+.world-map {
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: crosshair;
+  background: var(--code-bg);
+}
+
+.world-map-ocean {
+  fill: var(--code-bg);
+}
+
+.world-map-land {
+  fill: var(--accent-bg);
+  stroke: var(--border);
+  stroke-width: 0.5;
+}
+
+.pin-guess {
+  fill: var(--accent);
+  stroke: var(--text-h);
+  stroke-width: 1;
+}
+
+.pin-truth {
+  fill: #2ecc71;
+  stroke: var(--text-h);
+  stroke-width: 1;
+}
+
+.pin-line {
+  stroke: var(--text-h);
+  stroke-dasharray: 4 3;
+  stroke-width: 1;
+}
+
+.timeline-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+}
+
+.timeline-block {
+  font: inherit;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.timeline-block.selected {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+  color: var(--text-h);
+}
+
+.reveal-panel {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+.reveal-attribution {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.share-card-text {
+  font-family: var(--mono);
+  white-space: pre-wrap;
+  background: var(--code-bg);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.share-stats {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4px 12px;
+  justify-content: center;
+}
+
+.share-stats dt {
+  color: var(--text);
+}
+
+.share-stats dd {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text-h);
+}
