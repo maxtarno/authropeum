@@ -1,0 +1,43 @@
+[
+ {
+  "id": 130707, "accession_number": "1953.424", "share_license_status": "CC0",
+  "title": "Head of Saint John the Baptist",
+  "tombstone": "Head of Saint John the Baptist, c. 1550-1650. Spain or Northern Italy, mid 16th - mid 17th century. Oil on canvas. The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund 1953.424",
+  "creation_date": "c. 1550-1650", "creation_date_earliest": 1550, "creation_date_latest": 1650,
+  "creators": [], "culture": ["Spain or Northern Italy, mid 16th - mid 17th century"],
+  "technique": "oil on canvas", "department": "European Painting and Sculpture",
+  "type": "Painting", "find_spot": null, "highlight": false,
+  "did_you_know": "The subject was among the most reproduced devotional images of the Counter-Reformation.",
+  "images": {"web": {"url": "https://openaccess-cdn.clevelandart.org/1953.424/1953.424_web.jpg"}},
+  "url": "https://clevelandart.org/art/1953.424"
+ },
+ {
+  "id": 453146, "accession_number": "2022.41.1", "share_license_status": "CC0",
+  "title": "Standing Apostle (Probably Saint John the Evangelist)",
+  "tombstone": "Standing Apostle, c. 1430. Master of the Saint-Omer Apostles (Southern Netherlandish, active Bruges?). Alabaster. The Cleveland Museum of Art 2022.41.1",
+  "creation_date": "c. 1430", "creation_date_earliest": 1425, "creation_date_latest": 1435,
+  "creators": [{"description": "Master of the Saint-Omer Apostles (Southern Netherlandish, active Bruges?)"}],
+  "culture": ["Southern Netherlandish, Bruges"], "technique": "alabaster",
+  "department": "Medieval Art", "type": "Sculpture", "find_spot": null, "highlight": true,
+  "description": "Carved for a Flemish altarpiece ensemble.",
+  "images": {"web": {"url": "https://openaccess-cdn.clevelandart.org/2022.41.1/2022.41.1_web.jpg"}},
+  "url": "https://clevelandart.org/art/2022.41.1"
+ },
+ {
+  "id": 92100, "accession_number": "1920.1990", "share_license_status": "CC0",
+  "title": "Cuneiform Tablet",
+  "creation_date": "c. 2050 BC", "creation_date_earliest": -2060, "creation_date_latest": -2040,
+  "creators": [], "culture": ["Sumerian, Third Dynasty of Ur"], "technique": "clay",
+  "department": "Ancient Near Eastern Art", "type": "Tablet",
+  "find_spot": "Ur, southern Mesopotamia", "highlight": false,
+  "did_you_know": "This receipt records deliveries of sheep and goats for temple offerings.",
+  "images": {"web": {"url": "https://openaccess-cdn.clevelandart.org/1920.1990/1920.1990_web.jpg"}},
+  "url": "https://clevelandart.org/art/1920.1990"
+ },
+ {
+  "id": 999100, "accession_number": "2001.1", "share_license_status": "Copyrighted",
+  "title": "Restricted work",
+  "creation_date_earliest": 1955, "creation_date_latest": 1955,
+  "culture": ["United States"], "images": {}
+ }
+]

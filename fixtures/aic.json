@@ -1,0 +1,50 @@
+[
+ {
+  "id": 24645, "title": "Under the Wave off Kanagawa (The Great Wave)",
+  "image_id": "sample-great-wave-image-id", "alt_image_ids": [],
+  "is_public_domain": true, "date_start": 1830, "date_end": 1833,
+  "date_display": "1830/33", "date_qualifier_title": "",
+  "place_of_origin": "Japan",
+  "artist_display": "Katsushika Hokusai (Japanese, 1760-1849)",
+  "medium_display": "Color woodblock print; oban",
+  "credit_line": "Clarence Buckingham Collection",
+  "short_description": "Hokusai's iconic wave dwarfs Mount Fuji in the distance, a masterpiece of the ukiyo-e tradition.",
+  "term_titles": ["ukiyo-e", "woodblock print"], "department_title": "Arts of Asia",
+  "artwork_type_title": "Print", "is_boosted": true,
+  "latitude": null, "longitude": null
+ },
+ {
+  "id": 87165, "title": "Trolley, New Orleans",
+  "image_id": "db8a5bc9-cf4c-225f-f51e-7a70fe70c17a", "alt_image_ids": [],
+  "is_public_domain": true, "date_start": 1955, "date_end": 1955,
+  "date_display": "1955", "date_qualifier_title": "",
+  "place_of_origin": "New Orleans",
+  "artist_display": "Robert Frank (American, born Switzerland, 1924-2019)",
+  "medium_display": "Gelatin silver print", "credit_line": "Photography Fund",
+  "short_description": "", "term_titles": ["photography"],
+  "department_title": "Photography and Media", "artwork_type_title": "Photograph",
+  "is_boosted": false, "latitude": null, "longitude": null
+ },
+ {
+  "id": 55500, "title": "Untitled Landscape Print",
+  "image_id": "sample-undated-print", "alt_image_ids": [],
+  "is_public_domain": true, "date_start": 1824, "date_end": 1867,
+  "date_display": "n.d.", "date_qualifier_title": "Artist's working dates",
+  "place_of_origin": "England",
+  "artist_display": "Unknown (English, 1824-1867)",
+  "medium_display": "Etching", "credit_line": "Gift",
+  "term_titles": [], "department_title": "Prints and Drawings",
+  "artwork_type_title": "Print", "is_boosted": false
+ },
+ {
+  "id": 55501, "title": "Teapot",
+  "image_id": "sample-teapot", "alt_image_ids": [],
+  "is_public_domain": true, "date_start": 1760, "date_end": 1780,
+  "date_display": "1760-80", "date_qualifier_title": "",
+  "place_of_origin": "Staffordshire",
+  "artist_display": "English, Staffordshire",
+  "medium_display": "Lead-glazed earthenware", "credit_line": "Bequest",
+  "term_titles": ["ceramics"], "department_title": "Applied Arts of Europe",
+  "artwork_type_title": "Vessel", "is_boosted": false
+ }
+]
