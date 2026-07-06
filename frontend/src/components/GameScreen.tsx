@@ -64,7 +64,7 @@ export default function GameScreen({ puzzle, onExit }: Props) {
         truth={revealed ? { lat: artifact.lat, lng: artifact.lng } : null}
         onGuess={revealed ? undefined : setPin}
       />
-      <TimelineBlocks selected={block} onSelect={revealed ? () => {} : setBlock} />
+      <TimelineBlocks selected={block} onSelect={setBlock} disabled={revealed} />
 
       {!revealed && (
         <button type="button" disabled={!pin || block === null} onClick={submitGuess}>
