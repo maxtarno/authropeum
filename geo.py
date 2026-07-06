@@ -201,6 +201,35 @@ GAZETTEER: dict[str, tuple[float, float, str, str]] = {
     "fang": (1.50, 11.50, "culture", "Fang (Gabon/Cameroon)"),
     "maori": (-38.00, 176.00, "culture", "Māori (New Zealand)"),
     "aboriginal": (-25.30, 133.80, "culture", "Aboriginal Australia"),
+
+    # ---- Added after first live ingest: demonym/adjective forms and region
+    # terms that the strict word-boundary token scan doesn't catch via their
+    # noun-form entries above (e.g. "russian" doesn't match "russia") ----
+    "america": (39.80, -98.60, "country", "United States"),
+    "french": (46.60, 2.30, "country", "France"),
+    "russian": (55.75, 37.62, "country", "Russia"),
+    "british": (52.50, -1.50, "country", "Britain"),
+    "german": (51.10, 10.40, "country", "Germany"),
+    "byzantium": (41.01, 28.98, "culture", "Byzantine Empire"),
+    "europe": (50.00, 10.00, "region", "Europe"),
+    "balkans": (42.50, 21.00, "region", "Balkans"),
+    "siam": (15.10, 101.00, "country", "Siam (Thailand)"),
+    "merovingian": (48.86, 2.35, "culture", "Merovingian Francia"),
+    "frankish": (49.00, 4.00, "culture", "Frankish"),
+    "finland": (61.92, 25.75, "country", "Finland"),
+    "uzbekistan": (41.38, 64.59, "country", "Uzbekistan"),
+    "panama": (8.54, -80.78, "country", "Panama"),
+    "panamá": (8.54, -80.78, "country", "Panama"),
+    "costa rica": (9.75, -83.75, "country", "Costa Rica"),
+    "cyprus": (35.13, 33.43, "country", "Cyprus"),
+    "czechoslovakia": (49.80, 15.00, "country", "Czechoslovakia"),
+    "sumatra": (0.59, 101.34, "region", "Sumatra, Indonesia"),
+    "central asia": (41.00, 65.00, "region", "Central Asia"),
+    "bulgaria": (42.73, 25.49, "country", "Bulgaria"),
+    "madeira": (32.75, -17.00, "region", "Madeira, Portugal"),
+    "cycladic": (37.00, 25.30, "culture", "Cycladic (Greece)"),
+    "thrace": (42.00, 25.50, "region", "Thrace"),
+    "bactria-margiana": (37.50, 65.00, "culture", "Bactria-Margiana (Central Asia)"),
 }
 
 # Dynasty / period words that imply a place when nothing else resolves.

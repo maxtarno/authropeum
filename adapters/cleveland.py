@@ -19,6 +19,7 @@ from schema import Artifact, RejectRecord
 from geo import GeoResolver
 
 BASE = "https://openaccess-api.clevelandart.org/api/artworks/"
+USER_AGENT = "Mozilla/5.0 (compatible; anthropeum-multi-pipeline/1.0)"
 
 
 def normalize(rec: dict, geo: GeoResolver) -> Artifact:
@@ -84,7 +85,8 @@ def iter_records(limit: int | None = None, highlights_only: bool = False,
         url = f"{BASE}?cc0&has_image=1&limit={page_size}&skip={skip}"
         if highlights_only:
             url += "&highlight"
-        with urllib.request.urlopen(url, timeout=30) as r:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=30) as r:
             data = json.loads(r.read()).get("data") or []
         if not data:
             return
