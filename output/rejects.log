@@ -10899,3 +10899,7 @@ adapters.cleveland:152699	geo unresolved: ['', 'South Italian, Paestan']
 adapters.cleveland:286706	geo unresolved: ['', 'Africa, West Africa, Burkina Faso, Bobo-style blacksmith-carver']
 adapters.cleveland:171615	geo unresolved: ['', 'Mosan (Valley of the Meuse), Liège(?), late 13th century']
 adapters.cleveland:135706	geo unresolved: ['', 'Rembrandt, 17th century']
+adapters.met:999001	not public domain
+adapters.met:999002	geo unresolved: ['', '', '', '', '', '', '', '', '', '']
+adapters.cleveland:999100	not CC0
+adapters.aic:55500	date range is artist's life, not object's

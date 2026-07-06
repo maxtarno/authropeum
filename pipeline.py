@@ -5,10 +5,13 @@
     python3 pipeline.py --source aic --limit 500
     python3 pipeline.py --fixtures            # offline test with bundled samples
 
-Each run APPENDS/UPDATES output/artifacts.json (keyed by source:id), so you
-can ingest sources incrementally. Rejections and gazetteer misses are written
-to output/rejects.log and output/geo_misses.json — feed the misses back into
-geo.GAZETTEER to grow coverage.
+Each live run APPENDS/UPDATES output/artifacts.json (keyed by source:id), so
+you can ingest sources incrementally. --fixtures writes to the separate
+output/artifacts.fixtures.json instead, so offline sanity checks never leak
+placeholder/sample records into the real shipped pool. Rejections and
+gazetteer misses are written to output/rejects.log and
+output/geo_misses.json — feed the misses back into geo.GAZETTEER to grow
+coverage.
 """
 
 from __future__ import annotations
@@ -26,21 +29,22 @@ from adapters import met, cleveland, aic
 
 OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")
 POOL_PATH = os.path.join(OUT_DIR, "artifacts.json")
+FIXTURES_POOL_PATH = os.path.join(OUT_DIR, "artifacts.fixtures.json")
 
 ADAPTERS = {"met": met, "cleveland": cleveland, "aic": aic}
 
 
-def load_pool() -> dict[str, dict]:
-    if os.path.exists(POOL_PATH):
-        with open(POOL_PATH) as f:
+def load_pool(pool_path: str) -> dict[str, dict]:
+    if os.path.exists(pool_path):
+        with open(pool_path) as f:
             return {a["source"] + ":" + a["source_id"]: a for a in json.load(f)}
     return {}
 
 
-def save_pool(pool: dict[str, dict]) -> None:
+def save_pool(pool: dict[str, dict], pool_path: str) -> None:
     os.makedirs(OUT_DIR, exist_ok=True)
     arts = sorted(pool.values(), key=lambda a: (a["source"], a["source_id"]))
-    with open(POOL_PATH, "w") as f:
+    with open(pool_path, "w") as f:
         json.dump(arts, f, indent=1, ensure_ascii=False)
 
 
@@ -73,8 +77,9 @@ def main():
                    help="offline run against bundled sample records")
     args = p.parse_args()
 
+    pool_path = FIXTURES_POOL_PATH if args.fixtures else POOL_PATH
     geo = GeoResolver()
-    pool = load_pool()
+    pool = load_pool(pool_path)
     rejects: list[str] = []
 
     if args.fixtures:
@@ -99,7 +104,7 @@ def main():
         ok, bad = run(records, adapter, geo, pool, rejects)
         print(f"[{args.source:9}] live: {ok} accepted, {bad} rejected")
 
-    save_pool(pool)
+    save_pool(pool, pool_path)
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(os.path.join(OUT_DIR, "rejects.log"), "a") as f:
         f.write("\n".join(rejects) + ("\n" if rejects else ""))
@@ -107,7 +112,7 @@ def main():
         json.dump(dict(sorted(geo.misses.items(), key=lambda kv: -kv[1])), f,
                   indent=1, ensure_ascii=False)
 
-    print(f"pool now contains {len(pool)} artifacts → {POOL_PATH}")
+    print(f"pool now contains {len(pool)} artifacts → {pool_path}")
     if geo.misses:
         print(f"{len(geo.misses)} unresolved geo strings → output/geo_misses.json "
               f"(add the frequent ones to geo.GAZETTEER)")

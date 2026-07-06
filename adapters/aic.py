@@ -5,8 +5,10 @@ Dump: https://artic-api-data.s3.amazonaws.com/artic-api-data.tar.bz2
       (~115MB compressed → one {id}.json per artwork; PREFER this for full
       ingest so you never paginate the live API.)
 
-Images: IIIF — https://www.artic.edu/iiif/2/{image_id}/full/843,/0/default.jpg
-        (843px is AIC's recommended width.)
+Images: IIIF — https://www.artic.edu/iiif/2/{image_id}/full/!843,843/0/default.jpg
+        (843px is AIC's recommended width; the "!w,h" best-fit form is
+        required — a plain "843," forces an exact 843px width and 403s
+        with "scale in excess of 100%" on any scan narrower than that.)
 
 Quirks handled here:
   * is_public_domain must be true.
@@ -20,15 +22,28 @@ Quirks handled here:
 
 from __future__ import annotations
 
+import html
 import json
+import re
 import time
 import urllib.request
 
 from schema import Artifact, RejectRecord
 from geo import GeoResolver
 
+_BLOCK_TAG_RE = re.compile(r"</?(p|br|div|li)\s*/?>", re.IGNORECASE)
+_TAG_RE = re.compile(r"<[^>]+>")
+
+
+def _clean_description(text: str) -> str:
+    """AIC's description/short_description fields are HTML, not plain text."""
+    text = _BLOCK_TAG_RE.sub("\n", text)
+    text = _TAG_RE.sub("", text)
+    text = html.unescape(text)
+    return re.sub(r"\n{3,}", "\n\n", text).strip()
+
 BASE = "https://api.artic.edu/api/v1/artworks"
-IIIF = "https://www.artic.edu/iiif/2/{image_id}/full/843,/0/default.jpg"
+IIIF = "https://www.artic.edu/iiif/2/{image_id}/full/!843,843/0/default.jpg"
 
 FIELDS = ",".join([
     "id", "title", "image_id", "alt_image_ids", "is_public_domain",
@@ -83,7 +98,7 @@ def normalize(rec: dict, geo: GeoResolver) -> Artifact:
     if g is None:
         raise RejectRecord(f"geo unresolved: {candidates}")
 
-    desc = rec.get("short_description") or rec.get("description") or ""
+    desc = _clean_description(rec.get("short_description") or rec.get("description") or "")
 
     return Artifact(
         source="aic",
