@@ -2,13 +2,13 @@ import { useState } from "react";
 import type { Puzzle } from "../lib/puzzle";
 import { blockOf } from "../lib/puzzle";
 import { roundScore } from "../lib/scoring";
-import type { RoundScore } from "../lib/types";
-import { average, getStats, recordDailyResult } from "../lib/storage";
+import type { RoundResult } from "../lib/types";
+import { getStats, recordDailyResult } from "../lib/storage";
 import WorldMap, { type Pin } from "./WorldMap";
 import TimelineBlocks from "./TimelineBlocks";
 import RoundCard from "./RoundCard";
 import RevealPanel from "./RevealPanel";
-import ShareGrid from "./ShareGrid";
+import EndScreen from "./EndScreen";
 
 interface Props {
   puzzle: Puzzle;
@@ -20,7 +20,7 @@ export default function GameScreen({ puzzle, onExit }: Props) {
   const [pin, setPin] = useState<Pin | null>(null);
   const [block, setBlock] = useState<number | null>(null);
   const [revealed, setRevealed] = useState(false);
-  const [scores, setScores] = useState<RoundScore[]>([]);
+  const [results, setResults] = useState<RoundResult[]>([]);
 
   const artifact = puzzle.rounds[roundIndex];
   const isLastRound = roundIndex === puzzle.rounds.length - 1;
@@ -28,8 +28,9 @@ export default function GameScreen({ puzzle, onExit }: Props) {
 
   function submitGuess() {
     if (!pin || block === null) return;
-    const score = roundScore({ ...pin, block }, artifact, blockOf);
-    setScores((prev) => [...prev, score]);
+    const guess = { ...pin, block };
+    const score = roundScore(guess, artifact, blockOf);
+    setResults((prev) => [...prev, { artifact, guess, score }]);
     setRevealed(true);
   }
 
@@ -42,18 +43,10 @@ export default function GameScreen({ puzzle, onExit }: Props) {
   }
 
   if (done) {
-    const totals = scores.map((s) => s.total);
     const dateStr = puzzle.date ?? new Date().toISOString().slice(0, 10);
-    const stats = puzzle.mode === "daily" ? recordDailyResult(dateStr, totals.reduce((a, b) => a + b, 0)) : getStats();
-    return (
-      <div className="game-done">
-        <h2>{puzzle.mode === "daily" ? "Daily results" : "Practice results"}</h2>
-        <ShareGrid dateStr={dateStr} roundTotals={totals} best={stats.best} average={average(stats)} streak={stats.streak} />
-        <button type="button" onClick={onExit}>
-          Back to menu
-        </button>
-      </div>
-    );
+    const total = results.reduce((sum, r) => sum + r.score.total, 0);
+    const stats = puzzle.mode === "daily" ? recordDailyResult(dateStr, total) : getStats();
+    return <EndScreen mode={puzzle.mode} dateStr={dateStr} results={results} stats={stats} onExit={onExit} />;
   }
 
   return (
@@ -80,7 +73,7 @@ export default function GameScreen({ puzzle, onExit }: Props) {
       {revealed && (
         <RevealPanel
           artifact={artifact}
-          score={scores[scores.length - 1]}
+          score={results[results.length - 1].score}
           guessBlock={block!}
           guessPin={pin!}
           onNext={nextRound}

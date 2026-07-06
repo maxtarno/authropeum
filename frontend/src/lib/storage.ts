@@ -1,6 +1,6 @@
 const KEY = "anthropeum-multi:stats:v1";
 
-interface Stats {
+export interface Stats {
   best: number;
   totalScore: number;
   gamesPlayed: number;

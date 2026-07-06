@@ -40,3 +40,9 @@ export interface RoundScore {
   time: number;
   total: number;
 }
+
+export interface RoundResult {
+  artifact: Artifact;
+  guess: Guess;
+  score: RoundScore;
+}

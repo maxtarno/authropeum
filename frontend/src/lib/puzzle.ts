@@ -9,11 +9,14 @@ export function blockOf(year: number): number {
   return Math.max(0, Math.min(N_BLOCKS - 1, Math.floor((year - TIMELINE_START) / BLOCK_YEARS)));
 }
 
+export function formatYear(y: number): string {
+  return y < 0 ? `${-y} BCE` : `${y} CE`;
+}
+
 export function blockLabel(i: number): string {
   const a = TIMELINE_START + i * BLOCK_YEARS;
   const b = a + BLOCK_YEARS;
-  const fmt = (y: number) => (y < 0 ? `${-y} BCE` : `${y} CE`);
-  return `${fmt(a)} – ${fmt(b)}`;
+  return `${formatYear(a)} – ${formatYear(b)}`;
 }
 
 export const BLOCK_LABELS = Array.from({ length: N_BLOCKS }, (_, i) => blockLabel(i));

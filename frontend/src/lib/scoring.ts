@@ -38,6 +38,22 @@ export function eraGapBlocks(guessBlock: number, yearStart: number, yearEnd: num
   return guessBlock < lo ? lo - guessBlock : guessBlock - hi;
 }
 
+// Actual years between the guessed 250-year block and the artifact's true
+// era range (0 if the guessed block overlaps it) — finer-grained than
+// eraGapBlocks, for display rather than scoring.
+export function yearErrorYears(
+  guessBlock: number,
+  yearStart: number,
+  yearEnd: number,
+  timelineStart: number,
+  blockYears: number
+): number {
+  const guessStart = timelineStart + guessBlock * blockYears;
+  const guessEnd = guessStart + blockYears;
+  if (guessEnd >= yearStart && guessStart <= yearEnd) return 0;
+  return guessEnd < yearStart ? yearStart - guessEnd : guessStart - yearEnd;
+}
+
 export function roundScore(
   guess: Guess,
   artifact: { lat: number; lng: number; year_start: number; year_end: number },

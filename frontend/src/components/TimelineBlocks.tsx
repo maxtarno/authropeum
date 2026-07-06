@@ -1,4 +1,4 @@
-import { BLOCK_LABELS, N_BLOCKS } from "../lib/puzzle";
+import { BLOCK_LABELS, N_BLOCKS, TIMELINE_START, BLOCK_YEARS, formatYear } from "../lib/puzzle";
 
 interface Props {
   selected: number | null;
@@ -11,6 +11,9 @@ interface Props {
 
 const pctPerBlock = 100 / (N_BLOCKS - 1);
 const pctOf = (block: number) => block * pctPerBlock;
+
+const MAJOR_STEP = 4; // label every 4 blocks (1000 years)
+const MAJOR_YEARS = Array.from({ length: N_BLOCKS / MAJOR_STEP + 1 }, (_, i) => TIMELINE_START + i * MAJOR_STEP * BLOCK_YEARS);
 
 export default function TimelineBlocks({ selected, onSelect, disabled, trueRange }: Props) {
   const value = selected ?? Math.floor((N_BLOCKS - 1) / 2);
@@ -30,6 +33,11 @@ export default function TimelineBlocks({ selected, onSelect, disabled, trueRange
         )}
       </div>
       <div className="timeline-track">
+        <div className="timeline-cells" aria-hidden="true">
+          {BLOCK_LABELS.map((label, i) => (
+            <div key={i} className="timeline-cell" title={label} />
+          ))}
+        </div>
         {trueRange && (
           <div
             className="timeline-true-range"
@@ -52,14 +60,10 @@ export default function TimelineBlocks({ selected, onSelect, disabled, trueRange
           aria-valuetext={selected === null ? undefined : BLOCK_LABELS[selected]}
         />
       </div>
-      <div className="timeline-ticks" aria-hidden="true">
-        {BLOCK_LABELS.map((label, i) => (
-          <span key={i} className="timeline-tick" title={label} />
+      <div className="timeline-major-labels" aria-hidden="true">
+        {MAJOR_YEARS.map((y, i) => (
+          <span key={i}>{formatYear(y)}</span>
         ))}
-      </div>
-      <div className="timeline-endpoints" aria-hidden="true">
-        <span>{BLOCK_LABELS[0].split("–")[0].trim()}</span>
-        <span>{BLOCK_LABELS[N_BLOCKS - 1].split("–")[1].trim()}</span>
       </div>
     </div>
   );
