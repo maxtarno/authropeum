@@ -10889,3 +10889,13 @@ adapters.aic:69737	not public domain
 adapters.aic:69762	not public domain
 adapters.aic:69759	not public domain
 adapters.aic:69756	not public domain
+adapters.cleveland:155665	geo unresolved: ['', 'South Italian, Lucanian']
+adapters.cleveland:119143	geo unresolved: ['', 'Spanish, Burgundy, Dijon, 15th century']
+adapters.cleveland:130939	year_start -4710 predates timeline
+adapters.cleveland:157016	geo unresolved: ['', 'Western Anatolia, early Bronze Age (c. 3300–1200 BCE)']
+adapters.cleveland:172387	date range too wide (799y) to guess fairly
+adapters.cleveland:538229	geo unresolved: ['']
+adapters.cleveland:152699	geo unresolved: ['', 'South Italian, Paestan']
+adapters.cleveland:286706	geo unresolved: ['', 'Africa, West Africa, Burkina Faso, Bobo-style blacksmith-carver']
+adapters.cleveland:171615	geo unresolved: ['', 'Mosan (Valley of the Meuse), Liège(?), late 13th century']
+adapters.cleveland:135706	geo unresolved: ['', 'Rembrandt, 17th century']

@@ -84,7 +84,7 @@ def iter_records(limit: int | None = None, highlights_only: bool = False,
     while True:
         url = f"{BASE}?cc0&has_image=1&limit={page_size}&skip={skip}"
         if highlights_only:
-            url += "&highlight"
+            url += "&highlight=1"
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=30) as r:
             data = json.loads(r.read()).get("data") or []
