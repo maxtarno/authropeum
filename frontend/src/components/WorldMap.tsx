@@ -21,14 +21,14 @@ interface Props {
 export default function WorldMap({ guess, truth, onGuess }: Props) {
   const svgRef = useRef<SVGSVGElement>(null);
 
-  const projection = useMemo(() => {
-    return geoEqualEarth().fitSize([WIDTH, HEIGHT], countries);
-  }, []);
-
   const countries = useMemo(() => {
     const topo = worldTopo as unknown as Topology;
     return feature(topo, topo.objects.countries as GeometryCollection);
   }, []);
+
+  const projection = useMemo(() => {
+    return geoEqualEarth().fitSize([WIDTH, HEIGHT], countries);
+  }, [countries]);
 
   const path = useMemo(() => geoPath(projection), [projection]);
 
