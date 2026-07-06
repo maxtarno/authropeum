@@ -1,5 +1,7 @@
 import type { Artifact, RoundScore } from "../lib/types";
-import { blockLabel, blockOf } from "../lib/puzzle";
+import { blockLabel, blockOf, BLOCK_YEARS } from "../lib/puzzle";
+import { MAX_GEO, MAX_TIME, haversineKm, eraGapBlocks } from "../lib/scoring";
+import type { Pin } from "./WorldMap";
 
 const SOURCE_NAMES: Record<string, string> = {
   met: "The Metropolitan Museum of Art",
@@ -11,22 +13,51 @@ interface Props {
   artifact: Artifact;
   score: RoundScore;
   guessBlock: number;
+  guessPin: Pin;
   onNext: () => void;
   isLastRound: boolean;
 }
 
-export default function RevealPanel({ artifact, score, guessBlock, onNext, isLastRound }: Props) {
+export default function RevealPanel({ artifact, score, guessBlock, guessPin, onNext, isLastRound }: Props) {
   const trueBlockStart = blockLabel(blockOf(artifact.year_start));
+  const distanceKm = Math.round(haversineKm(guessPin.lat, guessPin.lng, artifact.lat, artifact.lng));
+  const gap = eraGapBlocks(guessBlock, artifact.year_start, artifact.year_end, blockOf);
+
   return (
     <div className="reveal-panel">
       <p className="reveal-answer">
         {artifact.geo_qualifier && <em>{artifact.geo_qualifier} </em>}
         <strong>{artifact.geo_display}</strong> · {artifact.year_start}–{artifact.year_end}
       </p>
-      <p className="reveal-score">
-        📍 {score.geo.toLocaleString()} + 🕓 {score.time.toLocaleString()} ={" "}
-        <strong>{score.total.toLocaleString()}</strong> / 10,000
-      </p>
+
+      <div className="score-breakdown">
+        <div className="score-row">
+          <div className="score-row-label">
+            📍 {distanceKm.toLocaleString()} km from the true spot
+          </div>
+          <div className="score-bar">
+            <div className="score-bar-fill score-bar-geo" style={{ width: `${(score.geo / MAX_GEO) * 100}%` }} />
+          </div>
+          <div className="score-row-value">
+            {score.geo.toLocaleString()} / {MAX_GEO.toLocaleString()}
+          </div>
+        </div>
+        <div className="score-row">
+          <div className="score-row-label">
+            🕓 {gap === 0 ? "within the correct era" : `${gap} block${gap > 1 ? "s" : ""} off (~${(gap * BLOCK_YEARS).toLocaleString()} yrs)`}
+          </div>
+          <div className="score-bar">
+            <div className="score-bar-fill score-bar-time" style={{ width: `${(score.time / MAX_TIME) * 100}%` }} />
+          </div>
+          <div className="score-row-value">
+            {score.time.toLocaleString()} / {MAX_TIME.toLocaleString()}
+          </div>
+        </div>
+        <p className="score-total">
+          Total: <strong>{score.total.toLocaleString()}</strong> / 10,000
+        </p>
+      </div>
+
       <p className="reveal-your-guess">
         You guessed: {blockLabel(guessBlock)}
         {" · "}true era: {trueBlockStart}

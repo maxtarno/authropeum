@@ -77,6 +77,7 @@ export default function GameScreen({ puzzle, onExit }: Props) {
           artifact={artifact}
           score={scores[scores.length - 1]}
           guessBlock={block!}
+          guessPin={pin!}
           onNext={nextRound}
           isLastRound={isLastRound}
         />

@@ -29,6 +29,15 @@ export function timeScore(guessBlock: number, yearStart: number, yearEnd: number
   return Math.round(MAX_TIME * Math.exp(-gap / TIME_DECAY_BLOCKS));
 }
 
+// Blocks between the guess and the nearest edge of the artifact's true era
+// range; 0 means the guess overlaps (full credit). Mirrors timeScore's gap.
+export function eraGapBlocks(guessBlock: number, yearStart: number, yearEnd: number, blockOf: (y: number) => number): number {
+  const lo = blockOf(yearStart);
+  const hi = blockOf(yearEnd);
+  if (guessBlock >= lo && guessBlock <= hi) return 0;
+  return guessBlock < lo ? lo - guessBlock : guessBlock - hi;
+}
+
 export function roundScore(
   guess: Guess,
   artifact: { lat: number; lng: number; year_start: number; year_end: number },

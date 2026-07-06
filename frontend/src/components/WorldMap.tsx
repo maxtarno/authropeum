@@ -1,6 +1,6 @@
 import { useMemo, useRef } from "react";
 import { geoEqualEarth, geoPath } from "d3-geo";
-import { feature } from "topojson-client";
+import { feature, mesh } from "topojson-client";
 import type { Topology, GeometryCollection } from "topojson-specification";
 import worldTopo from "../data/world-110m.json";
 
@@ -24,6 +24,13 @@ export default function WorldMap({ guess, truth, onGuess }: Props) {
   const countries = useMemo(() => {
     const topo = worldTopo as unknown as Topology;
     return feature(topo, topo.objects.countries as GeometryCollection);
+  }, []);
+
+  const borders = useMemo(() => {
+    const topo = worldTopo as unknown as Topology;
+    // Includes both shared country borders and coastlines (mesh treats the
+    // ocean side of a coastal arc as an implicit second, distinct object).
+    return mesh(topo, topo.objects.countries as GeometryCollection, (a, b) => a !== b);
   }, []);
 
   const projection = useMemo(() => {
@@ -63,6 +70,7 @@ export default function WorldMap({ guess, truth, onGuess }: Props) {
       {countries.features.map((f, i) => (
         <path key={i} d={path(f) ?? undefined} className="world-map-land" />
       ))}
+      <path d={path(borders) ?? undefined} className="world-map-borders" />
       {guessXY && <circle cx={guessXY[0]} cy={guessXY[1]} r={6} className="pin pin-guess" />}
       {truthXY && <circle cx={truthXY[0]} cy={truthXY[1]} r={6} className="pin pin-truth" />}
       {guessXY && truthXY && (
