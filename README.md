@@ -29,6 +29,17 @@ python3 pipeline.py --fixtures
 python3 puzzle.py --date 2026-07-05
 ```
 
+## Tests
+
+```
+pip install pytest
+python3 -m pytest
+```
+
+Covers schema validation gates, the scoring/timeline math and daily-selection
+diversity caps in `puzzle.py`, and pipeline ingest/dedupe against the bundled
+fixtures.
+
 ## Real ingest (run on your machine — needs internet)
 
 ```

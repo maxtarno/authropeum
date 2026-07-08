@@ -15,8 +15,8 @@
 | Round display | Image(s), title, material/medium hint |
 
 Implemented in `puzzle.py`: `block_of`, `geo_score` (exponential decay,
-`GEO_DECAY_KM=1800`), `time_score` (overlap → 5,000; else exp decay per block,
-`TIME_DECAY_BLOCKS=1.4`), `share_card`.
+`GEO_DECAY_KM=3000`), `time_score` (overlap → 5,000; else exp decay per block,
+`TIME_DECAY_BLOCKS=3.0`), `share_card`.
 
 ## Our differences
 

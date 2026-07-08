@@ -77,7 +77,14 @@ export default function EndScreen({ mode, dateStr, results, stats, onExit }: Pro
                 <tr key={i}>
                   <td className="end-table-num">{i + 1}</td>
                   <td className="end-table-artifact">
-                    <img src={r.artifact.image_url} alt="" className="end-table-thumb" />
+                    <img
+                      src={r.artifact.image_url}
+                      alt=""
+                      className="end-table-thumb"
+                      onError={(e) => {
+                        e.currentTarget.style.visibility = "hidden";
+                      }}
+                    />
                     <span className="end-table-title">{r.artifact.title}</span>
                   </td>
                   <td>{distanceKm.toLocaleString()} km</td>
@@ -93,10 +100,10 @@ export default function EndScreen({ mode, dateStr, results, stats, onExit }: Pro
       </div>
 
       <div className="end-actions">
-        <button type="button" className="end-action-primary" onClick={onExit}>
+        <button type="button" className="btn-primary" onClick={onExit}>
           Go to menu
         </button>
-        <button type="button" className="end-action-secondary" onClick={copyScorecard}>
+        <button type="button" className="btn-outline" onClick={copyScorecard}>
           {copied ? "Copied!" : "Share your scorecard"}
         </button>
       </div>

@@ -14,14 +14,24 @@ function App() {
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
 
   useEffect(() => {
-    fetch("/artifacts.json")
+    fetch(`${import.meta.env.BASE_URL}artifacts.json`)
       .then((r) => r.json())
       .then(setPool)
       .catch(() => setError("Couldn't load the artifact pool (public/artifacts.json)."));
   }, []);
 
-  if (error) return <div className="app-error">{error}</div>;
-  if (!pool) return <div className="app-loading">Loading…</div>;
+  if (error) {
+    return (
+      <div className="app-status">
+        <p className="eyebrow">Couldn't load the pool</p>
+        <p className="app-status-message">{error}</p>
+        <button type="button" className="btn-primary" onClick={() => window.location.reload()}>
+          Retry
+        </button>
+      </div>
+    );
+  }
+  if (!pool) return <div className="app-status app-status-loading">Loading…</div>;
 
   if (puzzle) {
     return <GameScreen puzzle={puzzle} onExit={() => setPuzzle(null)} />;
@@ -29,14 +39,20 @@ function App() {
 
   return (
     <div className="mode-select">
-      <h1>Anthropeum-Multi</h1>
-      <p>Guess where and when each artifact is from.</p>
-      <button type="button" onClick={() => setPuzzle(buildDailyPuzzle(pool, todayStr()))}>
-        Play today's puzzle
-      </button>
-      <button type="button" onClick={() => setPuzzle(buildPracticePuzzle(pool))}>
-        Practice (random, unrecorded)
-      </button>
+      <p className="eyebrow">Anthropeum — daily artifact game</p>
+      <h1>Guess where and when it was made.</h1>
+      <p className="mode-select-sub">
+        Ten objects from the Met, Cleveland, and the Art Institute of Chicago. Pin the map, place the era, meet the
+        answer.
+      </p>
+      <div className="mode-select-actions">
+        <button type="button" className="btn-primary" onClick={() => setPuzzle(buildDailyPuzzle(pool, todayStr()))}>
+          Play today's puzzle
+        </button>
+        <button type="button" className="btn-secondary" onClick={() => setPuzzle(buildPracticePuzzle(pool))}>
+          Practice (random, unrecorded)
+        </button>
+      </div>
     </div>
   );
 }

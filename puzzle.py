@@ -53,8 +53,8 @@ def block_label(i: int) -> str:
 # ---------------- scoring ----------------
 
 MAX_GEO, MAX_TIME = 5000, 5000
-GEO_DECAY_KM = 1800        # e^-1 of geo points gone per 1800 km — tune to taste
-TIME_DECAY_BLOCKS = 1.4    # partial credit falloff for near-miss blocks
+GEO_DECAY_KM = 3000        # e^-1 of geo points gone per 3000 km — tune to taste
+TIME_DECAY_BLOCKS = 3.0    # partial credit falloff for near-miss blocks
 
 
 def haversine_km(lat1, lng1, lat2, lng2) -> float:

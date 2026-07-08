@@ -2,8 +2,8 @@ import type { Guess, RoundScore } from "./types";
 
 export const MAX_GEO = 5000;
 export const MAX_TIME = 5000;
-export const GEO_DECAY_KM = 1800;
-export const TIME_DECAY_BLOCKS = 1.4;
+export const GEO_DECAY_KM = 3000;
+export const TIME_DECAY_BLOCKS = 3.0;
 
 export function haversineKm(lat1: number, lng1: number, lat2: number, lng2: number): number {
   const r = 6371;
