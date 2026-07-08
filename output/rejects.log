@@ -10903,3 +10903,2677 @@ adapters.met:999001	not public domain
 adapters.met:999002	geo unresolved: ['', '', '', '', '', '', '', '', '', '']
 adapters.cleveland:999100	not CC0
 adapters.aic:55500	date range is artist's life, not object's
+adapters.cleveland:155665	geo unresolved: ['', 'South Italian, Lucanian']
+adapters.cleveland:119143	geo unresolved: ['', 'Spanish, Burgundy, Dijon, 15th century']
+adapters.cleveland:148021	geo unresolved: ['', 'Western Himalayas']
+adapters.cleveland:130939	year_start -4710 predates timeline
+adapters.cleveland:144495	geo unresolved: ['', 'Africa, West Africa, Burkina Faso, possibly Bwa-style maker']
+adapters.cleveland:157016	geo unresolved: ['', 'Western Anatolia, early Bronze Age (c. 3300–1200 BCE)']
+adapters.cleveland:108743	geo unresolved: ['', 'Mosan, Meuse Valley, Romanesque period, 12th century']
+adapters.cleveland:136459	geo unresolved: ['', 'Africa, West Africa, Guinea, possibly Baga-style maker']
+adapters.cleveland:118615	geo unresolved: ['']
+adapters.cleveland:168757	inverted date range 1880..-1920
+adapters.cleveland:168758	inverted date range 1880..-1920
+adapters.cleveland:148772	geo unresolved: ['', 'Africa, West Africa, Sierra Leone, Sapi-style carver']
+adapters.cleveland:118479	date range too wide (799y) to guess fairly
+adapters.cleveland:172387	date range too wide (799y) to guess fairly
+adapters.cleveland:146111	geo unresolved: ['', 'Africa, West Africa, Côte d’Ivoire, Baule-style carver']
+adapters.cleveland:146112	geo unresolved: ['', 'Africa, West Africa, Côte d’Ivoire, Baule-style carver']
+adapters.cleveland:125349	date range too wide (799y) to guess fairly
+adapters.cleveland:172388	date range too wide (799y) to guess fairly
+adapters.cleveland:134703	date range too wide (799y) to guess fairly
+adapters.cleveland:106465	geo unresolved: ['', 'South Italian, Apulian']
+adapters.cleveland:538229	geo unresolved: ['']
+adapters.cleveland:125026	date range too wide (799y) to guess fairly
+adapters.cleveland:148796	inverted date range -2900..-2950
+adapters.cleveland:125175	date range too wide (799y) to guess fairly
+adapters.cleveland:155057	geo unresolved: ['', 'South Italian, Apulian']
+adapters.cleveland:146110	geo unresolved: ['', 'Africa, West Africa, Côte d’Ivoire, Baule-style carver']
+adapters.cleveland:150987	geo unresolved: ['', 'South Italian, Apulian, Tarentine']
+adapters.cleveland:155650	geo unresolved: ['', 'Northwest Honduras, Ulúa Valley, 8th-10th century']
+adapters.cleveland:163793	geo unresolved: ['', 'Africa, Central Africa, Gabon, Kota-style maker']
+adapters.cleveland:149037	geo unresolved: ['', 'South Italian, Apulian']
+adapters.cleveland:148156	geo unresolved: ['', 'Africa, West Africa, Côte d’Ivoire, Baule-style carver']
+adapters.cleveland:147842	geo unresolved: ['', 'Africa, West Africa, Côte d’Ivoire, Baule-style carver']
+adapters.cleveland:97957	inverted date range 1755..1665
+adapters.cleveland:154281	geo unresolved: ['']
+adapters.cleveland:147854	inverted date range 1880..1820
+adapters.cleveland:152699	geo unresolved: ['', 'South Italian, Paestan']
+adapters.cleveland:95865	geo unresolved: ['', 'European, 15th century']
+adapters.cleveland:96089	geo unresolved: ['', 'European, 15th century']
+adapters.cleveland:96788	geo unresolved: ['', 'Franco-Flemish, Liège, early 18th Century']
+adapters.cleveland:100182	geo unresolved: ['', 'European (unassigned), 15th century']
+adapters.cleveland:168429	geo unresolved: ['', 'Southern Africa, Lesotho, Southern Sotho-style maker']
+adapters.cleveland:159884	date range too wide (800y) to guess fairly
+adapters.cleveland:153767	inverted date range 100..1
+adapters.cleveland:154738	year_start -3500 predates timeline
+adapters.cleveland:168424	geo unresolved: ['', 'Africa, Southern Africa, Kingdom of Eswatini, Swazi-style maker']
+adapters.cleveland:143315	geo unresolved: ['', 'South Italian, Campanian, Cumaean']
+adapters.cleveland:152054	geo unresolved: ['', 'South Italian, Paestan']
+adapters.cleveland:154904	year_start -3500 predates timeline
+adapters.cleveland:171613	geo unresolved: ['', 'Mesoamerica, Veracruz, Nopiloa style?, 7th-10th century']
+adapters.cleveland:286706	geo unresolved: ['', 'Africa, West Africa, Burkina Faso, Bobo-style blacksmith-carver']
+adapters.cleveland:299902	geo unresolved: ['']
+adapters.cleveland:126267	date range too wide (701y) to guess fairly
+adapters.cleveland:103669	geo unresolved: ['']
+adapters.cleveland:96787	geo unresolved: ['', 'Franco-Flemish, Liège, early 18th century']
+adapters.cleveland:102585	geo unresolved: ['', 'European, early 15th century']
+adapters.cleveland:155864	geo unresolved: ['', 'South Italian']
+adapters.cleveland:95874	geo unresolved: ['', 'European, 15th century']
+adapters.cleveland:172512	date range too wide (799y) to guess fairly
+adapters.cleveland:132408	date range too wide (1000y) to guess fairly
+adapters.cleveland:171615	geo unresolved: ['', 'Mosan (Valley of the Meuse), Liège(?), late 13th century']
+adapters.cleveland:161429	geo unresolved: ['', 'Alemannic, Migration Period, 6th-7th century']
+adapters.cleveland:94968	geo unresolved: ['', 'South Italian, Daunian or Canosan']
+adapters.cleveland:135054	date range too wide (727y) to guess fairly
+adapters.cleveland:140461	geo unresolved: ['', 'Africa, West Africa, Guinea, Baga-style carver']
+adapters.cleveland:148070	geo unresolved: ['']
+adapters.cleveland:162576	date range too wide (1000y) to guess fairly
+adapters.cleveland:130743	geo unresolved: ['', 'Africa, West Africa, Liberia, Mano-style carver']
+adapters.cleveland:135706	geo unresolved: ['', 'Rembrandt, 17th century']
+adapters.cleveland:111502	geo unresolved: ['']
+adapters.cleveland:150537	geo unresolved: ['', 'Sarmato-Gothic, Migration period, 5th century']
+adapters.cleveland:96786	geo unresolved: ['', 'Franco-Flemish, Liège, early 18th century']
+adapters.cleveland:129267	geo unresolved: ['', 'South Italian, Apulian']
+adapters.cleveland:152313	geo unresolved: ['', 'South Italian, Apulian']
+adapters.cleveland:130314	geo unresolved: ['', 'Cross: Latin Kingdom of Jerusalem\r\nPanel: Rhine-Meuse region, Gothic period, 13th century']
+adapters.cleveland:156773	geo unresolved: ['']
+adapters.cleveland:163505	year_start -3300 predates timeline
+adapters.cleveland:680766	inverted date range 625..550
+adapters.cleveland:94775	geo unresolved: ['']
+adapters.cleveland:153314	geo unresolved: ['', 'Southern Siberia']
+adapters.cleveland:441847	geo unresolved: ['', 'Central Andes, South Coast, Paracas']
+adapters.cleveland:294348	geo unresolved: ['', '19th century']
+adapters.cleveland:124128	geo unresolved: ['', 'Mesoamerica, Classic Veracruz style']
+adapters.cleveland:101396	year_start -4000 predates timeline
+adapters.cleveland:457393	inverted date range -550..-600
+adapters.cleveland:149111	date range too wide (2677y) to guess fairly
+adapters.cleveland:148855	geo unresolved: ['']
+adapters.cleveland:380481	geo unresolved: ['', 'South Italian, Daunian or Canosan']
+adapters.cleveland:108841	geo unresolved: ['', 'South Italian, Campanian (Calenian)']
+adapters.cleveland:159217	year_start -4000 predates timeline
+adapters.cleveland:160080	date range too wide (1000y) to guess fairly
+adapters.cleveland:168438	geo unresolved: ['', 'Central Andes, North Highlands, Recuay people']
+adapters.cleveland:171268	geo unresolved: ['', 'Africa, West Africa, Burkina Faso, Mossi-style blacksmith-carver']
+adapters.cleveland:124411	date range too wide (800y) to guess fairly
+adapters.cleveland:153369	geo unresolved: ['', 'Western Himalayas, possibly Ladakh or Lahul']
+adapters.cleveland:127147	date range too wide (900y) to guess fairly
+adapters.cleveland:160425	year_start -3500 predates timeline
+adapters.cleveland:161676	year_start -3800 predates timeline
+adapters.cleveland:170780	date range too wide (900y) to guess fairly
+adapters.cleveland:294033	geo unresolved: ['', 'Andes, north coast, Cupisnique style']
+adapters.cleveland:441848	geo unresolved: ['', 'Central Andes, north coast, probably Jequetepeque Valley, Cupisnique people']
+adapters.cleveland:678264	geo unresolved: ['', 'Africa, Central Africa, Angola, Chokwe-style carver']
+adapters.cleveland:142352	inverted date range 1492..1452
+adapters.cleveland:151367	geo unresolved: ['', 'Latin Kingdom of Jerusalem, Jerusalem, Gothic period, 12th century']
+adapters.cleveland:161318	geo unresolved: ['', 'Anatolia, Phrygia']
+adapters.cleveland:161637	geo unresolved: ['', 'Serbia, Vinça culture, Neolithic Era']
+adapters.cleveland:119669	date range too wide (800y) to guess fairly
+adapters.cleveland:128277	geo unresolved: ['']
+adapters.cleveland:161638	geo unresolved: ['', 'Serbia, Vinça culture, Neolithic Era']
+adapters.cleveland:294065	geo unresolved: ['', 'Andes, south coast, Paracas people']
+adapters.cleveland:375049	geo unresolved: ['']
+adapters.cleveland:149446	geo unresolved: ['', 'Sino-Tibetan, Derge School, Yongle period (1403-1427)']
+adapters.cleveland:149448	geo unresolved: ['', 'Sino-Tibetan, Derge School, Yongle period (1403-1427)']
+adapters.cleveland:137341	date range too wide (1012y) to guess fairly
+adapters.cleveland:86111	geo unresolved: ['']
+adapters.cleveland:86110	geo unresolved: ['']
+adapters.cleveland:124355	geo unresolved: ['', 'Mesoamerica, Classic Veracruz style']
+adapters.cleveland:106395	inverted date range 1460..0
+adapters.cleveland:127246	date range too wide (800y) to guess fairly
+adapters.cleveland:114576	geo unresolved: ['', 'Kashmir']
+adapters.cleveland:155444	geo unresolved: ['', 'Honduras, Ulúa Valley, 7th-10th century']
+adapters.cleveland:168423	geo unresolved: ['', 'Africa, Southern Africa, Lesotho, South Sotho maker']
+adapters.cleveland:441005	geo unresolved: ['']
+adapters.cleveland:94084	year_start -3300 predates timeline
+adapters.cleveland:97497	date range too wide (725y) to guess fairly
+adapters.cleveland:457341	geo unresolved: ['']
+adapters.cleveland:128948	geo unresolved: ['', 'Eastern Anatolia']
+adapters.cleveland:104636	no web image
+adapters.cleveland:114729	geo unresolved: ['', 'Kashmir']
+adapters.cleveland:138379	geo unresolved: ['']
+adapters.cleveland:162901	geo unresolved: ['']
+adapters.cleveland:136929	geo unresolved: ['', 'Pacific Islands, Polynesia, Rapa Nui (Easter Island)']
+adapters.cleveland:97689	geo unresolved: ['']
+adapters.cleveland:170796	geo unresolved: ['']
+adapters.cleveland:149642	inverted date range 1863..1836
+adapters.cleveland:161430	geo unresolved: ['', 'Alemannic, Migration Period, 6th-7th century']
+adapters.cleveland:161431	geo unresolved: ['', 'Alemannic, Migration Period, 6th-7th century']
+adapters.cleveland:95291	geo unresolved: ['']
+adapters.cleveland:106856	date range too wide (2623y) to guess fairly
+adapters.cleveland:170875	geo unresolved: ['']
+adapters.cleveland:438932	geo unresolved: ['']
+adapters.cleveland:438934	geo unresolved: ['']
+adapters.cleveland:438933	geo unresolved: ['']
+adapters.cleveland:109234	date range too wide (2027y) to guess fairly
+adapters.cleveland:130762	date range too wide (800y) to guess fairly
+adapters.aic:109914	not public domain
+adapters.aic:54751	not public domain
+adapters.aic:24219	not public domain
+adapters.aic:24202	not public domain
+adapters.aic:22191	not public domain
+adapters.aic:21722	not public domain
+adapters.aic:21711	not public domain
+adapters.aic:2473	not public domain
+adapters.aic:107741	not public domain
+adapters.aic:107728	not public domain
+adapters.aic:107666	not public domain
+adapters.aic:104930	not public domain
+adapters.aic:104678	not public domain
+adapters.aic:104092	not public domain
+adapters.aic:103859	not public domain
+adapters.aic:103117	not public domain
+adapters.aic:102301	not public domain
+adapters.aic:102300	not public domain
+adapters.aic:102299	not public domain
+adapters.aic:102298	not public domain
+adapters.aic:101054	not public domain
+adapters.aic:101053	not public domain
+adapters.aic:100870	not public domain
+adapters.aic:100869	not public domain
+adapters.aic:99499	not public domain
+adapters.aic:99498	not public domain
+adapters.aic:99330	not public domain
+adapters.aic:97295	not public domain
+adapters.aic:97294	not public domain
+adapters.aic:97293	not public domain
+adapters.aic:89390	not public domain
+adapters.aic:65343	not public domain
+adapters.aic:65337	not public domain
+adapters.aic:65335	not public domain
+adapters.aic:65331	not public domain
+adapters.aic:62007	not public domain
+adapters.aic:62004	not public domain
+adapters.aic:61916	not public domain
+adapters.aic:61593	not public domain
+adapters.aic:59983	not public domain
+adapters.aic:58113	not public domain
+adapters.aic:52283	geo unresolved: ['Peruvian North Coast']
+adapters.aic:52267	not public domain
+adapters.aic:252015	not public domain
+adapters.aic:252013	not public domain
+adapters.aic:252012	not public domain
+adapters.aic:252011	not public domain
+adapters.aic:282622	not public domain
+adapters.aic:259192	not public domain
+adapters.aic:252017	not public domain
+adapters.aic:252016	not public domain
+adapters.aic:61560	date range is artist's life, not object's
+adapters.aic:61558	date range is artist's life, not object's
+adapters.aic:61552	date range is artist's life, not object's
+adapters.aic:61548	date range is artist's life, not object's
+adapters.aic:61545	date range is artist's life, not object's
+adapters.aic:139741	not public domain
+adapters.aic:138634	not public domain
+adapters.aic:67937	not public domain
+adapters.aic:283093	not public domain
+adapters.aic:279739	not public domain
+adapters.aic:279730	not public domain
+adapters.aic:159832	not public domain
+adapters.aic:268920	not public domain
+adapters.aic:268919	not public domain
+adapters.aic:268916	not public domain
+adapters.aic:268910	not public domain
+adapters.aic:268909	not public domain
+adapters.aic:268908	not public domain
+adapters.aic:268906	not public domain
+adapters.aic:268924	not public domain
+adapters.aic:268923	not public domain
+adapters.aic:268922	not public domain
+adapters.aic:268918	not public domain
+adapters.aic:268917	not public domain
+adapters.aic:268915	not public domain
+adapters.aic:268913	not public domain
+adapters.aic:268912	not public domain
+adapters.aic:268911	not public domain
+adapters.aic:268907	not public domain
+adapters.aic:268921	not public domain
+adapters.aic:268914	not public domain
+adapters.aic:188844	not public domain
+adapters.aic:180605	not public domain
+adapters.aic:48299	not public domain
+adapters.aic:239634	not public domain
+adapters.aic:220692	geo unresolved: ['']
+adapters.aic:104345	not public domain
+adapters.aic:102942	not public domain
+adapters.aic:100200	not public domain
+adapters.aic:233491	not public domain
+adapters.aic:217924	not public domain
+adapters.aic:215009	not public domain
+adapters.aic:196984	not public domain
+adapters.aic:179589	not public domain
+adapters.aic:10946	not public domain
+adapters.aic:284499	not public domain
+adapters.aic:189116	not public domain
+adapters.aic:93444	not public domain
+adapters.aic:9642	not public domain
+adapters.aic:264785	not public domain
+adapters.aic:197221	not public domain
+adapters.aic:87424	not public domain
+adapters.aic:87298	not public domain
+adapters.aic:87287	not public domain
+adapters.aic:87278	not public domain
+adapters.aic:55040	geo unresolved: ['Clichy']
+adapters.aic:20448	not public domain
+adapters.aic:286372	not public domain
+adapters.aic:67929	not public domain
+adapters.aic:67428	no image
+adapters.aic:185780	not public domain
+adapters.aic:180690	not public domain
+adapters.aic:122556	not public domain
+adapters.aic:122373	not public domain
+adapters.aic:111077	not public domain
+adapters.aic:100248	not public domain
+adapters.aic:96808	not public domain
+adapters.aic:94098	not public domain
+adapters.aic:15566	not public domain
+adapters.aic:221142	not public domain
+adapters.aic:60730	not public domain
+adapters.aic:53649	not public domain
+adapters.aic:41858	not public domain
+adapters.aic:249839	not public domain
+adapters.aic:104638	not public domain
+adapters.aic:239352	missing date_start/date_end
+adapters.aic:43732	not public domain
+adapters.aic:280952	not public domain
+adapters.aic:279464	not public domain
+adapters.aic:279246	not public domain
+adapters.aic:277977	not public domain
+adapters.aic:95204	not public domain
+adapters.aic:36876	not public domain
+adapters.aic:217213	not public domain
+adapters.aic:121127	not public domain
+adapters.aic:97081	not public domain
+adapters.aic:30659	not public domain
+adapters.aic:283154	not public domain
+adapters.aic:283153	not public domain
+adapters.aic:273700	not public domain
+adapters.aic:158749	not public domain
+adapters.aic:84742	not public domain
+adapters.aic:65906	not public domain
+adapters.aic:65887	not public domain
+adapters.aic:65864	not public domain
+adapters.aic:283823	not public domain
+adapters.aic:282723	not public domain
+adapters.aic:281769	not public domain
+adapters.aic:281763	not public domain
+adapters.aic:27966	not public domain
+adapters.aic:283145	not public domain
+adapters.aic:283141	not public domain
+adapters.aic:30613	not public domain
+adapters.aic:283144	not public domain
+adapters.aic:283140	not public domain
+adapters.aic:283137	not public domain
+adapters.aic:283136	not public domain
+adapters.aic:283149	not public domain
+adapters.aic:283148	not public domain
+adapters.aic:283138	not public domain
+adapters.aic:283151	not public domain
+adapters.aic:283150	not public domain
+adapters.aic:273056	not public domain
+adapters.aic:70201	not public domain
+adapters.aic:70084	not public domain
+adapters.aic:69836	not public domain
+adapters.aic:81860	not public domain
+adapters.aic:279729	not public domain
+adapters.aic:279748	not public domain
+adapters.aic:55210	not public domain
+adapters.aic:283236	not public domain
+adapters.aic:279728	not public domain
+adapters.aic:283235	not public domain
+adapters.aic:282844	not public domain
+adapters.aic:281324	not public domain
+adapters.aic:281323	not public domain
+adapters.aic:281322	not public domain
+adapters.aic:281321	not public domain
+adapters.aic:281320	not public domain
+adapters.aic:281318	not public domain
+adapters.aic:281354	not public domain
+adapters.aic:281353	not public domain
+adapters.aic:281352	not public domain
+adapters.aic:281334	not public domain
+adapters.aic:281319	not public domain
+adapters.aic:281333	not public domain
+adapters.aic:281332	not public domain
+adapters.aic:281331	not public domain
+adapters.aic:281330	not public domain
+adapters.aic:281329	not public domain
+adapters.aic:281328	not public domain
+adapters.aic:281327	not public domain
+adapters.aic:281326	not public domain
+adapters.aic:281325	not public domain
+adapters.aic:280957	not public domain
+adapters.aic:280956	not public domain
+adapters.aic:280953	not public domain
+adapters.aic:273708	not public domain
+adapters.aic:141097	date range too wide (986y) to guess fairly
+adapters.aic:135173	date range too wide (986y) to guess fairly
+adapters.aic:141112	date range too wide (986y) to guess fairly
+adapters.aic:141098	date range too wide (986y) to guess fairly
+adapters.aic:275844	not public domain
+adapters.aic:275843	not public domain
+adapters.aic:275842	not public domain
+adapters.aic:275841	not public domain
+adapters.aic:217545	not public domain
+adapters.aic:70732	not public domain
+adapters.aic:70720	not public domain
+adapters.aic:281338	not public domain
+adapters.aic:281337	not public domain
+adapters.aic:277978	not public domain
+adapters.aic:86538	geo unresolved: ['Lunéville']
+adapters.aic:70806	not public domain
+adapters.aic:70040	not public domain
+adapters.aic:281347	not public domain
+adapters.aic:281346	not public domain
+adapters.aic:281342	not public domain
+adapters.aic:281341	not public domain
+adapters.aic:281340	not public domain
+adapters.aic:281339	not public domain
+adapters.aic:281336	not public domain
+adapters.aic:281335	not public domain
+adapters.aic:281345	not public domain
+adapters.aic:281344	not public domain
+adapters.aic:281343	not public domain
+adapters.aic:145859	not public domain
+adapters.aic:277820	geo unresolved: ['Dehua']
+adapters.aic:242800	not public domain
+adapters.aic:131385	not public domain
+adapters.aic:212605	not public domain
+adapters.aic:190192	not public domain
+adapters.aic:182221	not public domain
+adapters.aic:179315	not public domain
+adapters.aic:101578	not public domain
+adapters.aic:194410	not public domain
+adapters.aic:91503	geo unresolved: ['Cuzco']
+adapters.aic:158752	not public domain
+adapters.aic:141140	no image
+adapters.aic:74375	not public domain
+adapters.aic:65884	not public domain
+adapters.aic:65868	not public domain
+adapters.aic:64276	not public domain
+adapters.aic:32630	not public domain
+adapters.aic:158751	not public domain
+adapters.aic:110919	no image
+adapters.aic:110917	no image
+adapters.aic:70037	not public domain
+adapters.aic:66108	not public domain
+adapters.aic:65893	not public domain
+adapters.aic:41455	no image
+adapters.aic:280836	not public domain
+adapters.aic:280835	not public domain
+adapters.aic:280830	not public domain
+adapters.aic:280030	not public domain
+adapters.aic:281397	not public domain
+adapters.aic:281392	not public domain
+adapters.aic:281311	not public domain
+adapters.aic:280831	not public domain
+adapters.aic:213058	not public domain
+adapters.aic:281350	not public domain
+adapters.aic:281349	not public domain
+adapters.aic:281348	not public domain
+adapters.aic:281317	not public domain
+adapters.aic:281316	not public domain
+adapters.aic:281315	not public domain
+adapters.aic:281314	not public domain
+adapters.aic:281313	not public domain
+adapters.aic:281312	not public domain
+adapters.aic:281303	not public domain
+adapters.aic:281351	not public domain
+adapters.aic:231633	not public domain
+adapters.aic:189206	not public domain
+adapters.aic:204041	not public domain
+adapters.aic:158750	not public domain
+adapters.aic:118577	not public domain
+adapters.aic:276377	not public domain
+adapters.aic:276372	not public domain
+adapters.aic:276275	not public domain
+adapters.aic:160098	not public domain
+adapters.aic:80533	geo unresolved: ['Genoa']
+adapters.aic:62883	not public domain
+adapters.aic:99766	not public domain
+adapters.aic:183	geo unresolved: ['Apulia']
+adapters.aic:60561	geo unresolved: ['Milan']
+adapters.aic:157924	not public domain
+adapters.aic:58476	not public domain
+adapters.aic:69454	geo unresolved: ['Newton']
+adapters.aic:80487	not public domain
+adapters.aic:71562	not public domain
+adapters.aic:65133	not public domain
+adapters.aic:90981	not public domain
+adapters.aic:74683	not public domain
+adapters.aic:65151	not public domain
+adapters.aic:76776	not public domain
+adapters.aic:74340	not public domain
+adapters.aic:270159	not public domain
+adapters.aic:76284	not public domain
+adapters.aic:109524	geo unresolved: ['Newcastle-upon-Tyne']
+adapters.aic:78857	geo unresolved: ['Friesland']
+adapters.aic:282273	not public domain
+adapters.aic:282271	not public domain
+adapters.aic:282142	not public domain
+adapters.aic:282141	not public domain
+adapters.aic:282274	not public domain
+adapters.aic:282272	not public domain
+adapters.aic:282140	not public domain
+adapters.aic:118614	not public domain
+adapters.aic:285419	not public domain
+adapters.aic:285113	not public domain
+adapters.aic:286661	not public domain
+adapters.aic:286552	not public domain
+adapters.aic:286240	not public domain
+adapters.aic:285792	not public domain
+adapters.aic:285777	not public domain
+adapters.aic:284974	not public domain
+adapters.aic:284498	not public domain
+adapters.aic:283810	not public domain
+adapters.aic:283668	not public domain
+adapters.aic:283454	not public domain
+adapters.aic:283453	not public domain
+adapters.aic:282116	not public domain
+adapters.aic:282014	not public domain
+adapters.aic:281918	not public domain
+adapters.aic:281915	not public domain
+adapters.aic:281796	not public domain
+adapters.aic:281791	not public domain
+adapters.aic:280667	not public domain
+adapters.aic:280327	not public domain
+adapters.aic:274978	not public domain
+adapters.aic:273530	not public domain
+adapters.aic:262403	not public domain
+adapters.aic:262402	not public domain
+adapters.aic:262401	not public domain
+adapters.aic:262401	not public domain
+adapters.aic:262400	not public domain
+adapters.aic:262399	not public domain
+adapters.aic:262398	not public domain
+adapters.aic:262397	not public domain
+adapters.aic:262396	not public domain
+adapters.aic:262395	not public domain
+adapters.aic:262394	not public domain
+adapters.aic:262393	not public domain
+adapters.aic:262392	not public domain
+adapters.aic:262391	not public domain
+adapters.aic:262388	not public domain
+adapters.aic:262382	not public domain
+adapters.aic:262381	not public domain
+adapters.aic:262380	not public domain
+adapters.aic:262379	not public domain
+adapters.aic:262376	not public domain
+adapters.aic:262375	not public domain
+adapters.aic:262374	not public domain
+adapters.aic:262370	not public domain
+adapters.aic:262369	not public domain
+adapters.aic:262368	not public domain
+adapters.aic:262367	not public domain
+adapters.aic:262366	not public domain
+adapters.aic:262365	not public domain
+adapters.aic:262363	not public domain
+adapters.aic:262362	not public domain
+adapters.aic:262361	not public domain
+adapters.aic:262360	not public domain
+adapters.aic:262359	not public domain
+adapters.aic:262358	not public domain
+adapters.aic:262357	not public domain
+adapters.aic:262356	not public domain
+adapters.aic:262355	not public domain
+adapters.aic:262354	not public domain
+adapters.aic:262353	not public domain
+adapters.aic:262352	not public domain
+adapters.aic:262351	not public domain
+adapters.aic:262350	not public domain
+adapters.aic:262349	not public domain
+adapters.aic:262348	not public domain
+adapters.aic:262347	not public domain
+adapters.aic:262346	not public domain
+adapters.aic:262345	not public domain
+adapters.aic:262344	not public domain
+adapters.aic:262343	not public domain
+adapters.aic:262342	not public domain
+adapters.aic:262338	not public domain
+adapters.aic:262337	not public domain
+adapters.aic:262336	not public domain
+adapters.aic:262335	not public domain
+adapters.aic:262334	not public domain
+adapters.aic:262333	not public domain
+adapters.aic:262332	not public domain
+adapters.aic:262331	not public domain
+adapters.aic:262330	not public domain
+adapters.aic:262329	not public domain
+adapters.aic:262328	not public domain
+adapters.aic:262327	not public domain
+adapters.aic:262326	not public domain
+adapters.aic:262325	not public domain
+adapters.aic:262324	not public domain
+adapters.aic:262323	not public domain
+adapters.aic:262322	not public domain
+adapters.aic:262321	not public domain
+adapters.aic:262320	not public domain
+adapters.aic:262319	not public domain
+adapters.aic:262318	not public domain
+adapters.aic:262317	not public domain
+adapters.aic:262316	not public domain
+adapters.aic:262315	not public domain
+adapters.aic:262314	not public domain
+adapters.aic:262313	not public domain
+adapters.aic:262312	not public domain
+adapters.aic:262311	not public domain
+adapters.aic:262310	not public domain
+adapters.aic:262309	not public domain
+adapters.aic:262300	not public domain
+adapters.aic:262299	not public domain
+adapters.aic:262297	not public domain
+adapters.aic:262296	not public domain
+adapters.aic:262294	not public domain
+adapters.aic:262293	not public domain
+adapters.aic:262292	not public domain
+adapters.aic:262291	not public domain
+adapters.aic:262290	not public domain
+adapters.aic:262289	not public domain
+adapters.aic:262288	not public domain
+adapters.aic:262287	not public domain
+adapters.aic:262286	not public domain
+adapters.aic:262285	not public domain
+adapters.aic:262284	not public domain
+adapters.aic:262283	not public domain
+adapters.aic:262282	not public domain
+adapters.aic:262281	not public domain
+adapters.aic:262280	not public domain
+adapters.aic:262279	not public domain
+adapters.aic:262278	not public domain
+adapters.aic:262277	not public domain
+adapters.aic:262260	not public domain
+adapters.aic:262259	not public domain
+adapters.aic:262258	not public domain
+adapters.aic:262257	not public domain
+adapters.aic:262256	not public domain
+adapters.aic:262255	not public domain
+adapters.aic:262254	not public domain
+adapters.aic:262253	not public domain
+adapters.aic:262252	not public domain
+adapters.aic:262251	not public domain
+adapters.aic:262250	not public domain
+adapters.aic:262249	not public domain
+adapters.aic:262246	not public domain
+adapters.aic:262245	not public domain
+adapters.aic:262244	not public domain
+adapters.aic:262243	not public domain
+adapters.aic:262242	not public domain
+adapters.aic:262241	not public domain
+adapters.aic:262240	not public domain
+adapters.aic:262239	not public domain
+adapters.aic:262234	not public domain
+adapters.aic:262233	not public domain
+adapters.aic:262232	not public domain
+adapters.aic:262231	not public domain
+adapters.aic:262230	not public domain
+adapters.aic:262229	not public domain
+adapters.aic:262228	not public domain
+adapters.aic:262226	not public domain
+adapters.aic:262225	not public domain
+adapters.aic:262199	not public domain
+adapters.aic:262198	not public domain
+adapters.aic:262197	not public domain
+adapters.aic:262196	not public domain
+adapters.aic:262195	not public domain
+adapters.aic:262194	not public domain
+adapters.aic:262193	not public domain
+adapters.aic:262192	not public domain
+adapters.aic:262191	not public domain
+adapters.aic:262190	not public domain
+adapters.aic:262189	not public domain
+adapters.aic:262185	not public domain
+adapters.aic:262184	not public domain
+adapters.aic:262183	not public domain
+adapters.aic:262182	not public domain
+adapters.aic:262181	not public domain
+adapters.aic:262177	not public domain
+adapters.aic:262176	not public domain
+adapters.aic:262175	not public domain
+adapters.aic:262174	not public domain
+adapters.aic:262173	not public domain
+adapters.aic:262171	not public domain
+adapters.aic:262170	not public domain
+adapters.aic:262169	not public domain
+adapters.aic:262167	not public domain
+adapters.aic:262166	not public domain
+adapters.aic:262165	not public domain
+adapters.aic:262164	not public domain
+adapters.aic:262163	not public domain
+adapters.aic:262162	not public domain
+adapters.aic:262161	not public domain
+adapters.aic:262160	not public domain
+adapters.aic:262159	not public domain
+adapters.aic:262158	not public domain
+adapters.aic:262157	not public domain
+adapters.aic:262156	not public domain
+adapters.aic:262155	not public domain
+adapters.aic:262154	not public domain
+adapters.aic:262153	not public domain
+adapters.aic:262152	not public domain
+adapters.aic:262151	not public domain
+adapters.aic:262150	not public domain
+adapters.aic:262149	not public domain
+adapters.aic:262148	not public domain
+adapters.aic:262147	not public domain
+adapters.aic:262146	not public domain
+adapters.aic:262145	not public domain
+adapters.aic:262144	not public domain
+adapters.aic:262143	not public domain
+adapters.aic:262142	not public domain
+adapters.aic:262141	not public domain
+adapters.aic:262140	not public domain
+adapters.aic:262139	not public domain
+adapters.aic:262138	not public domain
+adapters.aic:262137	not public domain
+adapters.aic:262132	not public domain
+adapters.aic:262112	not public domain
+adapters.aic:262111	not public domain
+adapters.aic:262110	not public domain
+adapters.aic:262109	not public domain
+adapters.aic:262108	not public domain
+adapters.aic:262106	not public domain
+adapters.aic:251160	not public domain
+adapters.aic:251159	not public domain
+adapters.aic:251158	not public domain
+adapters.aic:251157	not public domain
+adapters.aic:251156	not public domain
+adapters.aic:251155	not public domain
+adapters.aic:251154	not public domain
+adapters.aic:251153	not public domain
+adapters.aic:251152	not public domain
+adapters.aic:251151	not public domain
+adapters.aic:251146	not public domain
+adapters.aic:251144	not public domain
+adapters.aic:251143	not public domain
+adapters.aic:251142	not public domain
+adapters.aic:251141	not public domain
+adapters.aic:243871	not public domain
+adapters.aic:198627	not public domain
+adapters.aic:148369	geo unresolved: ['Madhya Pradesh']
+adapters.aic:130676	geo unresolved: ['Bihar']
+adapters.aic:130622	geo unresolved: ['Madhya Pradesh']
+adapters.aic:111212	not public domain
+adapters.aic:87753	not public domain
+adapters.aic:71789	not public domain
+adapters.aic:59822	not public domain
+adapters.aic:161	geo unresolved: ['Cales']
+adapters.aic:7988	not public domain
+adapters.aic:9024	not public domain
+adapters.aic:28096	not public domain
+adapters.aic:41375	missing date_start/date_end
+adapters.aic:37900	not public domain
+adapters.aic:47141	not public domain
+adapters.aic:54415	not public domain
+adapters.aic:52983	not public domain
+adapters.aic:54418	not public domain
+adapters.aic:54424	not public domain
+adapters.aic:57211	not public domain
+adapters.aic:61910	geo unresolved: ['Mediterranean Region']
+adapters.aic:74699	not public domain
+adapters.aic:70593	geo unresolved: ['Herat']
+adapters.aic:79021	not public domain
+adapters.aic:90443	not public domain
+adapters.aic:92195	not public domain
+adapters.aic:92194	not public domain
+adapters.aic:92196	not public domain
+adapters.aic:92198	not public domain
+adapters.aic:92197	not public domain
+adapters.aic:92199	not public domain
+adapters.aic:99512	not public domain
+adapters.aic:109274	not public domain
+adapters.aic:117266	not public domain
+adapters.aic:118981	not public domain
+adapters.aic:125547	not public domain
+adapters.aic:136120	not public domain
+adapters.aic:133852	not public domain
+adapters.aic:137125	not public domain
+adapters.aic:145876	not public domain
+adapters.aic:145243	not public domain
+adapters.aic:146861	not public domain
+adapters.aic:147604	not public domain
+adapters.aic:158412	not public domain
+adapters.aic:160222	not public domain
+adapters.aic:160197	not public domain
+adapters.aic:190628	not public domain
+adapters.aic:190640	not public domain
+adapters.aic:190629	not public domain
+adapters.aic:196410	not public domain
+adapters.aic:200003	not public domain
+adapters.aic:198303	not public domain
+adapters.aic:200149	not public domain
+adapters.aic:217155	not public domain
+adapters.aic:228882	not public domain
+adapters.aic:217464	not public domain
+adapters.aic:229377	not public domain
+adapters.aic:229351	not public domain
+adapters.aic:229950	not public domain
+adapters.aic:236545	not public domain
+adapters.aic:237995	not public domain
+adapters.aic:236623	not public domain
+adapters.aic:237997	not public domain
+adapters.aic:237996	not public domain
+adapters.aic:238000	not public domain
+adapters.aic:237998	not public domain
+adapters.aic:238002	not public domain
+adapters.aic:238001	not public domain
+adapters.aic:238004	not public domain
+adapters.aic:238005	not public domain
+adapters.aic:238007	not public domain
+adapters.aic:238006	not public domain
+adapters.aic:238009	not public domain
+adapters.aic:238008	not public domain
+adapters.aic:238012	not public domain
+adapters.aic:238010	not public domain
+adapters.aic:238014	not public domain
+adapters.aic:238016	not public domain
+adapters.aic:238015	not public domain
+adapters.aic:238019	not public domain
+adapters.aic:238018	not public domain
+adapters.aic:238021	not public domain
+adapters.aic:238020	not public domain
+adapters.aic:238024	not public domain
+adapters.aic:238022	not public domain
+adapters.aic:238026	not public domain
+adapters.aic:238025	not public domain
+adapters.aic:238027	not public domain
+adapters.aic:238029	not public domain
+adapters.aic:238028	not public domain
+adapters.aic:238031	not public domain
+adapters.aic:238030	not public domain
+adapters.aic:238032	not public domain
+adapters.aic:238034	not public domain
+adapters.aic:238037	not public domain
+adapters.aic:238036	not public domain
+adapters.aic:238039	not public domain
+adapters.aic:238038	not public domain
+adapters.aic:238042	not public domain
+adapters.aic:238041	not public domain
+adapters.aic:238047	not public domain
+adapters.aic:238044	not public domain
+adapters.aic:238051	not public domain
+adapters.aic:238049	not public domain
+adapters.aic:238749	not public domain
+adapters.aic:239062	not public domain
+adapters.aic:239056	not public domain
+adapters.aic:240563	not public domain
+adapters.aic:240852	not public domain
+adapters.aic:240613	not public domain
+adapters.aic:240859	not public domain
+adapters.aic:241619	not public domain
+adapters.aic:240860	not public domain
+adapters.aic:241626	not public domain
+adapters.aic:242554	not public domain
+adapters.aic:242557	not public domain
+adapters.aic:242556	not public domain
+adapters.aic:244623	not public domain
+adapters.aic:244382	not public domain
+adapters.aic:249190	not public domain
+adapters.aic:247700	not public domain
+adapters.aic:250740	not public domain
+adapters.aic:250603	not public domain
+adapters.aic:252909	not public domain
+adapters.aic:250820	not public domain
+adapters.aic:252910	not public domain
+adapters.aic:254119	not public domain
+adapters.aic:253998	not public domain
+adapters.aic:257312	not public domain
+adapters.aic:255779	not public domain
+adapters.aic:258232	not public domain
+adapters.aic:257352	not public domain
+adapters.aic:260117	not public domain
+adapters.aic:259173	geo unresolved: ['Stoke-on-Trent']
+adapters.aic:260119	not public domain
+adapters.aic:260118	not public domain
+adapters.aic:260591	not public domain
+adapters.aic:260580	not public domain
+adapters.aic:261478	not public domain
+adapters.aic:260599	not public domain
+adapters.aic:261735	not public domain
+adapters.aic:261734	not public domain
+adapters.aic:261736	not public domain
+adapters.aic:261739	not public domain
+adapters.aic:261738	not public domain
+adapters.aic:262846	not public domain
+adapters.aic:266891	not public domain
+adapters.aic:266874	not public domain
+adapters.aic:266910	not public domain
+adapters.aic:266892	not public domain
+adapters.aic:269134	not public domain
+adapters.aic:267204	not public domain
+adapters.aic:269967	not public domain
+adapters.aic:270618	not public domain
+adapters.aic:270584	not public domain
+adapters.aic:271969	not public domain
+adapters.aic:271714	not public domain
+adapters.aic:272045	not public domain
+adapters.aic:272029	not public domain
+adapters.aic:273560	not public domain
+adapters.aic:272154	not public domain
+adapters.aic:275514	not public domain
+adapters.aic:275510	not public domain
+adapters.aic:275504	not public domain
+adapters.aic:277921	not public domain
+adapters.aic:277920	not public domain
+adapters.aic:277923	not public domain
+adapters.aic:277922	not public domain
+adapters.aic:230382	geo unresolved: ['']
+adapters.aic:136107	not public domain
+adapters.aic:111158	not public domain
+adapters.aic:136109	not public domain
+adapters.aic:136108	not public domain
+adapters.aic:136110	not public domain
+adapters.aic:136111	not public domain
+adapters.aic:28019	not public domain
+adapters.aic:25809	not public domain
+adapters.aic:109439	not public domain
+adapters.aic:36129	not public domain
+adapters.aic:100666	not public domain
+adapters.aic:269809	not public domain
+adapters.aic:241624	not public domain
+adapters.aic:96052	geo unresolved: ['Antioch']
+adapters.aic:92533	geo unresolved: ['Thessaloníki']
+adapters.aic:92547	geo unresolved: ['Thessaloníki']
+adapters.aic:92537	geo unresolved: ['Thessaloníki']
+adapters.aic:82511	geo unresolved: ['Kríti']
+adapters.aic:126436	geo unresolved: ['Tyre']
+adapters.aic:145234	geo unresolved: ['Trier']
+adapters.aic:210830	geo unresolved: ['']
+adapters.aic:274021	not public domain
+adapters.aic:32641	no image
+adapters.aic:113041	date range is artist's life, not object's
+adapters.aic:113043	date range is artist's life, not object's
+adapters.aic:113042	date range is artist's life, not object's
+adapters.aic:264440	not public domain
+adapters.aic:104451	not public domain
+adapters.aic:264205	not public domain
+adapters.aic:259486	not public domain
+adapters.aic:264453	not public domain
+adapters.aic:239865	not public domain
+adapters.aic:267240	not public domain
+adapters.aic:264755	not public domain
+adapters.aic:264743	not public domain
+adapters.aic:212628	not public domain
+adapters.aic:212394	not public domain
+adapters.aic:107449	geo unresolved: ['Utrecht']
+adapters.aic:268942	not public domain
+adapters.aic:180751	geo unresolved: ['Hopi Tribe of Arizona']
+adapters.aic:223207	not public domain
+adapters.aic:265981	not public domain
+adapters.aic:54229	not public domain
+adapters.aic:257402	not public domain
+adapters.aic:20428	not public domain
+adapters.aic:197561	not public domain
+adapters.aic:97407	not public domain
+adapters.aic:253630	not public domain
+adapters.aic:25671	not public domain
+adapters.aic:184102	not public domain
+adapters.aic:236145	not public domain
+adapters.aic:222486	not public domain
+adapters.aic:267179	not public domain
+adapters.aic:222487	not public domain
+adapters.aic:12814	no image
+adapters.aic:256099	not public domain
+adapters.aic:151364	not public domain
+adapters.aic:154231	not public domain
+adapters.aic:180753	not public domain
+adapters.aic:180752	not public domain
+adapters.aic:15706	not public domain
+adapters.aic:22906	not public domain
+adapters.aic:86570	not public domain
+adapters.aic:264731	not public domain
+adapters.aic:243815	not public domain
+adapters.aic:218720	not public domain
+adapters.aic:196127	not public domain
+adapters.aic:196083	not public domain
+adapters.aic:196131	not public domain
+adapters.aic:204473	not public domain
+adapters.aic:251709	not public domain
+adapters.aic:206417	not public domain
+adapters.aic:204476	not public domain
+adapters.aic:251725	not public domain
+adapters.aic:251723	not public domain
+adapters.aic:251739	not public domain
+adapters.aic:251727	not public domain
+adapters.aic:251758	not public domain
+adapters.aic:251775	not public domain
+adapters.aic:251774	not public domain
+adapters.aic:254384	not public domain
+adapters.aic:254385	not public domain
+adapters.aic:254386	not public domain
+adapters.aic:251701	not public domain
+adapters.aic:251703	not public domain
+adapters.aic:212598	not public domain
+adapters.aic:198575	not public domain
+adapters.aic:254381	not public domain
+adapters.aic:254382	not public domain
+adapters.aic:254383	not public domain
+adapters.aic:229990	not public domain
+adapters.aic:229992	not public domain
+adapters.aic:229994	not public domain
+adapters.aic:236368	not public domain
+adapters.aic:233342	not public domain
+adapters.aic:236369	not public domain
+adapters.aic:27614	not public domain
+adapters.aic:236370	not public domain
+adapters.aic:237823	not public domain
+adapters.aic:236372	not public domain
+adapters.aic:239156	not public domain
+adapters.aic:239168	not public domain
+adapters.aic:239159	not public domain
+adapters.aic:239189	not public domain
+adapters.aic:239175	not public domain
+adapters.aic:239193	not public domain
+adapters.aic:242354	not public domain
+adapters.aic:239194	not public domain
+adapters.aic:147425	not public domain
+adapters.aic:146957	not public domain
+adapters.aic:218422	not public domain
+adapters.aic:199238	not public domain
+adapters.aic:229398	not public domain
+adapters.aic:218424	not public domain
+adapters.aic:120534	not public domain
+adapters.aic:58440	geo unresolved: ['Arizona']
+adapters.aic:61535	geo unresolved: ['Arizona']
+adapters.aic:106537	not public domain
+adapters.aic:279967	not public domain
+adapters.aic:207253	geo unresolved: ['']
+adapters.aic:257863	not public domain
+adapters.aic:279961	not public domain
+adapters.aic:257864	not public domain
+adapters.aic:279962	not public domain
+adapters.aic:279964	not public domain
+adapters.aic:279963	not public domain
+adapters.aic:279965	not public domain
+adapters.aic:230325	not public domain
+adapters.aic:230326	not public domain
+adapters.aic:230324	not public domain
+adapters.aic:51139	geo unresolved: ['Arizona']
+adapters.aic:51144	geo unresolved: ['Southwest']
+adapters.aic:51185	geo unresolved: ['Southwest']
+adapters.aic:52119	geo unresolved: ['Arizona']
+adapters.aic:52784	geo unresolved: ['Arizona']
+adapters.aic:52127	geo unresolved: ['Arizona']
+adapters.aic:59999	geo unresolved: ['Arizona']
+adapters.aic:108753	geo unresolved: ['Southwest']
+adapters.aic:230320	not public domain
+adapters.aic:230323	not public domain
+adapters.aic:70996	not public domain
+adapters.aic:230321	not public domain
+adapters.aic:230322	not public domain
+adapters.aic:198501	geo unresolved: ['']
+adapters.aic:198227	geo unresolved: ['']
+adapters.aic:36649	geo unresolved: ['Silesia']
+adapters.aic:70605	geo unresolved: ['Sussex']
+adapters.aic:198503	geo unresolved: ['']
+adapters.aic:30472	geo unresolved: ['Nevers']
+adapters.aic:17152	geo unresolved: ['Cork']
+adapters.aic:28514	geo unresolved: ['Bristol']
+adapters.aic:267237	not public domain
+adapters.aic:267234	not public domain
+adapters.aic:267238	not public domain
+adapters.aic:21166	not public domain
+adapters.aic:13280	not public domain
+adapters.aic:13275	not public domain
+adapters.aic:25608	not public domain
+adapters.aic:13285	not public domain
+adapters.aic:17861	not public domain
+adapters.aic:23996	not public domain
+adapters.aic:23993	not public domain
+adapters.aic:23444	not public domain
+adapters.aic:24000	not public domain
+adapters.aic:23998	not public domain
+adapters.aic:32125	not public domain
+adapters.aic:30499	no image
+adapters.aic:24453	not public domain
+adapters.aic:32816	missing date_start/date_end
+adapters.aic:34487	not public domain
+adapters.aic:34485	not public domain
+adapters.aic:35648	not public domain
+adapters.aic:35392	not public domain
+adapters.aic:37553	not public domain
+adapters.aic:46283	no image
+adapters.aic:5825	not public domain
+adapters.aic:8041	not public domain
+adapters.aic:21081	not public domain
+adapters.aic:57481	not public domain
+adapters.aic:90759	no image
+adapters.aic:86918	no image
+adapters.aic:61162	not public domain
+adapters.aic:90764	no image
+adapters.aic:109501	no image
+adapters.aic:132520	no image
+adapters.aic:132523	no image
+adapters.aic:132521	not public domain
+adapters.aic:156620	not public domain
+adapters.aic:238618	no image
+adapters.aic:185359	not public domain
+adapters.aic:182079	no image
+adapters.aic:251140	not public domain
+adapters.aic:238059	not public domain
+adapters.aic:238058	not public domain
+adapters.aic:238060	not public domain
+adapters.aic:62018	not public domain
+adapters.aic:238056	not public domain
+adapters.aic:238055	not public domain
+adapters.aic:16464	not public domain
+adapters.aic:282466	not public domain
+adapters.aic:282465	not public domain
+adapters.aic:282464	not public domain
+adapters.aic:282463	not public domain
+adapters.aic:264747	not public domain
+adapters.aic:264732	not public domain
+adapters.aic:264760	not public domain
+adapters.aic:264759	not public domain
+adapters.aic:264776	not public domain
+adapters.aic:264761	not public domain
+adapters.aic:184098	not public domain
+adapters.aic:221064	not public domain
+adapters.aic:221057	not public domain
+adapters.aic:221055	not public domain
+adapters.aic:221054	not public domain
+adapters.aic:221053	not public domain
+adapters.aic:221052	not public domain
+adapters.aic:221051	not public domain
+adapters.aic:221050	not public domain
+adapters.aic:221049	not public domain
+adapters.aic:221048	not public domain
+adapters.aic:221047	not public domain
+adapters.aic:221046	not public domain
+adapters.aic:221045	not public domain
+adapters.aic:221044	not public domain
+adapters.aic:221043	not public domain
+adapters.aic:221042	not public domain
+adapters.aic:221041	not public domain
+adapters.aic:221040	not public domain
+adapters.aic:221039	not public domain
+adapters.aic:221038	not public domain
+adapters.aic:221037	not public domain
+adapters.aic:221036	not public domain
+adapters.aic:221035	not public domain
+adapters.aic:221034	not public domain
+adapters.aic:221033	not public domain
+adapters.aic:221032	not public domain
+adapters.aic:221031	not public domain
+adapters.aic:221030	not public domain
+adapters.aic:221029	not public domain
+adapters.aic:221028	not public domain
+adapters.aic:221027	not public domain
+adapters.aic:221026	not public domain
+adapters.aic:221025	not public domain
+adapters.aic:221024	not public domain
+adapters.aic:221023	not public domain
+adapters.aic:221022	not public domain
+adapters.aic:221021	not public domain
+adapters.aic:221020	not public domain
+adapters.aic:221019	not public domain
+adapters.aic:221018	not public domain
+adapters.aic:221017	not public domain
+adapters.aic:221016	not public domain
+adapters.aic:221015	not public domain
+adapters.aic:221014	not public domain
+adapters.aic:221013	not public domain
+adapters.aic:221012	not public domain
+adapters.aic:221011	not public domain
+adapters.aic:221010	not public domain
+adapters.aic:221009	not public domain
+adapters.aic:221008	not public domain
+adapters.aic:221007	not public domain
+adapters.aic:221006	not public domain
+adapters.aic:221005	not public domain
+adapters.aic:220892	not public domain
+adapters.aic:220891	not public domain
+adapters.aic:220890	not public domain
+adapters.aic:220889	not public domain
+adapters.aic:220888	not public domain
+adapters.aic:220887	not public domain
+adapters.aic:220886	not public domain
+adapters.aic:220885	not public domain
+adapters.aic:220884	not public domain
+adapters.aic:220883	not public domain
+adapters.aic:220882	not public domain
+adapters.aic:220881	not public domain
+adapters.aic:220880	not public domain
+adapters.aic:220879	not public domain
+adapters.aic:220878	not public domain
+adapters.aic:220877	not public domain
+adapters.aic:220876	not public domain
+adapters.aic:220875	not public domain
+adapters.aic:220874	not public domain
+adapters.aic:220873	not public domain
+adapters.aic:220872	not public domain
+adapters.aic:220871	not public domain
+adapters.aic:220870	not public domain
+adapters.aic:220869	not public domain
+adapters.aic:220868	not public domain
+adapters.aic:220867	not public domain
+adapters.aic:220866	not public domain
+adapters.aic:220865	not public domain
+adapters.aic:220864	not public domain
+adapters.aic:220863	not public domain
+adapters.aic:220862	not public domain
+adapters.aic:220861	not public domain
+adapters.aic:220860	not public domain
+adapters.aic:220859	not public domain
+adapters.aic:220858	not public domain
+adapters.aic:220857	not public domain
+adapters.aic:220856	not public domain
+adapters.aic:220855	not public domain
+adapters.aic:220854	not public domain
+adapters.aic:220853	not public domain
+adapters.aic:220852	not public domain
+adapters.aic:220851	not public domain
+adapters.aic:220850	not public domain
+adapters.aic:220849	not public domain
+adapters.aic:220848	not public domain
+adapters.aic:220847	not public domain
+adapters.aic:220846	not public domain
+adapters.aic:220845	not public domain
+adapters.aic:220844	not public domain
+adapters.aic:220843	not public domain
+adapters.aic:220842	not public domain
+adapters.aic:220841	not public domain
+adapters.aic:220840	not public domain
+adapters.aic:220839	not public domain
+adapters.aic:220838	not public domain
+adapters.aic:220837	not public domain
+adapters.aic:220836	not public domain
+adapters.aic:220835	not public domain
+adapters.aic:220834	not public domain
+adapters.aic:220833	not public domain
+adapters.aic:220832	not public domain
+adapters.aic:220831	not public domain
+adapters.aic:220830	not public domain
+adapters.aic:220829	not public domain
+adapters.aic:220828	not public domain
+adapters.aic:220827	not public domain
+adapters.aic:220826	not public domain
+adapters.aic:220825	not public domain
+adapters.aic:220824	not public domain
+adapters.aic:220823	not public domain
+adapters.aic:220822	not public domain
+adapters.aic:220821	not public domain
+adapters.aic:220820	not public domain
+adapters.aic:220819	not public domain
+adapters.aic:220818	not public domain
+adapters.aic:220817	not public domain
+adapters.aic:220816	not public domain
+adapters.aic:220815	not public domain
+adapters.aic:220814	not public domain
+adapters.aic:220813	not public domain
+adapters.aic:220812	not public domain
+adapters.aic:220811	not public domain
+adapters.aic:220810	not public domain
+adapters.aic:220809	not public domain
+adapters.aic:220808	not public domain
+adapters.aic:220807	not public domain
+adapters.aic:220806	not public domain
+adapters.aic:220805	not public domain
+adapters.aic:220804	not public domain
+adapters.aic:220803	not public domain
+adapters.aic:220802	not public domain
+adapters.aic:220801	not public domain
+adapters.aic:220800	not public domain
+adapters.aic:220799	not public domain
+adapters.aic:220798	not public domain
+adapters.aic:220797	not public domain
+adapters.aic:220796	not public domain
+adapters.aic:220795	not public domain
+adapters.aic:220794	not public domain
+adapters.aic:220793	not public domain
+adapters.aic:220792	not public domain
+adapters.aic:220791	not public domain
+adapters.aic:220790	not public domain
+adapters.aic:220789	not public domain
+adapters.aic:220788	not public domain
+adapters.aic:220787	not public domain
+adapters.aic:220786	not public domain
+adapters.aic:220785	not public domain
+adapters.aic:220784	not public domain
+adapters.aic:220783	not public domain
+adapters.aic:220782	not public domain
+adapters.aic:220781	not public domain
+adapters.aic:220780	not public domain
+adapters.aic:220779	not public domain
+adapters.aic:220778	not public domain
+adapters.aic:220777	not public domain
+adapters.aic:220776	not public domain
+adapters.aic:220775	not public domain
+adapters.aic:220774	not public domain
+adapters.aic:220773	not public domain
+adapters.aic:220772	not public domain
+adapters.aic:220771	not public domain
+adapters.aic:220770	not public domain
+adapters.aic:220769	not public domain
+adapters.aic:220768	not public domain
+adapters.aic:18456	not public domain
+adapters.aic:180375	not public domain
+adapters.aic:122876	geo unresolved: ['Navajo']
+adapters.aic:180400	not public domain
+adapters.aic:227361	not public domain
+adapters.aic:260763	not public domain
+adapters.aic:153707	not public domain
+adapters.aic:267035	not public domain
+adapters.aic:249348	not public domain
+adapters.aic:59939	not public domain
+adapters.aic:183234	not public domain
+adapters.aic:180418	not public domain
+adapters.aic:180381	not public domain
+adapters.aic:85273	geo unresolved: ['Peruvian Central Coast']
+adapters.aic:157683	not public domain
+adapters.aic:153764	not public domain
+adapters.aic:153736	not public domain
+adapters.aic:152937	geo unresolved: ['Peruvian Central Coast']
+adapters.aic:237850	not public domain
+adapters.aic:153750	not public domain
+adapters.aic:153727	not public domain
+adapters.aic:152990	not public domain
+adapters.aic:111296	not public domain
+adapters.aic:34037	not public domain
+adapters.aic:33974	not public domain
+adapters.aic:34052	not public domain
+adapters.aic:34039	not public domain
+adapters.aic:143733	not public domain
+adapters.aic:254440	not public domain
+adapters.aic:256314	not public domain
+adapters.aic:70699	no image
+adapters.aic:279658	not public domain
+adapters.aic:279659	not public domain
+adapters.aic:76237	no image
+adapters.aic:70763	no image
+adapters.aic:70757	no image
+adapters.aic:70458	not public domain
+adapters.aic:70690	no image
+adapters.aic:142548	geo unresolved: ['Brussels']
+adapters.aic:25288	not public domain
+adapters.aic:47532	not public domain
+adapters.aic:227362	not public domain
+adapters.aic:227363	not public domain
+adapters.aic:227376	not public domain
+adapters.aic:227375	not public domain
+adapters.aic:227377	not public domain
+adapters.aic:227378	not public domain
+adapters.aic:152740	not public domain
+adapters.aic:273697	not public domain
+adapters.aic:256067	not public domain
+adapters.aic:273716	not public domain
+adapters.aic:186646	not public domain
+adapters.aic:151366	not public domain
+adapters.aic:273705	not public domain
+adapters.aic:273703	not public domain
+adapters.aic:72791	not public domain
+adapters.aic:193327	not public domain
+adapters.aic:193325	not public domain
+adapters.aic:69688	no image
+adapters.aic:69685	not public domain
+adapters.aic:33098	date range too wide (1000y) to guess fairly
+adapters.aic:69702	not public domain
+adapters.aic:69700	no image
+adapters.aic:69696	not public domain
+adapters.aic:69711	no image
+adapters.aic:69708	no image
+adapters.aic:69706	not public domain
+adapters.aic:69860	not public domain
+adapters.aic:69858	not public domain
+adapters.aic:69715	no image
+adapters.aic:69893	not public domain
+adapters.aic:69891	not public domain
+adapters.aic:69863	not public domain
+adapters.aic:70523	not public domain
+adapters.aic:70522	not public domain
+adapters.aic:69903	not public domain
+adapters.aic:69899	not public domain
+adapters.aic:70543	not public domain
+adapters.aic:70537	not public domain
+adapters.aic:70534	not public domain
+adapters.aic:70531	not public domain
+adapters.aic:70548	not public domain
+adapters.aic:70556	not public domain
+adapters.aic:70554	not public domain
+adapters.aic:70552	not public domain
+adapters.aic:70549	not public domain
+adapters.aic:70582	not public domain
+adapters.aic:70580	not public domain
+adapters.aic:70577	not public domain
+adapters.aic:70954	not public domain
+adapters.aic:70670	not public domain
+adapters.aic:70639	not public domain
+adapters.aic:71462	no image
+adapters.aic:70962	not public domain
+adapters.aic:68791	no image
+adapters.aic:68808	no image
+adapters.aic:68800	no image
+adapters.aic:68840	no image
+adapters.aic:68836	no image
+adapters.aic:68816	no image
+adapters.aic:68868	no image
+adapters.aic:68859	no image
+adapters.aic:68898	no image
+adapters.aic:68881	no image
+adapters.aic:68956	no image
+adapters.aic:68953	no image
+adapters.aic:68919	no image
+adapters.aic:68976	no image
+adapters.aic:68971	no image
+adapters.aic:69057	no image
+adapters.aic:69050	no image
+adapters.aic:69154	no image
+adapters.aic:69096	no image
+adapters.aic:69260	no image
+adapters.aic:69255	no image
+adapters.aic:69270	no image
+adapters.aic:69267	not public domain
+adapters.aic:69288	no image
+adapters.aic:69285	no image
+adapters.aic:69297	no image
+adapters.aic:69294	no image
+adapters.aic:69308	no image
+adapters.aic:69306	no image
+adapters.aic:69303	no image
+adapters.aic:69317	no image
+adapters.aic:69315	no image
+adapters.aic:69328	no image
+adapters.aic:69321	no image
+adapters.aic:69351	no image
+adapters.aic:69343	no image
+adapters.aic:69331	no image
+adapters.aic:69356	no image
+adapters.aic:69355	no image
+adapters.aic:69394	no image
+adapters.aic:69386	no image
+adapters.aic:69462	no image
+adapters.aic:69459	no image
+adapters.aic:69396	no image
+adapters.aic:69465	no image
+adapters.aic:69479	no image
+adapters.aic:69470	no image
+adapters.aic:69494	no image
+adapters.aic:69491	no image
+adapters.aic:69482	no image
+adapters.aic:69512	no image
+adapters.aic:69506	no image
+adapters.aic:69526	no image
+adapters.aic:69522	no image
+adapters.aic:69515	no image
+adapters.aic:69558	no image
+adapters.aic:69528	no image
+adapters.aic:69568	no image
+adapters.aic:69565	no image
+adapters.aic:69574	no image
+adapters.aic:69589	no image
+adapters.aic:69582	no image
+adapters.aic:69692	not public domain
+adapters.aic:69621	no image
+adapters.aic:69598	not public domain
+adapters.aic:69773	no image
+adapters.aic:69770	no image
+adapters.aic:69785	no image
+adapters.aic:69782	no image
+adapters.aic:69779	no image
+adapters.aic:69830	no image
+adapters.aic:69975	no image
+adapters.aic:69853	no image
+adapters.aic:69999	no image
+adapters.aic:69993	no image
+adapters.aic:69978	no image
+adapters.aic:70067	no image
+adapters.aic:70004	no image
+adapters.aic:70086	no image
+adapters.aic:70081	no image
+adapters.aic:70078	no image
+adapters.aic:70155	no image
+adapters.aic:70091	no image
+adapters.aic:70229	no image
+adapters.aic:70186	no image
+adapters.aic:70160	no image
+adapters.aic:70278	no image
+adapters.aic:70238	no image
+adapters.aic:70284	no image
+adapters.aic:70280	no image
+adapters.aic:70480	no image
+adapters.aic:70332	not public domain
+adapters.aic:70288	no image
+adapters.aic:70717	not public domain
+adapters.aic:70672	not public domain
+adapters.aic:70493	no image
+adapters.aic:90262	no image
+adapters.aic:71272	not public domain
+adapters.aic:117458	no image
+adapters.aic:117460	no image
+adapters.aic:68875	no image
+adapters.aic:68865	no image
+adapters.aic:69808	no image
+adapters.aic:68893	no image
+adapters.aic:68878	no image
+adapters.aic:69833	no image
+adapters.aic:70176	no image
+adapters.aic:70174	no image
+adapters.aic:70241	no image
+adapters.aic:70237	no image
+adapters.aic:70231	no image
+adapters.aic:70246	no image
+adapters.aic:70243	no image
+adapters.aic:70268	no image
+adapters.aic:70249	no image
+adapters.aic:70812	no image
+adapters.aic:70829	no image
+adapters.aic:70819	no image
+adapters.aic:70816	no image
+adapters.aic:70839	no image
+adapters.aic:71113	not public domain
+adapters.aic:70723	not public domain
+adapters.aic:70823	not public domain
+adapters.aic:75561	not public domain
+adapters.aic:154078	not public domain
+adapters.aic:117459	no image
+adapters.aic:117453	no image
+adapters.aic:93228	not public domain
+adapters.aic:90265	not public domain
+adapters.aic:68635	no image
+adapters.aic:68673	no image
+adapters.aic:68706	no image
+adapters.aic:69632	no image
+adapters.aic:71270	not public domain
+adapters.aic:68633	no image
+adapters.aic:68700	no image
+adapters.aic:68697	no image
+adapters.aic:68675	no image
+adapters.aic:68718	no image
+adapters.aic:68712	no image
+adapters.aic:68741	no image
+adapters.aic:68737	no image
+adapters.aic:68748	no image
+adapters.aic:68744	no image
+adapters.aic:68762	no image
+adapters.aic:68754	no image
+adapters.aic:68751	no image
+adapters.aic:69008	no image
+adapters.aic:69002	no image
+adapters.aic:69672	not public domain
+adapters.aic:69011	no image
+adapters.aic:70385	not public domain
+adapters.aic:70383	no image
+adapters.aic:70368	not public domain
+adapters.aic:70421	not public domain
+adapters.aic:70418	no image
+adapters.aic:70441	no image
+adapters.aic:70439	not public domain
+adapters.aic:70428	no image
+adapters.aic:20395	not public domain
+adapters.aic:76781	not public domain
+adapters.aic:70587	not public domain
+adapters.aic:70514	not public domain
+adapters.aic:70512	not public domain
+adapters.aic:70597	not public domain
+adapters.aic:70595	not public domain
+adapters.aic:70611	not public domain
+adapters.aic:70609	not public domain
+adapters.aic:70603	not public domain
+adapters.aic:70602	not public domain
+adapters.aic:70599	not public domain
+adapters.aic:70677	not public domain
+adapters.aic:70637	not public domain
+adapters.aic:70632	not public domain
+adapters.aic:70626	not public domain
+adapters.aic:70619	not public domain
+adapters.aic:70725	not public domain
+adapters.aic:70701	not public domain
+adapters.aic:70697	not public domain
+adapters.aic:70682	not public domain
+adapters.aic:70743	not public domain
+adapters.aic:70740	not public domain
+adapters.aic:70737	not public domain
+adapters.aic:70734	not public domain
+adapters.aic:70761	not public domain
+adapters.aic:70753	not public domain
+adapters.aic:70750	not public domain
+adapters.aic:70747	not public domain
+adapters.aic:69774	not public domain
+adapters.aic:71583	not public domain
+adapters.aic:70065	not public domain
+adapters.aic:68781	no image
+adapters.aic:68692	no image
+adapters.aic:68689	no image
+adapters.aic:68805	no image
+adapters.aic:68803	no image
+adapters.aic:68828	no image
+adapters.aic:68814	no image
+adapters.aic:68843	no image
+adapters.aic:68838	no image
+adapters.aic:68855	no image
+adapters.aic:68852	no image
+adapters.aic:68871	no image
+adapters.aic:68861	no image
+adapters.aic:68896	no image
+adapters.aic:68911	no image
+adapters.aic:68905	no image
+adapters.aic:68998	no image
+adapters.aic:68995	no image
+adapters.aic:68992	not public domain
+adapters.aic:69005	date range too wide (1000y) to guess fairly
+adapters.aic:69016	no image
+adapters.aic:69014	no image
+adapters.aic:69062	no image
+adapters.aic:69099	no image
+adapters.aic:69112	no image
+adapters.aic:69108	no image
+adapters.aic:69105	no image
+adapters.aic:69102	no image
+adapters.aic:69114	no image
+adapters.aic:69126	no image
+adapters.aic:69124	no image
+adapters.aic:69119	no image
+adapters.aic:69142	no image
+adapters.aic:69135	no image
+adapters.aic:69129	no image
+adapters.aic:69147	no image
+adapters.aic:69144	no image
+adapters.aic:69175	not public domain
+adapters.aic:69168	not public domain
+adapters.aic:69190	not public domain
+adapters.aic:69187	not public domain
+adapters.aic:69198	not public domain
+adapters.aic:69196	not public domain
+adapters.aic:69194	not public domain
+adapters.aic:69203	not public domain
+adapters.aic:69201	not public domain
+adapters.aic:69245	not public domain
+adapters.aic:69208	not public domain
+adapters.aic:69206	not public domain
+adapters.aic:69250	not public domain
+adapters.aic:69248	not public domain
+adapters.aic:69273	not public domain
+adapters.aic:69262	not public domain
+adapters.aic:69253	not public domain
+adapters.aic:69311	not public domain
+adapters.aic:69282	not public domain
+adapters.aic:69279	not public domain
+adapters.aic:69334	not public domain
+adapters.aic:69325	not public domain
+adapters.aic:69347	not public domain
+adapters.aic:69345	not public domain
+adapters.aic:69336	not public domain
+adapters.aic:69364	not public domain
+adapters.aic:69360	not public domain
+adapters.aic:69375	not public domain
+adapters.aic:69369	not public domain
+adapters.aic:69365	not public domain
+adapters.aic:69379	not public domain
+adapters.aic:69377	not public domain
+adapters.aic:69399	not public domain
+adapters.aic:69392	not public domain
+adapters.aic:69388	not public domain
+adapters.aic:69413	not public domain
+adapters.aic:69407	not public domain
+adapters.aic:69423	not public domain
+adapters.aic:69421	not public domain
+adapters.aic:69418	not public domain
+adapters.aic:69427	not public domain
+adapters.aic:69425	not public domain
+adapters.aic:69448	not public domain
+adapters.aic:69444	not public domain
+adapters.aic:69441	not public domain
+adapters.aic:69456	not public domain
+adapters.aic:69452	not public domain
+adapters.aic:69451	not public domain
+adapters.aic:69477	not public domain
+adapters.aic:69474	not public domain
+adapters.aic:69497	not public domain
+adapters.aic:69488	not public domain
+adapters.aic:69485	not public domain
+adapters.aic:69502	not public domain
+adapters.aic:69500	not public domain
+adapters.aic:69531	not public domain
+adapters.aic:69519	not public domain
+adapters.aic:69509	not public domain
+adapters.aic:69540	not public domain
+adapters.aic:69536	not public domain
+adapters.aic:69534	not public domain
+adapters.aic:69546	not public domain
+adapters.aic:69552	not public domain
+adapters.aic:69549	not public domain
+adapters.aic:69570	not public domain
+adapters.aic:69560	not public domain
+adapters.aic:69554	not public domain
+adapters.aic:69587	not public domain
+adapters.aic:69581	not public domain
+adapters.aic:69578	not public domain
+adapters.aic:69595	not public domain
+adapters.aic:69593	not public domain
+adapters.aic:69602	not public domain
+adapters.aic:69600	not public domain
+adapters.aic:69596	not public domain
+adapters.aic:69610	not public domain
+adapters.aic:69608	not public domain
+adapters.aic:69603	not public domain
+adapters.aic:69611	not public domain
+adapters.aic:69618	not public domain
+adapters.aic:69617	not public domain
+adapters.aic:69613	not public domain
+adapters.aic:69630	not public domain
+adapters.aic:69628	not public domain
+adapters.aic:69623	not public domain
+adapters.aic:69677	not public domain
+adapters.aic:69675	not public domain
+adapters.aic:69635	not public domain
+adapters.aic:69727	not public domain
+adapters.aic:69726	not public domain
+adapters.aic:69722	not public domain
+adapters.aic:69733	not public domain
+adapters.aic:69730	not public domain
+adapters.aic:69754	not public domain
+adapters.aic:69741	not public domain
+adapters.aic:69737	not public domain
+adapters.aic:69762	not public domain
+adapters.aic:69759	not public domain
+adapters.aic:69756	not public domain
+adapters.aic:69768	not public domain
+adapters.aic:69765	not public domain
+adapters.aic:69806	not public domain
+adapters.aic:69795	not public domain
+adapters.aic:69792	not public domain
+adapters.aic:69788	not public domain
+adapters.aic:69824	not public domain
+adapters.aic:69822	not public domain
+adapters.aic:69850	not public domain
+adapters.aic:69847	not public domain
+adapters.aic:69845	not public domain
+adapters.aic:69906	not public domain
+adapters.aic:69915	not public domain
+adapters.aic:69912	not public domain
+adapters.aic:69909	not public domain
+adapters.aic:69925	not public domain
+adapters.aic:69922	not public domain
+adapters.aic:69918	not public domain
+adapters.aic:69947	not public domain
+adapters.aic:69944	not public domain
+adapters.aic:69928	not public domain
+adapters.aic:69956	not public domain
+adapters.aic:69952	not public domain
+adapters.aic:69997	not public domain
+adapters.aic:69972	not public domain
+adapters.aic:69967	not public domain
+adapters.aic:70020	not public domain
+adapters.aic:70013	not public domain
+adapters.aic:70007	not public domain
+adapters.aic:70031	not public domain
+adapters.aic:70023	not public domain
+adapters.aic:70049	not public domain
+adapters.aic:70042	not public domain
+adapters.aic:70056	not public domain
+adapters.aic:70051	not public domain
+adapters.aic:70076	not public domain
+adapters.aic:70064	not public domain
+adapters.aic:70062	not public domain
+adapters.aic:70121	not public domain
+adapters.aic:70136	not public domain
+adapters.aic:70126	not public domain
+adapters.aic:70123	not public domain
+adapters.aic:70146	not public domain
+adapters.aic:70142	not public domain
+adapters.aic:70139	not public domain
+adapters.aic:70157	not public domain
+adapters.aic:70151	not public domain
+adapters.aic:70149	not public domain
+adapters.aic:70183	not public domain
+adapters.aic:70181	not public domain
+adapters.aic:70178	not public domain
+adapters.aic:70196	not public domain
+adapters.aic:70193	not public domain
+adapters.aic:70188	not public domain
+adapters.aic:70209	not public domain
+adapters.aic:70214	not public domain
+adapters.aic:70213	not public domain
+adapters.aic:70220	not public domain
+adapters.aic:70216	not public domain
+adapters.aic:70225	not public domain
+adapters.aic:70223	not public domain
+adapters.aic:70258	not public domain
+adapters.aic:70253	not public domain
+adapters.aic:70295	not public domain
+adapters.aic:70286	not public domain
+adapters.aic:70274	not public domain
+adapters.aic:70322	not public domain
+adapters.aic:70317	not public domain
+adapters.aic:70315	not public domain
+adapters.aic:70340	not public domain
+adapters.aic:70338	not public domain
+adapters.aic:70336	not public domain
+adapters.aic:70334	not public domain
+adapters.aic:70326	not public domain
+adapters.aic:70359	not public domain
+adapters.aic:70356	not public domain
+adapters.aic:70354	not public domain
+adapters.aic:70391	not public domain
+adapters.aic:70389	not public domain
+adapters.aic:70379	not public domain
+adapters.aic:70373	not public domain
+adapters.aic:70370	not public domain
+adapters.aic:70434	not public domain
+adapters.aic:70431	not public domain
+adapters.aic:70409	not public domain
+adapters.aic:70406	not public domain
+adapters.aic:70469	not public domain
+adapters.aic:70465	not public domain
+adapters.aic:70461	not public domain
+adapters.aic:70437	not public domain
+adapters.aic:70490	not public domain
+adapters.aic:70486	not public domain
+adapters.aic:70483	not public domain
+adapters.aic:70473	not public domain
+adapters.aic:70507	not public domain
+adapters.aic:70502	not public domain
+adapters.aic:70499	not public domain
+adapters.aic:70494	no image
+adapters.aic:70510	not public domain
+adapters.aic:48518	not public domain
+adapters.aic:90899	not public domain
+adapters.aic:70538	not public domain
+adapters.aic:244932	not public domain
+adapters.aic:244934	not public domain
+adapters.aic:244931	not public domain
+adapters.aic:5410	date range is artist's life, not object's
+adapters.aic:5546	not public domain
+adapters.aic:5544	not public domain
+adapters.aic:5918	no image
+adapters.aic:7521	date range too wide (806y) to guess fairly
+adapters.aic:7550	not public domain
+adapters.aic:7547	not public domain
+adapters.aic:12077	date range is artist's life, not object's
+adapters.aic:12059	date range is artist's life, not object's
+adapters.aic:14811	date range is artist's life, not object's
+adapters.aic:14852	date range is artist's life, not object's
+adapters.aic:15754	no image
+adapters.aic:16383	not public domain
+adapters.aic:16378	not public domain
+adapters.aic:16390	not public domain
+adapters.aic:20635	not public domain
+adapters.aic:21025	not public domain
+adapters.aic:26025	not public domain
+adapters.aic:28120	not public domain
+adapters.aic:28131	not public domain
+adapters.aic:28161	date range is artist's life, not object's
+adapters.aic:30203	not public domain
+adapters.aic:30506	not public domain
+adapters.aic:32530	not public domain
+adapters.aic:32554	date range is artist's life, not object's
+adapters.aic:33936	date range is artist's life, not object's
+adapters.aic:33959	not public domain
+adapters.aic:33942	date range is artist's life, not object's
+adapters.aic:33981	not public domain
+adapters.aic:33983	not public domain
+adapters.aic:33982	not public domain
+adapters.aic:34144	not public domain
+adapters.aic:34142	not public domain
+adapters.aic:34148	not public domain
+adapters.aic:34147	not public domain
+adapters.aic:35931	not public domain
+adapters.aic:60308	not public domain
+adapters.aic:58328	not public domain
+adapters.aic:60339	date range is artist's life, not object's
+adapters.aic:60322	not public domain
+adapters.aic:60932	not public domain
+adapters.aic:60348	date range is artist's life, not object's
+adapters.aic:62564	not public domain
+adapters.aic:67071	not public domain
+adapters.aic:79103	date range is artist's life, not object's
+adapters.aic:73224	date range is artist's life, not object's
+adapters.aic:86387	date range is artist's life, not object's
+adapters.aic:86415	date range is artist's life, not object's
+adapters.aic:86418	date range is artist's life, not object's
+adapters.aic:86547	date range is artist's life, not object's
+adapters.aic:86545	not public domain
+adapters.aic:86744	date range is artist's life, not object's
+adapters.aic:88562	not public domain
+adapters.aic:88015	not public domain
+adapters.aic:90425	not public domain
+adapters.aic:100667	date range is artist's life, not object's
+adapters.aic:180516	date range is artist's life, not object's
+adapters.aic:180135	date range is artist's life, not object's
+adapters.aic:118662	not public domain
+adapters.aic:154059	not public domain
+adapters.aic:228982	not public domain
+adapters.aic:156603	not public domain
+adapters.aic:68705	not public domain
+adapters.aic:214464	not public domain
+adapters.aic:186545	not public domain
+adapters.aic:229364	not public domain
+adapters.aic:229363	not public domain
+adapters.aic:229373	not public domain
+adapters.aic:229372	not public domain
+adapters.aic:229375	not public domain
+adapters.aic:229374	not public domain
+adapters.aic:259352	not public domain
+adapters.aic:229379	not public domain
+adapters.aic:229356	not public domain
+adapters.aic:229355	not public domain
+adapters.aic:229358	not public domain
+adapters.aic:229357	not public domain
+adapters.aic:229360	not public domain
+adapters.aic:229359	not public domain
+adapters.aic:229362	not public domain
+adapters.aic:229361	not public domain
+adapters.aic:229376	not public domain
+adapters.aic:229369	not public domain
+adapters.aic:229380	not public domain
+adapters.aic:229378	not public domain
+adapters.aic:229382	not public domain
+adapters.aic:229381	not public domain
+adapters.aic:229384	not public domain
+adapters.aic:229383	not public domain
+adapters.aic:229386	not public domain
+adapters.aic:229385	not public domain
+adapters.aic:234616	not public domain
+adapters.aic:229389	not public domain
+adapters.aic:229388	not public domain
+adapters.aic:229391	not public domain
+adapters.aic:229390	not public domain
+adapters.aic:230609	not public domain
+adapters.aic:229406	not public domain
+adapters.aic:60794	not public domain
+adapters.aic:7755	not public domain
+adapters.aic:11371	not public domain
+adapters.aic:11887	not public domain
+adapters.aic:72191	not public domain
+adapters.aic:68517	not public domain
+adapters.aic:72198	not public domain
+adapters.aic:111326	not public domain
+adapters.aic:118284	not public domain
+adapters.aic:208330	not public domain
+adapters.aic:151370	not public domain
+adapters.aic:229877	not public domain
+adapters.aic:267096	not public domain
+adapters.aic:253793	not public domain
+adapters.aic:271465	not public domain
+adapters.aic:276622	not public domain
+adapters.aic:276374	not public domain
+adapters.aic:100929	not public domain
+adapters.aic:276274	not public domain
+adapters.aic:201626	not public domain
+adapters.aic:221647	not public domain
+adapters.aic:54599	not public domain
+adapters.aic:54594	not public domain
+adapters.aic:54606	not public domain
+adapters.aic:54590	not public domain
+adapters.aic:192689	not public domain
+adapters.aic:274224	not public domain
+adapters.aic:184100	not public domain
+adapters.aic:145684	not public domain
+adapters.aic:234680	not public domain
+adapters.aic:234682	not public domain
+adapters.aic:234681	not public domain
+adapters.aic:234683	not public domain
+adapters.aic:234684	not public domain
+adapters.aic:234686	not public domain
+adapters.aic:234685	not public domain
+adapters.aic:275407	not public domain
+adapters.aic:42924	no image
+adapters.aic:199118	not public domain
+adapters.aic:260080	not public domain
+adapters.aic:226806	not public domain
+adapters.aic:187252	not public domain
+adapters.aic:182728	not public domain
+adapters.aic:63151	not public domain
+adapters.aic:29461	not public domain
+adapters.aic:70935	not public domain
+adapters.aic:72125	not public domain
+adapters.aic:72576	not public domain
+adapters.aic:203555	not public domain
+adapters.aic:142401	not public domain
+adapters.aic:203556	not public domain
+adapters.aic:250789	not public domain
+adapters.aic:179153	not public domain
+adapters.aic:130821	not public domain
+adapters.aic:130819	not public domain
+adapters.aic:130822	not public domain
+adapters.aic:226923	not public domain
+adapters.aic:226921	not public domain
+adapters.aic:226945	not public domain
+adapters.aic:226940	not public domain
+adapters.aic:226949	not public domain
+adapters.aic:226961	not public domain
+adapters.aic:35665	not public domain
+adapters.aic:102066	not public domain
+adapters.aic:101050	not public domain
+adapters.aic:203647	not public domain
+adapters.aic:190919	not public domain
+adapters.aic:190917	not public domain
+adapters.aic:190980	not public domain
+adapters.aic:226890	not public domain
+adapters.aic:226887	not public domain
+adapters.aic:226910	not public domain
+adapters.aic:226891	not public domain
+adapters.aic:237986	not public domain
+adapters.aic:76907	not public domain
+adapters.aic:158437	not public domain
+adapters.aic:111171	not public domain
+adapters.aic:179974	no image
+adapters.aic:6626	geo unresolved: ['Rouen']
+adapters.aic:22401	geo unresolved: ['Chelsea']
+adapters.aic:34276	geo unresolved: ['Worcester']
+adapters.aic:40272	geo unresolved: ['Bow']
+adapters.aic:40357	geo unresolved: ['Bow']
+adapters.aic:48823	geo unresolved: ['Delfland']
+adapters.aic:71160	geo unresolved: ['Bow']
+adapters.aic:80335	geo unresolved: ['Southwark']
+adapters.aic:111218	geo unresolved: ['Derby']
+adapters.aic:135964	geo unresolved: ['Worcester']
+adapters.aic:145842	geo unresolved: ['Chelsea']
+adapters.aic:269135	not public domain
+adapters.aic:272125	not public domain
+adapters.aic:270103	not public domain
+adapters.aic:274206	not public domain
+adapters.aic:52980	not public domain
+adapters.aic:41393	geo unresolved: ['Caucasus']
+adapters.aic:281457	not public domain
+adapters.aic:149393	not public domain
+adapters.aic:153641	not public domain
+adapters.aic:145410	not public domain
+adapters.aic:107796	not public domain
+adapters.aic:275393	not public domain
+adapters.aic:275409	not public domain
+adapters.aic:68686	no image
+adapters.aic:69747	not public domain
+adapters.aic:70447	not public domain
+adapters.aic:70504	not public domain
+adapters.aic:66207	not public domain
+adapters.aic:53010	not public domain
+adapters.aic:152056	not public domain
+adapters.aic:215942	not public domain
+adapters.aic:127209	not public domain
+adapters.aic:100902	not public domain
+adapters.aic:100901	not public domain
+adapters.aic:53385	not public domain
+adapters.aic:53382	not public domain
+adapters.aic:53379	not public domain
+adapters.aic:53376	not public domain
+adapters.aic:53372	not public domain
+adapters.aic:53369	not public domain
+adapters.aic:53368	not public domain
+adapters.aic:53365	not public domain
+adapters.aic:53362	not public domain
+adapters.aic:53359	not public domain
+adapters.aic:53356	not public domain
+adapters.aic:53352	not public domain
+adapters.aic:53349	not public domain
+adapters.aic:53346	not public domain
+adapters.aic:53343	not public domain
+adapters.aic:53340	not public domain
+adapters.aic:53337	not public domain
+adapters.aic:53334	not public domain
+adapters.aic:53331	not public domain
+adapters.aic:53328	not public domain
+adapters.aic:53325	not public domain
+adapters.aic:53322	not public domain
+adapters.aic:53320	not public domain
+adapters.aic:53318	not public domain
+adapters.aic:53315	not public domain
+adapters.aic:53312	not public domain
+adapters.aic:53310	not public domain
+adapters.aic:53308	not public domain
+adapters.aic:53305	not public domain
+adapters.aic:53302	not public domain
+adapters.aic:52977	not public domain
+adapters.aic:52974	not public domain
+adapters.aic:44562	not public domain
+adapters.aic:38437	not public domain
+adapters.aic:3038	not public domain
+adapters.aic:3036	not public domain
+adapters.aic:3033	not public domain
+adapters.aic:77271	no image
+adapters.aic:77267	no image
+adapters.aic:77263	no image
+adapters.aic:159721	not public domain
+adapters.aic:145903	not public domain
+adapters.aic:103304	geo unresolved: ['Vulci']
+adapters.aic:76258	not public domain
+adapters.aic:59426	not public domain
+adapters.aic:48609	not public domain
+adapters.aic:42969	not public domain
+adapters.aic:5764	geo unresolved: ['Ephesus']
+adapters.aic:34181	not public domain
+adapters.aic:28067	not public domain
+adapters.aic:208227	geo unresolved: ['Ohio']
+adapters.aic:184095	not public domain
+adapters.aic:157160	not public domain
+adapters.aic:79307	not public domain
+adapters.aic:153705	not public domain
+adapters.aic:144361	not public domain
+adapters.aic:55857	not public domain
+adapters.aic:236273	not public domain
+adapters.aic:236272	not public domain
+adapters.aic:236274	not public domain
+adapters.aic:236276	not public domain
+adapters.aic:236275	not public domain
+adapters.aic:229987	not public domain
+adapters.aic:273706	not public domain
+adapters.aic:242153	not public domain
+adapters.aic:281733	no image
+adapters.aic:281732	no image
+adapters.aic:281731	no image
+adapters.aic:281737	no image
+adapters.aic:281736	no image
+adapters.aic:281735	no image
+adapters.aic:281734	no image
+adapters.aic:281739	no image
+adapters.aic:281738	no image
+adapters.aic:281730	no image
+adapters.aic:147440	not public domain
+adapters.aic:19417	geo unresolved: ['Kashmir']
+adapters.aic:122010	not public domain
+adapters.aic:71978	not public domain
+adapters.aic:135536	not public domain
+adapters.aic:215631	not public domain
+adapters.aic:194766	not public domain
+adapters.aic:102234	not public domain
+adapters.aic:84503	date range is artist's life, not object's
+adapters.aic:159824	not public domain
+adapters.aic:216900	not public domain
+adapters.aic:222012	not public domain
+adapters.aic:216909	not public domain
+adapters.aic:229352	not public domain
+adapters.aic:222010	not public domain
+adapters.aic:229354	not public domain
+adapters.aic:229353	not public domain
+adapters.aic:229366	not public domain
+adapters.aic:229365	not public domain
+adapters.aic:229368	not public domain
+adapters.aic:229367	not public domain
+adapters.aic:229371	not public domain
+adapters.aic:229370	not public domain
+adapters.aic:234004	not public domain
+adapters.aic:234003	not public domain
+adapters.aic:234101	not public domain
+adapters.aic:229998	not public domain
+adapters.aic:266845	not public domain
+adapters.aic:229999	not public domain
+adapters.aic:80983	date range is artist's life, not object's
+adapters.aic:12552	not public domain
+adapters.aic:18463	not public domain
+adapters.aic:12632	not public domain
+adapters.aic:28200	not public domain
+adapters.aic:41933	not public domain
+adapters.aic:221977	no image
+adapters.aic:42321	not public domain
+adapters.aic:42387	not public domain
+adapters.aic:42559	not public domain
+adapters.aic:45424	not public domain
+adapters.aic:223357	no image
+adapters.aic:103295	not public domain
+adapters.aic:42724	not public domain
+adapters.aic:42866	not public domain
+adapters.aic:144356	not public domain
+adapters.aic:72609	not public domain
+adapters.aic:265986	not public domain
+adapters.aic:56108	not public domain
+adapters.aic:93725	not public domain
+adapters.aic:93728	not public domain
+adapters.aic:93727	not public domain
+adapters.aic:94245	not public domain
+adapters.aic:94249	not public domain
+adapters.aic:94252	not public domain
+adapters.aic:48268	not public domain
+adapters.aic:50107	not public domain
+adapters.aic:50928	not public domain
+adapters.aic:141470	not public domain
+adapters.aic:50931	not public domain
+adapters.aic:20649	not public domain
+adapters.aic:20650	not public domain
+adapters.aic:36401	not public domain
+adapters.aic:20652	not public domain
+adapters.aic:229276	not public domain
+adapters.aic:202494	not public domain
+adapters.aic:90579	not public domain
+adapters.aic:35277	not public domain
+adapters.aic:184210	not public domain
+adapters.aic:106542	not public domain
+adapters.aic:220494	not public domain
+adapters.aic:191371	not public domain
+adapters.aic:220544	not public domain
+adapters.aic:241782	not public domain
+adapters.aic:241781	not public domain
+adapters.aic:241784	not public domain
+adapters.aic:241783	not public domain
+adapters.aic:196317	not public domain
+adapters.aic:229241	not public domain
+adapters.aic:117473	not public domain
+adapters.aic:229280	not public domain
+adapters.aic:234972	not public domain
+adapters.aic:87394	not public domain
+adapters.aic:185158	not public domain
+adapters.aic:252700	not public domain
+adapters.aic:207572	not public domain
+adapters.aic:207571	not public domain
+adapters.aic:229011	not public domain
+adapters.aic:253028	not public domain
+adapters.aic:99451	not public domain
+adapters.aic:97064	not public domain
+adapters.aic:189323	not public domain
+adapters.aic:100190	not public domain
+adapters.aic:212188	not public domain
+adapters.aic:189324	not public domain
+adapters.aic:212187	not public domain
+adapters.aic:241419	not public domain
+adapters.aic:102513	not public domain
+adapters.aic:270960	not public domain
+adapters.aic:270958	not public domain
+adapters.aic:270956	not public domain
+adapters.aic:133634	not public domain
+adapters.aic:201222	not public domain
+adapters.aic:201235	not public domain
+adapters.aic:201234	not public domain
+adapters.aic:201236	not public domain
+adapters.aic:201240	not public domain
+adapters.aic:201231	not public domain
+adapters.aic:201227	not public domain
+adapters.aic:201210	not public domain
+adapters.aic:201229	not public domain
+adapters.aic:201230	not public domain
+adapters.aic:15753	no image
+adapters.aic:270188	not public domain
+adapters.aic:270192	not public domain
+adapters.aic:278606	not public domain
+adapters.aic:278610	not public domain
+adapters.aic:278629	not public domain
+adapters.aic:278611	not public domain
+adapters.aic:278630	not public domain
+adapters.aic:282198	not public domain
+adapters.aic:278632	not public domain
+adapters.aic:24621	not public domain
+adapters.aic:27810	not public domain
+adapters.aic:36233	not public domain
+adapters.aic:33025	not public domain
+adapters.aic:120527	not public domain
+adapters.aic:137016	not public domain
+adapters.aic:135290	not public domain
+adapters.aic:137017	not public domain
+adapters.aic:137043	not public domain
+adapters.aic:146487	not public domain
+adapters.aic:142505	not public domain
+adapters.aic:148111	not public domain
+adapters.aic:152749	not public domain
+adapters.aic:181778	not public domain
+adapters.aic:202084	not public domain
+adapters.aic:184976	not public domain
+adapters.aic:203128	not public domain
+adapters.aic:243516	not public domain
+adapters.aic:28516	geo unresolved: ['Bristol']
+adapters.aic:150898	not public domain
+adapters.aic:150907	not public domain
+adapters.aic:150899	not public domain
+adapters.aic:150921	not public domain
+adapters.aic:150914	not public domain
+adapters.aic:150930	not public domain
+adapters.aic:150928	not public domain
+adapters.aic:150940	not public domain
+adapters.aic:150931	not public domain
+adapters.aic:150944	not public domain
+adapters.aic:150943	not public domain
+adapters.aic:150946	not public domain
+adapters.aic:150945	not public domain
+adapters.aic:150948	not public domain
+adapters.aic:150947	not public domain
+adapters.aic:150952	not public domain
+adapters.aic:150954	not public domain
+adapters.aic:150953	not public domain
+adapters.aic:150958	not public domain
+adapters.aic:150956	not public domain
+adapters.aic:150955	not public domain
+adapters.aic:150959	not public domain
+adapters.aic:28518	geo unresolved: ['Bristol']
+adapters.aic:28519	geo unresolved: ['Bristol']
+adapters.aic:36166	not public domain
+adapters.aic:158467	not public domain
+adapters.aic:150861	not public domain
+adapters.aic:150863	not public domain
+adapters.aic:150862	not public domain
+adapters.aic:150865	not public domain
+adapters.aic:150864	not public domain
+adapters.aic:150867	not public domain
+adapters.aic:150866	not public domain
+adapters.aic:150869	not public domain
+adapters.aic:150868	not public domain
+adapters.aic:150870	not public domain
+adapters.aic:150872	not public domain
+adapters.aic:150871	not public domain
+adapters.aic:150874	not public domain
+adapters.aic:150873	not public domain
+adapters.aic:150875	not public domain
+adapters.aic:150877	not public domain
+adapters.aic:150876	not public domain
+adapters.aic:150880	not public domain
+adapters.aic:150879	not public domain
+adapters.aic:150883	not public domain
+adapters.aic:150882	not public domain
+adapters.aic:150885	not public domain
+adapters.aic:150884	not public domain
+adapters.aic:149641	not public domain
+adapters.aic:100788	not public domain
+adapters.aic:100790	not public domain
+adapters.aic:100789	not public domain
+adapters.aic:221067	not public domain
+adapters.aic:100792	not public domain
+adapters.aic:199837	not public domain
+adapters.aic:150707	no image
+adapters.aic:11372	not public domain
+adapters.aic:11379	not public domain
+adapters.aic:100752	not public domain
+adapters.aic:11381	not public domain
+adapters.aic:100753	not public domain
+adapters.aic:100758	not public domain
+adapters.aic:100754	not public domain
+adapters.aic:100760	not public domain
+adapters.aic:100759	not public domain
+adapters.aic:100763	not public domain
+adapters.aic:107069	not public domain
+adapters.aic:100773	not public domain
+adapters.aic:100775	not public domain
+adapters.aic:100774	not public domain
+adapters.aic:100776	not public domain
+adapters.aic:100778	not public domain
+adapters.aic:100777	not public domain
+adapters.aic:100780	not public domain
+adapters.aic:100779	not public domain
+adapters.aic:100782	not public domain
+adapters.aic:100781	not public domain
+adapters.aic:100784	not public domain
+adapters.aic:100783	not public domain
+adapters.aic:100786	not public domain
+adapters.aic:100785	not public domain
+adapters.aic:100787	not public domain
+adapters.aic:2227	no image
+adapters.aic:2225	no image
+adapters.aic:92289	no image
+adapters.aic:58454	not public domain
+adapters.aic:58453	not public domain
+adapters.aic:58455	not public domain
+adapters.aic:149416	not public domain
+adapters.aic:212423	not public domain
+adapters.aic:190220	not public domain
+adapters.aic:100755	not public domain
+adapters.aic:100751	not public domain
+adapters.aic:100756	not public domain
+adapters.aic:100761	not public domain
+adapters.aic:100757	not public domain
+adapters.aic:100762	not public domain
+adapters.aic:100765	not public domain
+adapters.aic:100764	not public domain
+adapters.aic:100767	not public domain
+adapters.aic:100766	not public domain
+adapters.aic:100768	not public domain
+adapters.aic:100770	not public domain
+adapters.aic:100769	not public domain
+adapters.aic:100749	not public domain
+adapters.aic:212412	not public domain
+adapters.aic:212400	not public domain
+adapters.aic:212410	not public domain
+adapters.aic:282748	not public domain
+adapters.aic:190183	not public domain
+adapters.aic:282850	not public domain
+adapters.aic:282854	not public domain
+adapters.aic:282853	not public domain
+adapters.aic:282852	not public domain
+adapters.aic:282851	not public domain
+adapters.aic:282859	not public domain
+adapters.aic:282858	not public domain
+adapters.aic:282857	not public domain
+adapters.aic:282856	not public domain
+adapters.aic:282855	not public domain
+adapters.aic:282863	not public domain
+adapters.aic:282862	not public domain
+adapters.aic:282861	not public domain
+adapters.aic:282860	not public domain
+adapters.aic:282868	not public domain
+adapters.aic:282867	not public domain
+adapters.aic:282866	not public domain
+adapters.aic:282865	not public domain
+adapters.aic:282864	not public domain
+adapters.aic:282873	not public domain
+adapters.aic:282872	not public domain
+adapters.aic:282871	not public domain
+adapters.aic:282870	not public domain
+adapters.aic:282869	not public domain
+adapters.aic:282877	not public domain
+adapters.aic:282876	not public domain
+adapters.aic:282875	not public domain
+adapters.aic:282874	not public domain
+adapters.aic:282882	not public domain
+adapters.aic:282881	not public domain
+adapters.aic:282880	not public domain
+adapters.aic:282879	not public domain
+adapters.aic:282878	not public domain
+adapters.aic:282887	not public domain
+adapters.aic:282886	not public domain
+adapters.aic:282885	not public domain
+adapters.aic:282884	not public domain
+adapters.aic:282883	not public domain
+adapters.aic:282892	not public domain
+adapters.aic:282891	not public domain
+adapters.aic:282890	not public domain
+adapters.aic:282889	not public domain
+adapters.aic:282888	not public domain
+adapters.aic:282897	not public domain
+adapters.aic:282896	not public domain
+adapters.aic:282895	not public domain
+adapters.aic:282894	not public domain
+adapters.aic:282893	not public domain
+adapters.aic:282899	not public domain
+adapters.aic:282898	not public domain
+adapters.aic:212614	not public domain
+adapters.aic:212407	not public domain
+adapters.aic:92305	not public domain
+adapters.aic:92304	not public domain
+adapters.aic:212425	not public domain
+adapters.aic:92306	not public domain
+adapters.aic:212426	not public domain
+adapters.aic:212562	not public domain
+adapters.aic:212604	not public domain
+adapters.aic:212591	not public domain
+adapters.aic:190245	not public domain
+adapters.aic:212473	not public domain
+adapters.aic:190302	not public domain
+adapters.aic:212442	not public domain
+adapters.aic:212406	not public domain
+adapters.aic:189294	geo unresolved: ['Pueblo of Acoma']
+adapters.aic:11387	not public domain
+adapters.aic:131299	not public domain
+adapters.aic:93789	not public domain
+adapters.aic:77855	geo unresolved: ['Glasgow']
+adapters.aic:149035	date range is artist's life, not object's
+adapters.aic:204030	not public domain
+adapters.aic:102192	not public domain
+adapters.aic:47914	not public domain
+adapters.aic:62273	not public domain
+adapters.aic:61428	not public domain
+adapters.aic:24306	not public domain
+adapters.aic:23700	not public domain
+adapters.aic:145241	not public domain
+adapters.aic:105282	not public domain
+adapters.aic:105213	not public domain
+adapters.aic:63279	not public domain
+adapters.aic:48220	not public domain
+adapters.aic:240948	not public domain
+adapters.aic:152057	not public domain
+adapters.aic:111810	not public domain
+adapters.aic:240934	not public domain
+adapters.aic:240932	not public domain
+adapters.aic:117417	not public domain
+adapters.aic:240967	not public domain
+adapters.aic:240957	not public domain
+adapters.aic:240956	not public domain
+adapters.aic:240953	not public domain
+adapters.aic:240945	not public domain
+adapters.aic:240942	not public domain
+adapters.aic:240933	not public domain
+adapters.aic:241448	not public domain
+adapters.aic:240951	not public domain
+adapters.aic:240944	not public domain
+adapters.aic:240941	not public domain
+adapters.aic:240936	not public domain
+adapters.aic:240935	not public domain
+adapters.aic:229152	not public domain
+adapters.aic:93804	not public domain
+adapters.aic:93811	not public domain
+adapters.aic:93809	not public domain
+adapters.aic:229343	not public domain
+adapters.aic:199002	not public domain
+adapters.aic:198809	not public domain
+adapters.aic:185162	not public domain
+adapters.aic:181719	geo unresolved: ['Illinois']
+adapters.aic:5375	not public domain
+adapters.aic:43774	not public domain
+adapters.aic:120275	not public domain
+adapters.aic:111629	not public domain
+adapters.aic:230193	not public domain
+adapters.aic:656	not public domain
+adapters.aic:239462	not public domain
+adapters.aic:86812	geo unresolved: ['Northwest Coast']
+adapters.aic:75101	not public domain
+adapters.aic:28869	not public domain
+adapters.aic:104031	not public domain
+adapters.aic:228827	not public domain
+adapters.aic:223896	not public domain
+adapters.aic:80062	not public domain
+adapters.aic:121186	not public domain
+adapters.aic:111628	not public domain
+adapters.aic:66039	not public domain
+adapters.aic:20522	not public domain
+adapters.aic:192603	not public domain
+adapters.aic:28024	not public domain
+adapters.aic:5357	not public domain
+adapters.aic:5353	not public domain
+adapters.aic:184362	not public domain
+adapters.aic:155999	not public domain
+adapters.aic:212474	not public domain
+adapters.aic:212252	not public domain
+adapters.aic:209437	not public domain
+adapters.aic:209425	not public domain
+adapters.aic:190218	not public domain
+adapters.aic:111634	not public domain
+adapters.aic:21727	not public domain
+adapters.aic:210442	not public domain
+adapters.aic:209926	not public domain
+adapters.aic:207293	not public domain
+adapters.aic:65975	not public domain
+adapters.aic:65972	not public domain
+adapters.aic:59967	not public domain
+adapters.aic:8996	not public domain
+adapters.aic:159594	not public domain
+adapters.aic:146905	not public domain
+adapters.aic:56682	not public domain
+adapters.aic:48509	not public domain
+adapters.aic:244905	not public domain
+adapters.aic:229510	not public domain
+adapters.aic:7021	not public domain
+adapters.aic:6565	not public domain
+adapters.aic:249299	not public domain
+adapters.aic:249012	not public domain
+adapters.aic:5519	geo unresolved: ['Al Fayyum']
+adapters.aic:5520	geo unresolved: ['Al Fayyum']
+adapters.aic:100858	not public domain
+adapters.aic:86385	not public domain
+adapters.aic:191556	not public domain
+adapters.aic:190558	not public domain
+adapters.aic:2189	not public domain
+adapters.aic:111060	not public domain
+adapters.aic:9018	not public domain
+adapters.aic:134050	not public domain
+adapters.aic:109529	not public domain
+adapters.aic:91194	not public domain
+adapters.aic:30839	not public domain
+adapters.aic:84241	not public domain
+adapters.aic:249208	not public domain
+adapters.aic:236538	not public domain
+adapters.aic:93798	not public domain
+adapters.aic:47149	not public domain
+adapters.aic:210350	geo unresolved: ['']
+adapters.aic:4706	geo unresolved: ['Monte Palatino']
+adapters.aic:210353	geo unresolved: ['']
+adapters.aic:210352	geo unresolved: ['']
+adapters.aic:210351	geo unresolved: ['']
+adapters.aic:210346	geo unresolved: ['']
+adapters.aic:210336	geo unresolved: ['']
+adapters.aic:210345	geo unresolved: ['']
+adapters.aic:210344	geo unresolved: ['']
+adapters.aic:23276	geo unresolved: ['Antioch']
+adapters.aic:184325	geo unresolved: ['Eastern Mediterranean Region']
+adapters.aic:65606	geo unresolved: ['Levant']
+adapters.aic:43397	geo unresolved: ['Eastern Mediterranean Region']
+adapters.aic:61941	geo unresolved: ['Mediterranean Region']
+adapters.aic:67446	geo unresolved: ['Mediterranean Region']
+adapters.aic:61965	geo unresolved: ['Ancient Mediterranean']
+adapters.aic:61955	geo unresolved: ['Mediterranean Region']
+adapters.aic:67421	geo unresolved: ['Levant']
+adapters.aic:61983	geo unresolved: ['Mediterranean Region']
+adapters.aic:65555	geo unresolved: ['Levant']
+adapters.aic:67615	geo unresolved: ['Eastern Mediterranean Region']
+adapters.aic:9920	geo unresolved: ['Capua']
+adapters.aic:96048	geo unresolved: ['Sicily']
+adapters.aic:5775	geo unresolved: ['Antioch']
+adapters.aic:5602	geo unresolved: ['Lyon']
+adapters.aic:83905	not public domain
+adapters.aic:9516	not public domain
+adapters.aic:93815	not public domain
+adapters.aic:93813	not public domain
+adapters.aic:93807	not public domain
+adapters.aic:93806	not public domain
+adapters.aic:93805	not public domain
+adapters.aic:32596	not public domain
+adapters.aic:9535	not public domain
+adapters.aic:99758	not public domain
+adapters.aic:93800	not public domain
+adapters.aic:62271	not public domain
+adapters.aic:116590	not public domain
+adapters.aic:111654	not public domain
+adapters.aic:93808	not public domain
+adapters.aic:121056	not public domain
+adapters.aic:93803	not public domain
+adapters.aic:93802	not public domain
+adapters.aic:93801	not public domain
+adapters.aic:93799	not public domain
+adapters.aic:10278	not public domain
+adapters.aic:104263	not public domain
+adapters.aic:104262	not public domain
+adapters.aic:104261	not public domain
+adapters.aic:104260	not public domain
+adapters.aic:104259	not public domain
+adapters.aic:94007	not public domain
+adapters.aic:93814	not public domain
+adapters.aic:93812	not public domain
+adapters.aic:104265	not public domain
+adapters.aic:104264	not public domain
+adapters.aic:104269	not public domain
+adapters.aic:104268	not public domain
+adapters.aic:104267	not public domain
+adapters.aic:104266	not public domain
+adapters.aic:104275	not public domain
+adapters.aic:104274	not public domain
+adapters.aic:104273	not public domain
+adapters.aic:104272	not public domain
+adapters.aic:104271	not public domain
+adapters.aic:104270	not public domain
+adapters.aic:248418	not public domain
+adapters.aic:104278	not public domain
+adapters.aic:104277	not public domain
+adapters.aic:104276	not public domain
+adapters.aic:245494	not public domain
+adapters.aic:213139	not public domain
+adapters.aic:197545	not public domain
+adapters.aic:150044	not public domain
+adapters.aic:40619	not public domain
+adapters.aic:170	geo unresolved: ['Basilicata']
+adapters.aic:185760	not public domain
+adapters.aic:26082	not public domain
+adapters.aic:5567	not public domain
+adapters.aic:181	geo unresolved: ['Campania']
+adapters.aic:72728	not public domain
+adapters.aic:189807	not public domain
+adapters.aic:185184	not public domain
+adapters.aic:151424	not public domain
+adapters.aic:75375	not public domain
+adapters.aic:117188	not public domain
+adapters.aic:62323	not public domain
+adapters.aic:20194	not public domain
+adapters.aic:45418	not public domain
+adapters.aic:20193	not public domain
+adapters.aic:253772	not public domain
+adapters.aic:215737	not public domain
+adapters.aic:215736	not public domain
+adapters.aic:214681	not public domain
+adapters.aic:122230	not public domain
+adapters.aic:99778	not public domain
+adapters.aic:99774	not public domain
+adapters.aic:79390	not public domain
+adapters.aic:186064	not public domain
+adapters.aic:90625	not public domain
+adapters.aic:76452	not public domain
+adapters.aic:72828	not public domain
+adapters.aic:223081	not public domain
+adapters.aic:90933	not public domain
+adapters.aic:107349	not public domain
+adapters.aic:69693	not public domain
+adapters.aic:71914	not public domain
+adapters.aic:65246	not public domain
+adapters.aic:217702	not public domain
+adapters.aic:180487	not public domain
+adapters.aic:156589	not public domain
+adapters.aic:154136	not public domain
+adapters.aic:152746	not public domain
+adapters.aic:120164	not public domain
+adapters.aic:104351	not public domain
+adapters.aic:97099	not public domain
+adapters.aic:71968	not public domain
+adapters.aic:99023	not public domain
+adapters.aic:44929	not public domain
+adapters.aic:44881	not public domain
+adapters.aic:223337	not public domain
+adapters.aic:202823	not public domain
+adapters.aic:104354	not public domain
+adapters.aic:89128	not public domain
+adapters.aic:69330	not public domain
+adapters.aic:47335	not public domain
+adapters.aic:223080	not public domain
+adapters.aic:76195	not public domain
+adapters.aic:223736	not public domain
+adapters.aic:32627	not public domain
+adapters.aic:11393	not public domain
+adapters.aic:245461	not public domain
+adapters.aic:154497	not public domain
+adapters.aic:91212	not public domain
+adapters.aic:245459	not public domain
+adapters.aic:241615	not public domain
+adapters.aic:201806	not public domain
+adapters.aic:154490	not public domain
+adapters.aic:130520	not public domain
+adapters.aic:102293	not public domain
+adapters.aic:90914	not public domain
+adapters.aic:76047	not public domain
+adapters.aic:151371	not public domain
+adapters.aic:210354	geo unresolved: ['']
+adapters.aic:193320	not public domain
+adapters.aic:63178	not public domain
+adapters.aic:185662	not public domain
+adapters.aic:118704	not public domain
+adapters.aic:118601	not public domain
+adapters.aic:223902	not public domain
+adapters.aic:30732	not public domain
+adapters.aic:236501	not public domain
+adapters.aic:209555	not public domain
+adapters.aic:185765	not public domain
+adapters.aic:151363	not public domain
+adapters.aic:60259	not public domain
+adapters.aic:60257	not public domain
+adapters.aic:146940	not public domain
+adapters.aic:70039	not public domain
+adapters.aic:193867	not public domain
+adapters.aic:13107	not public domain
+adapters.aic:7124	not public domain
+adapters.aic:99768	not public domain
+adapters.aic:99765	not public domain
+adapters.aic:99764	not public domain
+adapters.aic:99763	not public domain
+adapters.aic:99760	not public domain
+adapters.aic:244894	not public domain
+adapters.aic:69180	no image
+adapters.aic:244180	not public domain
+adapters.aic:185180	not public domain
+adapters.aic:251697	not public domain
+adapters.aic:250596	not public domain
+adapters.aic:151323	not public domain
+adapters.aic:257404	not public domain
+adapters.aic:190500	not public domain
+adapters.aic:117317	not public domain
+adapters.aic:87650	geo unresolved: ['Polis']
+adapters.aic:204509	not public domain
+adapters.aic:196669	not public domain
+adapters.aic:184498	not public domain
+adapters.aic:82410	not public domain
+adapters.aic:252541	not public domain
+adapters.aic:251894	not public domain
+adapters.aic:230687	not public domain
+adapters.aic:204511	not public domain
+adapters.aic:154124	not public domain
+adapters.aic:242485	not public domain
+adapters.aic:234433	not public domain
+adapters.aic:64599	not public domain
+adapters.aic:152752	not public domain
+adapters.aic:145246	not public domain
