@@ -1,4 +1,4 @@
-import type { Artifact } from "./types";
+import type { Artifact, ArtifactIndexEntry } from "./types";
 
 export const TIMELINE_START = -3000;
 export const TIMELINE_END = 2000;
@@ -74,18 +74,18 @@ function seededShuffle<T>(arr: T[], rand: () => number): T[] {
   return out;
 }
 
-export function selectDaily(
-  pool: Artifact[],
+export function selectDaily<A extends ArtifactIndexEntry>(
+  pool: A[],
   seed: string,
   n = 10,
   maxPerContinent = 3,
   maxPerSource = 5,
   maxPerEra = 3
-): Artifact[] {
+): A[] {
   const rand = seededRandom(seed);
   const shuffled = seededShuffle(pool, rand);
 
-  let picked: Artifact[] = [];
+  let picked: A[] = [];
   for (let relax = 0; relax < 3; relax++) {
     picked = [];
     const byCont: Record<string, number> = {};
@@ -111,13 +111,19 @@ export function selectDaily(
   return picked; // best effort, same as puzzle.py
 }
 
-export interface Puzzle {
+export interface PuzzleOf<A> {
   mode: "daily" | "practice";
   date: string | null;
-  rounds: Artifact[];
+  rounds: A[];
 }
 
-export function buildDailyPuzzle(pool: Artifact[], dateStr: string): Puzzle {
+// What selection produces: just index fields, cheap to compute over the
+// whole pool. Turned into a real Puzzle (full Artifact rounds) by fetching
+// each round's details once — see lib/details.ts and App.tsx.
+export type IndexPuzzle = PuzzleOf<ArtifactIndexEntry>;
+export type Puzzle = PuzzleOf<Artifact>;
+
+export function buildDailyPuzzle(pool: ArtifactIndexEntry[], dateStr: string): IndexPuzzle {
   return { mode: "daily", date: dateStr, rounds: selectDaily(pool, `daily-${dateStr}`) };
 }
 
@@ -167,7 +173,7 @@ const STYLE_KEYWORDS: [StyleBucket, string[]][] = [
   ["painting", ["paint"]],
 ];
 
-export function styleOf(a: Artifact): StyleBucket {
+export function styleOf(a: Pick<Artifact, "classification" | "tags">): StyleBucket {
   const hay = `${a.classification} ${a.tags.join(" ")}`.toLowerCase();
   for (const [bucket, keywords] of STYLE_KEYWORDS) {
     if (keywords.some((k) => hay.includes(k))) return bucket;
@@ -190,7 +196,7 @@ export type PracticeFilter =
   | { type: "region"; continent: Continent }
   | { type: "museum"; sources: string[] };
 
-export function matchesFilter(a: Artifact, filter: PracticeFilter): boolean {
+export function matchesFilter(a: ArtifactIndexEntry, filter: PracticeFilter): boolean {
   switch (filter.type) {
     case "all":
       return true;
@@ -208,7 +214,7 @@ export function matchesFilter(a: Artifact, filter: PracticeFilter): boolean {
   }
 }
 
-export function buildPracticePuzzle(pool: Artifact[], filter: PracticeFilter = { type: "all" }): Puzzle {
+export function buildPracticePuzzle(pool: ArtifactIndexEntry[], filter: PracticeFilter = { type: "all" }): IndexPuzzle {
   const filtered = filter.type === "all" ? pool : pool.filter((a) => matchesFilter(a, filter));
   const seed = `practice-${Math.random()}`;
   return { mode: "practice", date: null, rounds: selectDaily(filtered.length ? filtered : pool, seed) };

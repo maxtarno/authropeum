@@ -1,5 +1,7 @@
 import type { Puzzle } from "./puzzle";
-import type { Artifact, Guess, RoundResult, RoundScore } from "./types";
+import type { Guess, RoundResult, RoundScore } from "./types";
+import { uidOf } from "./types";
+import { fetchDetails } from "./details";
 
 const KEY = "authropeum-multi:session:v1";
 
@@ -33,10 +35,6 @@ export interface ResumedState {
   results: RoundResult[];
 }
 
-export function uidOf(a: Artifact): string {
-  return `${a.source}:${a.source_id}`;
-}
-
 export function saveSession(
   puzzle: Puzzle,
   state: { roundIndex: number; pin: Pin | null; block: number | null; revealed: boolean; results: RoundResult[] }
@@ -66,11 +64,12 @@ export function clearSession(): void {
   }
 }
 
-// Re-hydrates a persisted session against the currently loaded pool. Returns
-// null (and lets the caller fall back to the normal menu) for anything that
-// can't be safely resumed: a new day started, or the pool no longer contains
-// one of the referenced artifacts.
-export function resolveSession(pool: Artifact[], todayStr: string): { puzzle: Puzzle; state: ResumedState } | null {
+// Re-hydrates a persisted session by fetching full details for exactly the
+// artifacts it references (not the whole pool). Returns null (and lets the
+// caller fall back to the normal menu) for anything that can't be safely
+// resumed: a new day started, or a referenced artifact is no longer in the
+// pool (shouldn't happen absent an ingest re-run, but data can change).
+export async function resolveSession(todayStr: string): Promise<{ puzzle: Puzzle; state: ResumedState } | null> {
   let session: PersistedSession;
   try {
     const raw = localStorage.getItem(KEY);
@@ -84,10 +83,12 @@ export function resolveSession(pool: Artifact[], todayStr: string): { puzzle: Pu
     clearSession();
     return null;
   }
+  if (session.roundUids.length === 0) return null;
 
-  const byUid = new Map(pool.map((a) => [uidOf(a), a]));
+  const allUids = Array.from(new Set([...session.roundUids, ...session.results.map((r) => r.uid)]));
+  const byUid = await fetchDetails(allUids);
 
-  const rounds: Artifact[] = [];
+  const rounds = [];
   for (const uid of session.roundUids) {
     const a = byUid.get(uid);
     if (!a) {
@@ -96,7 +97,6 @@ export function resolveSession(pool: Artifact[], todayStr: string): { puzzle: Pu
     }
     rounds.push(a);
   }
-  if (rounds.length === 0) return null;
 
   const results: RoundResult[] = [];
   for (const r of session.results) {

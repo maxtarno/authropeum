@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import type { Artifact } from "../lib/types";
+import type { ArtifactIndexEntry } from "../lib/types";
 import {
   CONTINENTS,
   CONTINENT_LABELS,
@@ -27,7 +27,7 @@ const SOURCE_NAMES: Record<string, string> = {
 type Category = "all" | "era" | "style" | "region" | "museum";
 
 interface Props {
-  pool: Artifact[];
+  pool: ArtifactIndexEntry[];
   onStart: (filter: PracticeFilter) => void;
   onBack: () => void;
 }

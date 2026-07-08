@@ -50,8 +50,9 @@ Implemented in `puzzle.py`: `block_of`, `geo_score` (exponential decay,
 
 ## Data contract
 
-The game reads exactly one file: `output/artifacts.json`, a list of unified
-Artifact objects (see `schema.py`). Required by the game per round:
+The pipeline's source of truth is still one file, `output/artifacts.json` —
+a list of unified Artifact objects (see `schema.py`). Required by the game
+per round:
 
 ```
 image_url, title, medium                    → shown during play
@@ -62,3 +63,18 @@ artist_display, reveal_text (+license), credit, object_url → reveal screen
 
 Curation fields (`is_highlight`, `department`, `classification`, `tags`,
 `geo_confidence`) drive selection, never display.
+
+**The frontend, however, doesn't fetch that file directly** — at 30k+
+artifacts it's tens of MB, most of which (image/text/credit fields) is
+irrelevant until a specific artifact is actually chosen for a round.
+`scripts/sync-data.mjs` splits it into:
+
+* `public/artifacts-index.json` — every artifact, but only the fields
+  `selectDaily`/`matchesFilter`/`styleOf` need (source, source_id, lat, lng,
+  year_start, year_end, classification, tags). This is what loads on page
+  load, before the player has picked a mode.
+* `public/details/{0..127}.json` — the full records, hash-sharded by
+  `source:source_id` (`lib/detailShards.mjs`, shared between the build
+  script and the browser so both agree on which bucket an artifact is in).
+  Once a puzzle's ~10 rounds are chosen, only their few shards get fetched
+  (`lib/details.ts`) — never the whole pool.

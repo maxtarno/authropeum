@@ -6,10 +6,11 @@ export interface Stats {
   gamesPlayed: number;
   streak: number;
   lastPlayedDate: string | null;
+  lastTotal: number;
 }
 
 function defaultStats(): Stats {
-  return { best: 0, totalScore: 0, gamesPlayed: 0, streak: 0, lastPlayedDate: null };
+  return { best: 0, totalScore: 0, gamesPlayed: 0, streak: 0, lastPlayedDate: null, lastTotal: 0 };
 }
 
 function load(): Stats {
@@ -32,14 +33,26 @@ function isConsecutiveDay(prev: string, next: string): boolean {
   return diffDays === 1;
 }
 
-// Only daily-mode results affect streak/personal-best; practice runs are unrecorded per GAME_SPEC.
+export function alreadyPlayedToday(dateStr: string): boolean {
+  return load().lastPlayedDate === dateStr;
+}
+
+// Only daily-mode results affect streak/personal-best; practice runs are
+// unrecorded per GAME_SPEC. The app gates replaying today's puzzle once
+// it's done (see App.tsx), but this stays idempotent for the same date
+// regardless — otherwise a second call for a day already recorded would
+// silently reset the streak to 1, since "0 days since last played" isn't
+// "1 day since last played".
 export function recordDailyResult(dateStr: string, total: number): Stats {
   const stats = load();
+  if (stats.lastPlayedDate === dateStr) return stats;
+
   stats.best = Math.max(stats.best, total);
   stats.totalScore += total;
   stats.gamesPlayed += 1;
   stats.streak = stats.lastPlayedDate && isConsecutiveDay(stats.lastPlayedDate, dateStr) ? stats.streak + 1 : 1;
   stats.lastPlayedDate = dateStr;
+  stats.lastTotal = total;
   save(stats);
   return stats;
 }

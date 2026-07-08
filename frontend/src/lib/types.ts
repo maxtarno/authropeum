@@ -29,6 +29,20 @@ export interface Artifact {
   tags: string[];
 }
 
+// Fields needed to pick a puzzle's rounds (selectDaily) and support
+// practice-mode filters (matchesFilter/styleOf) — everything else about an
+// artifact (image, title, reveal text, ...) only ever matters for the ~10
+// artifacts a puzzle ends up using, so those are fetched separately as
+// "details" once the rounds are chosen. See lib/details.ts.
+export type ArtifactIndexEntry = Pick<
+  Artifact,
+  "source" | "source_id" | "lat" | "lng" | "year_start" | "year_end" | "classification" | "tags"
+>;
+
+export function uidOf(a: Pick<Artifact, "source" | "source_id">): string {
+  return `${a.source}:${a.source_id}`;
+}
+
 export interface Guess {
   lat: number;
   lng: number;

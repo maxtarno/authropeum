@@ -32,18 +32,21 @@ export default function GameScreen({ puzzle, onExit, initial }: Props) {
   const [block, setBlock] = useState<number | null>(initial?.block ?? null);
   const [revealed, setRevealed] = useState(initial?.revealed ?? false);
   const [results, setResults] = useState<RoundResult[]>(initial?.results ?? []);
+  // True only once the player clicks through the last round's reveal (the
+  // "See results" button) — NOT the instant that round is revealed, or
+  // they'd never see round 10's true answer/score before the end screen.
+  const [finished, setFinished] = useState(false);
   // Caches the one-time completion side effect (recording stats + clearing
   // the resumable session) so it fires exactly once even across re-renders.
   const completionStatsRef = useRef<Stats | null>(null);
 
   const artifact = puzzle.rounds[roundIndex];
   const isLastRound = roundIndex === puzzle.rounds.length - 1;
-  const done = revealed && isLastRound;
 
   useEffect(() => {
-    if (done) return; // completion is persisted by clearing, not saving, below
+    if (finished) return; // completion is persisted by clearing, not saving, below
     saveSession(puzzle, { roundIndex, pin, block, revealed, results });
-  }, [puzzle, roundIndex, pin, block, revealed, results, done]);
+  }, [puzzle, roundIndex, pin, block, revealed, results, finished]);
 
   function submitGuess() {
     if (!pin || block === null) return;
@@ -54,7 +57,10 @@ export default function GameScreen({ puzzle, onExit, initial }: Props) {
   }
 
   function nextRound() {
-    if (isLastRound) return;
+    if (isLastRound) {
+      setFinished(true);
+      return;
+    }
     setRoundIndex((i) => i + 1);
     setPin(null);
     setBlock(null);
@@ -66,7 +72,7 @@ export default function GameScreen({ puzzle, onExit, initial }: Props) {
     onExit();
   }
 
-  if (done) {
+  if (finished) {
     const dateStr = puzzle.date ?? new Date().toISOString().slice(0, 10);
     if (completionStatsRef.current === null) {
       clearSession();

@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
-import type { Artifact } from "./lib/types";
-import { buildDailyPuzzle, buildPracticePuzzle, type PracticeFilter, type Puzzle } from "./lib/puzzle";
+import type { ArtifactIndexEntry } from "./lib/types";
+import { uidOf } from "./lib/types";
+import { buildDailyPuzzle, buildPracticePuzzle, type IndexPuzzle, type PracticeFilter, type Puzzle } from "./lib/puzzle";
+import { fetchDetails } from "./lib/details";
 import { resolveSession, type ResumedState } from "./lib/session";
+import { alreadyPlayedToday, getStats } from "./lib/storage";
 import GameScreen from "./components/GameScreen";
 import PracticeSetup from "./components/PracticeSetup";
 import Wordmark from "./components/Wordmark";
@@ -11,26 +14,39 @@ function todayStr(): string {
   return new Date().toISOString().slice(0, 10);
 }
 
+async function hydrate(indexPuzzle: IndexPuzzle): Promise<Puzzle> {
+  const byUid = await fetchDetails(indexPuzzle.rounds.map(uidOf));
+  return { ...indexPuzzle, rounds: indexPuzzle.rounds.map((a) => byUid.get(uidOf(a))!) };
+}
+
 function App() {
-  const [pool, setPool] = useState<Artifact[] | null>(null);
+  const [pool, setPool] = useState<ArtifactIndexEntry[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
   const [resumed, setResumed] = useState<ResumedState | null>(null);
   const [showPracticeSetup, setShowPracticeSetup] = useState(false);
+  const [preparingPuzzle, setPreparingPuzzle] = useState(false);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}artifacts.json`)
+    fetch(`${import.meta.env.BASE_URL}artifacts-index.json`)
       .then((r) => r.json())
-      .then((data: Artifact[]) => {
+      .then(async (data: ArtifactIndexEntry[]) => {
         setPool(data);
-        const resolved = resolveSession(data, todayStr());
+        const resolved = await resolveSession(todayStr());
         if (resolved) {
           setPuzzle(resolved.puzzle);
           setResumed(resolved.state);
         }
       })
-      .catch(() => setError("Couldn't load the artifact pool (public/artifacts.json)."));
+      .catch(() => setError("Couldn't load the artifact pool (public/artifacts-index.json)."));
   }, []);
+
+  async function startPuzzle(indexPuzzle: IndexPuzzle) {
+    setPreparingPuzzle(true);
+    const hydrated = await hydrate(indexPuzzle);
+    setPuzzle(hydrated);
+    setPreparingPuzzle(false);
+  }
 
   if (error) {
     return (
@@ -44,6 +60,7 @@ function App() {
     );
   }
   if (!pool) return <div className="app-status app-status-loading">Loading…</div>;
+  if (preparingPuzzle) return <div className="app-status app-status-loading">Preparing puzzle…</div>;
 
   if (puzzle) {
     return (
@@ -64,12 +81,16 @@ function App() {
         pool={pool}
         onBack={() => setShowPracticeSetup(false)}
         onStart={(filter: PracticeFilter) => {
-          setPuzzle(buildPracticePuzzle(pool, filter));
           setShowPracticeSetup(false);
+          startPuzzle(buildPracticePuzzle(pool, filter));
         }}
       />
     );
   }
+
+  const today = todayStr();
+  const playedToday = alreadyPlayedToday(today);
+  const stats = getStats();
 
   return (
     <div className="mode-select">
@@ -81,9 +102,16 @@ function App() {
         Objects from museum open-access collections around the world. Pin the map, place the era, meet the answer.
       </p>
       <div className="mode-select-actions">
-        <button type="button" className="btn-primary" onClick={() => setPuzzle(buildDailyPuzzle(pool, todayStr()))}>
-          Play today's puzzle
-        </button>
+        {playedToday ? (
+          <p className="mode-select-done">
+            Today's puzzle is done — you scored <strong>{stats.lastTotal.toLocaleString()}</strong>. Come back
+            tomorrow for a new one, or keep practicing below.
+          </p>
+        ) : (
+          <button type="button" className="btn-primary" onClick={() => startPuzzle(buildDailyPuzzle(pool, today))}>
+            Play today's puzzle
+          </button>
+        )}
         <button type="button" className="btn-secondary" onClick={() => setShowPracticeSetup(true)}>
           Practice (unrecorded)
         </button>
