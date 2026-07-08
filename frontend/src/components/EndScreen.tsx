@@ -81,6 +81,7 @@ export default function EndScreen({ mode, dateStr, results, stats, onExit }: Pro
                       src={r.artifact.image_url}
                       alt=""
                       className="end-table-thumb"
+                      referrerPolicy="no-referrer"
                       onError={(e) => {
                         e.currentTarget.style.visibility = "hidden";
                       }}

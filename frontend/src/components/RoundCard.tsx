@@ -10,12 +10,11 @@ interface Props {
 export default function RoundCard({ artifact }: Props) {
   const [failCount, setFailCount] = useState(0);
 
-  // Some source APIs (AIC's IIIF resize-on-demand in particular) occasionally
-  // time out rather than 404 — one retry recovers most of those.
+  // AIC's IIIF server also occasionally times out (separately from the
+  // referrer issue below) — one retry recovers most of those.
   useEffect(() => setFailCount(0), [artifact.source_id]);
 
   function handleError() {
-    // Give a flaky/slow image server a moment before the one retry.
     setTimeout(() => setFailCount((n) => n + 1), 1200);
   }
 
@@ -33,6 +32,7 @@ export default function RoundCard({ artifact }: Props) {
             src={artifact.image_url}
             alt={artifact.title}
             className="round-card-image"
+            referrerPolicy="no-referrer"
             onError={handleError}
           />
         )}
