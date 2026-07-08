@@ -1,0 +1,998 @@
+[
+ {
+  "systemNumber": "O507242",
+  "accessionNumber": "358:69",
+  "objectType": "Textile design",
+  "titles": [],
+  "summaryDescription": "",
+  "physicalDescription": "Design for a damask cloth, one of a group of over 725 designs.",
+  "artistMakerPerson": [
+   {
+    "name": {
+     "text": "Joseph Neil Paton",
+     "id": "A34976"
+    },
+    "association": {
+     "text": "designer",
+     "id": "x36960"
+    },
+    "note": ""
+   }
+  ],
+  "artistMakerOrganisations": [],
+  "artistMakerPeople": [],
+  "materials": [
+   {
+    "text": "paper",
+    "id": "x30308"
+   }
+  ],
+  "techniques": [
+   {
+    "text": "drawing",
+    "id": "x32498"
+   }
+  ],
+  "materialsAndTechniques": "drawing",
+  "categories": [
+   {
+    "text": "Textiles",
+    "id": "THES48885"
+   },
+   {
+    "text": "Designs",
+    "id": "THES48968"
+   },
+   {
+    "text": "Drawings",
+    "id": "THES48966"
+   },
+   {
+    "text": "Scotland",
+    "id": "THES262877"
+   }
+  ],
+  "styles": [],
+  "collectionCode": {
+   "text": "PDP",
+   "id": "THES48595"
+  },
+  "images": [
+   "2016JL6700"
+  ],
+  "imageResolution": "high",
+  "galleryLocations": [
+   {
+    "current": {
+     "text": "LVLC (VA)",
+     "id": "THES49171"
+    },
+    "free": "",
+    "case": "T",
+    "shelf": "10",
+    "box": "B"
+   }
+  ],
+  "partTypes": [
+   [
+    {
+     "text": "print",
+     "id": ""
+    }
+   ],
+   [
+    {
+     "text": "drawing",
+     "id": ""
+    }
+   ]
+  ],
+  "contentWarnings": [
+   {
+    "apprise": "",
+    "note": ""
+   }
+  ],
+  "placesOfOrigin": [
+   {
+    "place": {
+     "text": "Scotland",
+     "id": "x29130"
+    },
+    "association": {
+     "text": "made",
+     "id": "x28654"
+    },
+    "note": ""
+   }
+  ],
+  "productionDates": [
+   {
+    "date": {
+     "text": "mid 19th century",
+     "earliest": "1825-01-01",
+     "latest": "1875-12-31"
+    },
+    "association": {
+     "text": "made",
+     "id": "x28654"
+    },
+    "note": ""
+   }
+  ],
+  "associatedObjects": [],
+  "creditLine": "",
+  "dimensions": [],
+  "dimensionsNote": "Individual dimensions not on file, but this run of numbers ranges from 2 inches to 12 inches according to original registry.",
+  "marksAndInscriptions": [],
+  "objectHistory": "Joseph Neil Paton (1797-1874), the father of the painter Joseph Nöel Paton, was a Scottish textile designer specialising in damasks who sold many of his designs to the leading Scottish damask manufacturers. Many examples of the damask designs of \"Joseph Paton\" (presumably the father, although Joseph Nöel did also start out as a damask designer before becoming a fine artist) were shown at the Great Exhibition in 1851. Over 725 damask designs were purchased by the Museum in 1875 following Joseph Neil Paton's death.",
+  "historicalContext": "",
+  "briefDescription": "Joseph Neil Paton. Design for a damask. Scottish, mid 19th century.\r\nOne of a group of over 725 designs, (356:1 to 371:2)",
+  "bibliographicReferences": [],
+  "production": "",
+  "productionType": {
+   "text": "",
+   "id": ""
+  },
+  "contentDescription": "",
+  "contentPlaces": [],
+  "associatedPlaces": [],
+  "contentPerson": [],
+  "associatedPerson": [],
+  "contentOrganisations": [],
+  "associatedOrganisations": [],
+  "contentPeople": [],
+  "associatedPeople": [],
+  "contentEvents": [],
+  "associatedEvents": [],
+  "contentOthers": [],
+  "contentConcepts": [],
+  "contentLiteraryRefs": [],
+  "galleryLabels": [],
+  "partNumbers": [
+   "358:69"
+  ],
+  "accessionNumberNum": "358",
+  "accessionNumberPrefix": "",
+  "accessionYear": null,
+  "otherNumbers": [],
+  "copyNumber": "",
+  "aspects": [
+   "WHOLE"
+  ],
+  "assets": [],
+  "recordModificationDate": "2025-04-23",
+  "recordCreationDate": "2009-06-30",
+  "availableToBook": false
+ },
+ {
+  "systemNumber": "O507241",
+  "accessionNumber": "358:70",
+  "objectType": "Textile design",
+  "titles": [],
+  "summaryDescription": "",
+  "physicalDescription": "Design for a damask cloth, one of a group of over 725 designs.",
+  "artistMakerPerson": [
+   {
+    "name": {
+     "text": "Joseph Neil Paton",
+     "id": "A34976"
+    },
+    "association": {
+     "text": "designer",
+     "id": "x36960"
+    },
+    "note": ""
+   }
+  ],
+  "artistMakerOrganisations": [],
+  "artistMakerPeople": [],
+  "materials": [
+   {
+    "text": "paper",
+    "id": "x30308"
+   }
+  ],
+  "techniques": [
+   {
+    "text": "drawing",
+    "id": "x32498"
+   }
+  ],
+  "materialsAndTechniques": "drawing",
+  "categories": [
+   {
+    "text": "Textiles",
+    "id": "THES48885"
+   },
+   {
+    "text": "Designs",
+    "id": "THES48968"
+   },
+   {
+    "text": "Drawings",
+    "id": "THES48966"
+   },
+   {
+    "text": "Scotland",
+    "id": "THES262877"
+   }
+  ],
+  "styles": [],
+  "collectionCode": {
+   "text": "PDP",
+   "id": "THES48595"
+  },
+  "images": [
+   "2016JL6702"
+  ],
+  "imageResolution": "high",
+  "galleryLocations": [
+   {
+    "current": {
+     "text": "LVLC (VA)",
+     "id": "THES49171"
+    },
+    "free": "",
+    "case": "T",
+    "shelf": "10",
+    "box": "B"
+   }
+  ],
+  "partTypes": [
+   [
+    {
+     "text": "print",
+     "id": ""
+    }
+   ],
+   [
+    {
+     "text": "drawing",
+     "id": ""
+    }
+   ]
+  ],
+  "contentWarnings": [
+   {
+    "apprise": "",
+    "note": ""
+   }
+  ],
+  "placesOfOrigin": [
+   {
+    "place": {
+     "text": "Scotland",
+     "id": "x29130"
+    },
+    "association": {
+     "text": "made",
+     "id": "x28654"
+    },
+    "note": ""
+   }
+  ],
+  "productionDates": [
+   {
+    "date": {
+     "text": "mid 19th century",
+     "earliest": "1825-01-01",
+     "latest": "1875-12-31"
+    },
+    "association": {
+     "text": "made",
+     "id": "x28654"
+    },
+    "note": ""
+   }
+  ],
+  "associatedObjects": [],
+  "creditLine": "",
+  "dimensions": [],
+  "dimensionsNote": "Individual dimensions not on file, but this run of numbers ranges from 2 inches to 12 inches according to original registry.",
+  "marksAndInscriptions": [],
+  "objectHistory": "Joseph Neil Paton (1797-1874), the father of the painter Joseph Nöel Paton, was a Scottish textile designer specialising in damasks who sold many of his designs to the leading Scottish damask manufacturers. Many examples of the damask designs of \"Joseph Paton\" (presumably the father, although Joseph Nöel did also start out as a damask designer before becoming a fine artist) were shown at the Great Exhibition in 1851. Over 725 damask designs were purchased by the Museum in 1875 following Joseph Neil Paton's death.",
+  "historicalContext": "",
+  "briefDescription": "Joseph Neil Paton. Design for a damask. Scottish, mid 19th century.\r\nOne of a group of over 725 designs, (356:1 to 371:2)",
+  "bibliographicReferences": [],
+  "production": "",
+  "productionType": {
+   "text": "",
+   "id": ""
+  },
+  "contentDescription": "",
+  "contentPlaces": [],
+  "associatedPlaces": [],
+  "contentPerson": [],
+  "associatedPerson": [],
+  "contentOrganisations": [],
+  "associatedOrganisations": [],
+  "contentPeople": [],
+  "associatedPeople": [],
+  "contentEvents": [],
+  "associatedEvents": [],
+  "contentOthers": [],
+  "contentConcepts": [],
+  "contentLiteraryRefs": [],
+  "galleryLabels": [],
+  "partNumbers": [
+   "358:70"
+  ],
+  "accessionNumberNum": "358",
+  "accessionNumberPrefix": "",
+  "accessionYear": null,
+  "otherNumbers": [],
+  "copyNumber": "",
+  "aspects": [
+   "WHOLE"
+  ],
+  "assets": [],
+  "recordModificationDate": "2025-04-23",
+  "recordCreationDate": "2009-06-30",
+  "availableToBook": false
+ },
+ {
+  "systemNumber": "O507240",
+  "accessionNumber": "358:71",
+  "objectType": "Textile design",
+  "titles": [],
+  "summaryDescription": "",
+  "physicalDescription": "Design for a damask cloth, one of a group of over 725 designs.",
+  "artistMakerPerson": [
+   {
+    "name": {
+     "text": "Joseph Neil Paton",
+     "id": "A34976"
+    },
+    "association": {
+     "text": "designer",
+     "id": "x36960"
+    },
+    "note": ""
+   }
+  ],
+  "artistMakerOrganisations": [],
+  "artistMakerPeople": [],
+  "materials": [
+   {
+    "text": "paper",
+    "id": "x30308"
+   }
+  ],
+  "techniques": [
+   {
+    "text": "drawing",
+    "id": "x32498"
+   }
+  ],
+  "materialsAndTechniques": "drawing",
+  "categories": [
+   {
+    "text": "Textiles",
+    "id": "THES48885"
+   },
+   {
+    "text": "Designs",
+    "id": "THES48968"
+   },
+   {
+    "text": "Drawings",
+    "id": "THES48966"
+   },
+   {
+    "text": "Scotland",
+    "id": "THES262877"
+   }
+  ],
+  "styles": [],
+  "collectionCode": {
+   "text": "PDP",
+   "id": "THES48595"
+  },
+  "images": [
+   "2016JL6701"
+  ],
+  "imageResolution": "high",
+  "galleryLocations": [
+   {
+    "current": {
+     "text": "LVLC (VA)",
+     "id": "THES49171"
+    },
+    "free": "",
+    "case": "T",
+    "shelf": "10",
+    "box": "B"
+   }
+  ],
+  "partTypes": [
+   [
+    {
+     "text": "print",
+     "id": ""
+    }
+   ],
+   [
+    {
+     "text": "drawing",
+     "id": ""
+    }
+   ]
+  ],
+  "contentWarnings": [
+   {
+    "apprise": "",
+    "note": ""
+   }
+  ],
+  "placesOfOrigin": [
+   {
+    "place": {
+     "text": "Scotland",
+     "id": "x29130"
+    },
+    "association": {
+     "text": "made",
+     "id": "x28654"
+    },
+    "note": ""
+   }
+  ],
+  "productionDates": [
+   {
+    "date": {
+     "text": "mid 19th century",
+     "earliest": "1825-01-01",
+     "latest": "1875-12-31"
+    },
+    "association": {
+     "text": "made",
+     "id": "x28654"
+    },
+    "note": ""
+   }
+  ],
+  "associatedObjects": [],
+  "creditLine": "",
+  "dimensions": [],
+  "dimensionsNote": "Individual dimensions not on file, but this run of numbers ranges from 2 inches to 12 inches according to original registry.",
+  "marksAndInscriptions": [],
+  "objectHistory": "Joseph Neil Paton (1797-1874), the father of the painter Joseph Nöel Paton, was a Scottish textile designer specialising in damasks who sold many of his designs to the leading Scottish damask manufacturers. Many examples of the damask designs of \"Joseph Paton\" (presumably the father, although Joseph Nöel did also start out as a damask designer before becoming a fine artist) were shown at the Great Exhibition in 1851. Over 725 damask designs were purchased by the Museum in 1875 following Joseph Neil Paton's death.",
+  "historicalContext": "",
+  "briefDescription": "Joseph Neil Paton. Design for a damask. Scottish, mid 19th century.\r\nOne of a group of over 725 designs, (356:1 to 371:2)",
+  "bibliographicReferences": [],
+  "production": "",
+  "productionType": {
+   "text": "",
+   "id": ""
+  },
+  "contentDescription": "",
+  "contentPlaces": [],
+  "associatedPlaces": [],
+  "contentPerson": [],
+  "associatedPerson": [],
+  "contentOrganisations": [],
+  "associatedOrganisations": [],
+  "contentPeople": [],
+  "associatedPeople": [],
+  "contentEvents": [],
+  "associatedEvents": [],
+  "contentOthers": [],
+  "contentConcepts": [],
+  "contentLiteraryRefs": [],
+  "galleryLabels": [],
+  "partNumbers": [
+   "358:71"
+  ],
+  "accessionNumberNum": "358",
+  "accessionNumberPrefix": "",
+  "accessionYear": null,
+  "otherNumbers": [],
+  "copyNumber": "",
+  "aspects": [
+   "WHOLE"
+  ],
+  "assets": [],
+  "recordModificationDate": "2025-04-23",
+  "recordCreationDate": "2009-06-30",
+  "availableToBook": false
+ },
+ {
+  "systemNumber": "O507239",
+  "accessionNumber": "358:72",
+  "objectType": "Textile design",
+  "titles": [],
+  "summaryDescription": "",
+  "physicalDescription": "Design for a damask cloth, one of a group of over 725 designs.",
+  "artistMakerPerson": [
+   {
+    "name": {
+     "text": "Joseph Neil Paton",
+     "id": "A34976"
+    },
+    "association": {
+     "text": "designer",
+     "id": "x36960"
+    },
+    "note": ""
+   }
+  ],
+  "artistMakerOrganisations": [],
+  "artistMakerPeople": [],
+  "materials": [
+   {
+    "text": "paper",
+    "id": "x30308"
+   }
+  ],
+  "techniques": [
+   {
+    "text": "drawing",
+    "id": "x32498"
+   }
+  ],
+  "materialsAndTechniques": "drawing",
+  "categories": [
+   {
+    "text": "Textiles",
+    "id": "THES48885"
+   },
+   {
+    "text": "Designs",
+    "id": "THES48968"
+   },
+   {
+    "text": "Drawings",
+    "id": "THES48966"
+   },
+   {
+    "text": "Scotland",
+    "id": "THES262877"
+   }
+  ],
+  "styles": [],
+  "collectionCode": {
+   "text": "PDP",
+   "id": "THES48595"
+  },
+  "images": [
+   "2016JL6398"
+  ],
+  "imageResolution": "high",
+  "galleryLocations": [
+   {
+    "current": {
+     "text": "LVLC (VA)",
+     "id": "THES49171"
+    },
+    "free": "",
+    "case": "T",
+    "shelf": "10",
+    "box": "B"
+   }
+  ],
+  "partTypes": [
+   [
+    {
+     "text": "print",
+     "id": ""
+    }
+   ],
+   [
+    {
+     "text": "drawing",
+     "id": ""
+    }
+   ]
+  ],
+  "contentWarnings": [
+   {
+    "apprise": "",
+    "note": ""
+   }
+  ],
+  "placesOfOrigin": [
+   {
+    "place": {
+     "text": "Scotland",
+     "id": "x29130"
+    },
+    "association": {
+     "text": "made",
+     "id": "x28654"
+    },
+    "note": ""
+   }
+  ],
+  "productionDates": [
+   {
+    "date": {
+     "text": "mid 19th century",
+     "earliest": "1825-01-01",
+     "latest": "1875-12-31"
+    },
+    "association": {
+     "text": "made",
+     "id": "x28654"
+    },
+    "note": ""
+   }
+  ],
+  "associatedObjects": [],
+  "creditLine": "",
+  "dimensions": [],
+  "dimensionsNote": "Individual dimensions not on file, but this run of numbers ranges from 2 inches to 12 inches according to original registry.",
+  "marksAndInscriptions": [],
+  "objectHistory": "Joseph Neil Paton (1797-1874), the father of the painter Joseph Nöel Paton, was a Scottish textile designer specialising in damasks who sold many of his designs to the leading Scottish damask manufacturers. Many examples of the damask designs of \"Joseph Paton\" (presumably the father, although Joseph Nöel did also start out as a damask designer before becoming a fine artist) were shown at the Great Exhibition in 1851. Over 725 damask designs were purchased by the Museum in 1875 following Joseph Neil Paton's death.",
+  "historicalContext": "",
+  "briefDescription": "Joseph Neil Paton. Design for a damask. Scottish, mid 19th century.\r\nOne of a group of over 725 designs, (356:1 to 371:2)",
+  "bibliographicReferences": [],
+  "production": "",
+  "productionType": {
+   "text": "",
+   "id": ""
+  },
+  "contentDescription": "",
+  "contentPlaces": [],
+  "associatedPlaces": [],
+  "contentPerson": [],
+  "associatedPerson": [],
+  "contentOrganisations": [],
+  "associatedOrganisations": [],
+  "contentPeople": [],
+  "associatedPeople": [],
+  "contentEvents": [],
+  "associatedEvents": [],
+  "contentOthers": [],
+  "contentConcepts": [],
+  "contentLiteraryRefs": [],
+  "galleryLabels": [],
+  "partNumbers": [
+   "358:72"
+  ],
+  "accessionNumberNum": "358",
+  "accessionNumberPrefix": "",
+  "accessionYear": null,
+  "otherNumbers": [],
+  "copyNumber": "",
+  "aspects": [
+   "WHOLE"
+  ],
+  "assets": [],
+  "recordModificationDate": "2025-04-23",
+  "recordCreationDate": "2009-06-30",
+  "availableToBook": false
+ },
+ {
+  "systemNumber": "O507238",
+  "accessionNumber": "358:73",
+  "objectType": "Textile design",
+  "titles": [],
+  "summaryDescription": "",
+  "physicalDescription": "Design for a damask cloth, one of a group of over 725 designs.",
+  "artistMakerPerson": [
+   {
+    "name": {
+     "text": "Joseph Neil Paton",
+     "id": "A34976"
+    },
+    "association": {
+     "text": "designer",
+     "id": "x36960"
+    },
+    "note": ""
+   }
+  ],
+  "artistMakerOrganisations": [],
+  "artistMakerPeople": [],
+  "materials": [
+   {
+    "text": "paper",
+    "id": "x30308"
+   }
+  ],
+  "techniques": [
+   {
+    "text": "drawing",
+    "id": "x32498"
+   }
+  ],
+  "materialsAndTechniques": "drawing",
+  "categories": [
+   {
+    "text": "Textiles",
+    "id": "THES48885"
+   },
+   {
+    "text": "Designs",
+    "id": "THES48968"
+   },
+   {
+    "text": "Drawings",
+    "id": "THES48966"
+   },
+   {
+    "text": "Scotland",
+    "id": "THES262877"
+   }
+  ],
+  "styles": [],
+  "collectionCode": {
+   "text": "PDP",
+   "id": "THES48595"
+  },
+  "images": [
+   "2016JL6464"
+  ],
+  "imageResolution": "high",
+  "galleryLocations": [
+   {
+    "current": {
+     "text": "LVLC (VA)",
+     "id": "THES49171"
+    },
+    "free": "",
+    "case": "T",
+    "shelf": "10",
+    "box": "B"
+   }
+  ],
+  "partTypes": [
+   [
+    {
+     "text": "print",
+     "id": ""
+    }
+   ],
+   [
+    {
+     "text": "drawing",
+     "id": ""
+    }
+   ]
+  ],
+  "contentWarnings": [
+   {
+    "apprise": "",
+    "note": ""
+   }
+  ],
+  "placesOfOrigin": [
+   {
+    "place": {
+     "text": "Scotland",
+     "id": "x29130"
+    },
+    "association": {
+     "text": "made",
+     "id": "x28654"
+    },
+    "note": ""
+   }
+  ],
+  "productionDates": [
+   {
+    "date": {
+     "text": "mid 19th century",
+     "earliest": "1825-01-01",
+     "latest": "1875-12-31"
+    },
+    "association": {
+     "text": "made",
+     "id": "x28654"
+    },
+    "note": ""
+   }
+  ],
+  "associatedObjects": [],
+  "creditLine": "",
+  "dimensions": [],
+  "dimensionsNote": "Individual dimensions not on file, but this run of numbers ranges from 2 inches to 12 inches according to original registry.",
+  "marksAndInscriptions": [],
+  "objectHistory": "Joseph Neil Paton (1797-1874), the father of the painter Joseph Nöel Paton, was a Scottish textile designer specialising in damasks who sold many of his designs to the leading Scottish damask manufacturers. Many examples of the damask designs of \"Joseph Paton\" (presumably the father, although Joseph Nöel did also start out as a damask designer before becoming a fine artist) were shown at the Great Exhibition in 1851. Over 725 damask designs were purchased by the Museum in 1875 following Joseph Neil Paton's death.",
+  "historicalContext": "",
+  "briefDescription": "Joseph Neil Paton. Design for a damask. Scottish, mid 19th century.\r\nOne of a group of over 725 designs, (356:1 to 371:2)",
+  "bibliographicReferences": [],
+  "production": "",
+  "productionType": {
+   "text": "",
+   "id": ""
+  },
+  "contentDescription": "",
+  "contentPlaces": [],
+  "associatedPlaces": [],
+  "contentPerson": [],
+  "associatedPerson": [],
+  "contentOrganisations": [],
+  "associatedOrganisations": [],
+  "contentPeople": [],
+  "associatedPeople": [],
+  "contentEvents": [],
+  "associatedEvents": [],
+  "contentOthers": [],
+  "contentConcepts": [],
+  "contentLiteraryRefs": [],
+  "galleryLabels": [],
+  "partNumbers": [
+   "358:73"
+  ],
+  "accessionNumberNum": "358",
+  "accessionNumberPrefix": "",
+  "accessionYear": null,
+  "otherNumbers": [],
+  "copyNumber": "",
+  "aspects": [
+   "WHOLE"
+  ],
+  "assets": [],
+  "recordModificationDate": "2025-04-23",
+  "recordCreationDate": "2009-06-30",
+  "availableToBook": false
+ },
+ {
+  "systemNumber": "O507237",
+  "accessionNumber": "358:74",
+  "objectType": "Textile design",
+  "titles": [],
+  "summaryDescription": "",
+  "physicalDescription": "Design for a damask cloth, one of a group of over 725 designs.",
+  "artistMakerPerson": [
+   {
+    "name": {
+     "text": "Joseph Neil Paton",
+     "id": "A34976"
+    },
+    "association": {
+     "text": "designer",
+     "id": "x36960"
+    },
+    "note": ""
+   }
+  ],
+  "artistMakerOrganisations": [],
+  "artistMakerPeople": [],
+  "materials": [
+   {
+    "text": "paper",
+    "id": "x30308"
+   }
+  ],
+  "techniques": [
+   {
+    "text": "drawing",
+    "id": "x32498"
+   }
+  ],
+  "materialsAndTechniques": "drawing",
+  "categories": [
+   {
+    "text": "Textiles",
+    "id": "THES48885"
+   },
+   {
+    "text": "Designs",
+    "id": "THES48968"
+   },
+   {
+    "text": "Drawings",
+    "id": "THES48966"
+   },
+   {
+    "text": "Scotland",
+    "id": "THES262877"
+   }
+  ],
+  "styles": [],
+  "collectionCode": {
+   "text": "PDP",
+   "id": "THES48595"
+  },
+  "images": [
+   "2016JL6463"
+  ],
+  "imageResolution": "high",
+  "galleryLocations": [
+   {
+    "current": {
+     "text": "LVLC (VA)",
+     "id": "THES49171"
+    },
+    "free": "",
+    "case": "T",
+    "shelf": "10",
+    "box": "B"
+   }
+  ],
+  "partTypes": [
+   [
+    {
+     "text": "print",
+     "id": ""
+    }
+   ],
+   [
+    {
+     "text": "drawing",
+     "id": ""
+    }
+   ]
+  ],
+  "contentWarnings": [
+   {
+    "apprise": "",
+    "note": ""
+   }
+  ],
+  "placesOfOrigin": [
+   {
+    "place": {
+     "text": "Scotland",
+     "id": "x29130"
+    },
+    "association": {
+     "text": "made",
+     "id": "x28654"
+    },
+    "note": ""
+   }
+  ],
+  "productionDates": [
+   {
+    "date": {
+     "text": "mid 19th century",
+     "earliest": "1825-01-01",
+     "latest": "1875-12-31"
+    },
+    "association": {
+     "text": "made",
+     "id": "x28654"
+    },
+    "note": ""
+   }
+  ],
+  "associatedObjects": [],
+  "creditLine": "",
+  "dimensions": [],
+  "dimensionsNote": "Individual dimensions not on file, but this run of numbers ranges from 2 inches to 12 inches according to original registry.",
+  "marksAndInscriptions": [],
+  "objectHistory": "Joseph Neil Paton (1797-1874), the father of the painter Joseph Nöel Paton, was a Scottish textile designer specialising in damasks who sold many of his designs to the leading Scottish damask manufacturers. Many examples of the damask designs of \"Joseph Paton\" (presumably the father, although Joseph Nöel did also start out as a damask designer before becoming a fine artist) were shown at the Great Exhibition in 1851. Over 725 damask designs were purchased by the Museum in 1875 following Joseph Neil Paton's death.",
+  "historicalContext": "",
+  "briefDescription": "Joseph Neil Paton. Design for a damask. Scottish, mid 19th century.\r\nOne of a group of over 725 designs, (356:1 to 371:2)",
+  "bibliographicReferences": [],
+  "production": "",
+  "productionType": {
+   "text": "",
+   "id": ""
+  },
+  "contentDescription": "",
+  "contentPlaces": [],
+  "associatedPlaces": [],
+  "contentPerson": [],
+  "associatedPerson": [],
+  "contentOrganisations": [],
+  "associatedOrganisations": [],
+  "contentPeople": [],
+  "associatedPeople": [],
+  "contentEvents": [],
+  "associatedEvents": [],
+  "contentOthers": [],
+  "contentConcepts": [],
+  "contentLiteraryRefs": [],
+  "galleryLabels": [],
+  "partNumbers": [
+   "358:74"
+  ],
+  "accessionNumberNum": "358",
+  "accessionNumberPrefix": "",
+  "accessionYear": null,
+  "otherNumbers": [],
+  "copyNumber": "",
+  "aspects": [
+   "WHOLE"
+  ],
+  "assets": [],
+  "recordModificationDate": "2025-04-23",
+  "recordCreationDate": "2009-06-30",
+  "availableToBook": false
+ }
+]

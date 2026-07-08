@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import type { Artifact } from "./lib/types";
-import { buildDailyPuzzle, buildPracticePuzzle, type Puzzle } from "./lib/puzzle";
+import { buildDailyPuzzle, buildPracticePuzzle, type PracticeFilter, type Puzzle } from "./lib/puzzle";
 import { resolveSession, type ResumedState } from "./lib/session";
 import GameScreen from "./components/GameScreen";
+import PracticeSetup from "./components/PracticeSetup";
 import "./App.css";
 
 function todayStr(): string {
@@ -14,6 +15,7 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
   const [resumed, setResumed] = useState<ResumedState | null>(null);
+  const [showPracticeSetup, setShowPracticeSetup] = useState(false);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}artifacts.json`)
@@ -55,20 +57,32 @@ function App() {
     );
   }
 
+  if (showPracticeSetup) {
+    return (
+      <PracticeSetup
+        pool={pool}
+        onBack={() => setShowPracticeSetup(false)}
+        onStart={(filter: PracticeFilter) => {
+          setPuzzle(buildPracticePuzzle(pool, filter));
+          setShowPracticeSetup(false);
+        }}
+      />
+    );
+  }
+
   return (
     <div className="mode-select">
       <p className="eyebrow">Anthropeum — daily artifact game</p>
       <h1>Guess where and when it was made.</h1>
       <p className="mode-select-sub">
-        Ten objects from the Met, Cleveland, and the Art Institute of Chicago. Pin the map, place the era, meet the
-        answer.
+        Objects from museum open-access collections around the world. Pin the map, place the era, meet the answer.
       </p>
       <div className="mode-select-actions">
         <button type="button" className="btn-primary" onClick={() => setPuzzle(buildDailyPuzzle(pool, todayStr()))}>
           Play today's puzzle
         </button>
-        <button type="button" className="btn-secondary" onClick={() => setPuzzle(buildPracticePuzzle(pool))}>
-          Practice (random, unrecorded)
+        <button type="button" className="btn-secondary" onClick={() => setShowPracticeSetup(true)}>
+          Practice (unrecorded)
         </button>
       </div>
     </div>

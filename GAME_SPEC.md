@@ -20,9 +20,10 @@ Implemented in `puzzle.py`: `block_of`, `geo_score` (exponential decay,
 
 ## Our differences
 
-1. **Multi-museum pool.** Rounds draw from Met + Cleveland + AIC (extensible).
-   The museum name is hidden during play (it's a strong location tell for
-   collection-savvy players) and revealed with the credit line after guessing.
+1. **Multi-museum pool.** Rounds draw from a growing set of open-access
+   museums (see `SOURCES.md` for what's built). The museum name is hidden
+   during play (it's a strong location tell for collection-savvy players)
+   and revealed with the credit line after guessing.
 2. **Single-player.** No percentile curve; the frontend should show personal
    best, average, and streak from localStorage instead.
 3. **Reveal moment.** After each guess: true pin + era, `geo_display` answer
@@ -31,6 +32,13 @@ Implemented in `puzzle.py`: `block_of`, `geo_score` (exponential decay,
    credit line, and a link to the object page.
 4. **Client-side daily generation.** The puzzle is derived deterministically
    from the date (SHA-256 seed) against the shipped pool — no server, no cron.
+5. **Filtered practice modes.** Daily stays the single unfiltered
+   "everything" challenge every player gets, so personal-best/streak stay
+   meaningful. Practice can additionally be scoped to an era preset
+   (Ancient/Classical/Medieval/Early Modern/Modern), a coarse style bucket
+   (painting, sculpture, prints & drawings, ...), a continent, or one or
+   more specific museums — see `frontend/src/lib/puzzle.ts`'s
+   `PracticeFilter` and `frontend/src/components/PracticeSetup.tsx`.
 
 ## Daily selection constraints (`select_daily`)
 

@@ -10,9 +10,16 @@ standardized artifact format.
 schema.py        Unified Artifact schema + quality-gate validation
 geo.py           Geography resolver (gazetteer + cascade logic)
 adapters/
-  met.py         Met Open Access API  → Artifact
-  cleveland.py   Cleveland Museum API → Artifact
-  aic.py         Art Institute of Chicago API/dump → Artifact
+  met.py                Met Open Access API  → Artifact
+  cleveland.py          Cleveland Museum API → Artifact
+  aic.py                Art Institute of Chicago API/dump → Artifact
+  mia.py                Minneapolis Institute of Art (GitHub JSON dump) → Artifact
+  walters.py            Walters Art Museum (CSV dump) → Artifact
+  smk.py                Statens Museum for Kunst (Denmark) API → Artifact
+  museums_victoria.py   Museums Victoria (Australia) API → Artifact
+  vam.py                Victoria and Albert Museum API → Artifact
+  smithsonian.py        Smithsonian Open Access bulk JSON (SAAM/NMAfA/CHNDM/...) → Artifact
+  harvard.py            Harvard Art Museums API → Artifact (needs HARVARD_API_KEY)
 pipeline.py      Orchestrator: ingest → normalize → validate → dedupe → pool
 puzzle.py        Game core: timeline, scoring, daily selection, share card
 fixtures/        Sample raw records (offline testing)
@@ -55,10 +62,27 @@ python3 pipeline.py --source aic --limit 5000
 #   curl -O https://artic-api-data.s3.amazonaws.com/artic-api-data.tar.bz2
 #   tar xjf artic-api-data.tar.bz2
 python3 pipeline.py --source aic --aic-dump ./artic-api-data
+
+# No-key sources — same incremental pattern
+python3 pipeline.py --source mia --limit 6000
+python3 pipeline.py --source walters                      # whole CSV, no limit needed
+python3 pipeline.py --source smk --limit 5000
+python3 pipeline.py --source museums_victoria --limit 3000
+python3 pipeline.py --source vam --limit 2500
+python3 pipeline.py --source smithsonian --units saam,nmafa,chndm --limit 3000
+
+# Key-gated — sign up for a free key first, then:
+export HARVARD_API_KEY=...   # https://harvardartmuseums.org/collections/api
+python3 pipeline.py --source harvard --limit 1000
 ```
 
 Runs are incremental — the pool is keyed by `source:id`, so re-running
 updates rather than duplicates.
+
+**Never run two `pipeline.py` invocations concurrently.** Each loads
+`output/artifacts.json` once at startup and only writes at the very end, so
+an overlapping run will silently clobber whatever the other one saved in the
+meantime. Run sources one at a time, sequentially.
 
 ## The iteration loop that matters
 
@@ -74,6 +98,9 @@ Write one file in `adapters/` exposing `normalize(rec, geo) -> Artifact` and
 an `iter_records()` generator. Raise `RejectRecord` for anything unplayable.
 Register it in `pipeline.ADAPTERS`. Nothing else changes — the game layer
 only ever sees `output/artifacts.json`.
+
+See [SOURCES.md](SOURCES.md) for a researched list of candidate open-access
+APIs/dumps, ranked by integration effort.
 
 ## Notes
 

@@ -121,7 +121,95 @@ export function buildDailyPuzzle(pool: Artifact[], dateStr: string): Puzzle {
   return { mode: "daily", date: dateStr, rounds: selectDaily(pool, `daily-${dateStr}`) };
 }
 
-export function buildPracticePuzzle(pool: Artifact[]): Puzzle {
+// --- practice-mode filters ---
+// Daily stays the single unfiltered "everything" challenge everyone gets
+// (see GAME_SPEC) — these only ever apply to buildPracticePuzzle.
+
+export const CONTINENTS = ["africa", "americas", "asia", "europe", "middle_east", "oceania"] as const;
+export type Continent = (typeof CONTINENTS)[number];
+
+export const CONTINENT_LABELS: Record<Continent, string> = {
+  africa: "Africa",
+  americas: "Americas",
+  asia: "Asia",
+  europe: "Europe",
+  middle_east: "Middle East",
+  oceania: "Oceania",
+};
+
+export type StyleBucket =
+  | "painting" | "sculpture" | "prints_drawings" | "ceramics_glass"
+  | "metal_jewelry" | "textiles" | "photography" | "manuscripts_books" | "other";
+
+export const STYLE_LABELS: Record<StyleBucket, string> = {
+  painting: "Painting",
+  sculpture: "Sculpture",
+  prints_drawings: "Prints & Drawings",
+  ceramics_glass: "Ceramics & Glass",
+  metal_jewelry: "Metalwork & Jewelry",
+  textiles: "Textiles",
+  photography: "Photography",
+  manuscripts_books: "Manuscripts & Books",
+  other: "Other",
+};
+
+// Coarse keyword bucketing over the messy raw classification vocab various
+// museums use (singular/plural, different taxonomies) — same spirit as
+// continentOf's coarse geography buckets.
+const STYLE_KEYWORDS: [StyleBucket, string[]][] = [
+  ["photography", ["photograph"]],
+  ["prints_drawings", ["print", "drawing", "watercolor"]],
+  ["manuscripts_books", ["manuscript", "bound volume", "book"]],
+  ["textiles", ["textile", "costume", "lace", "embroidery"]],
+  ["metal_jewelry", ["metal", "silver", "gold", "bronze", "jewelry", "arms and armor", "coin"]],
+  ["ceramics_glass", ["ceramic", "glass", "porcelain", "pottery"]],
+  ["sculpture", ["sculpture", "statue", "relief", "vessel"]],
+  ["painting", ["paint"]],
+];
+
+export function styleOf(a: Artifact): StyleBucket {
+  const hay = `${a.classification} ${a.tags.join(" ")}`.toLowerCase();
+  for (const [bucket, keywords] of STYLE_KEYWORDS) {
+    if (keywords.some((k) => hay.includes(k))) return bucket;
+  }
+  return "other";
+}
+
+export const ERA_PRESETS = [
+  { label: "Ancient", loBlock: 0, hiBlock: blockOf(-500) },
+  { label: "Classical & Late Antiquity", loBlock: blockOf(-500), hiBlock: blockOf(500) },
+  { label: "Medieval", loBlock: blockOf(500), hiBlock: blockOf(1500) },
+  { label: "Early Modern", loBlock: blockOf(1500), hiBlock: blockOf(1800) },
+  { label: "Modern", loBlock: blockOf(1800), hiBlock: N_BLOCKS - 1 },
+] as const;
+
+export type PracticeFilter =
+  | { type: "all" }
+  | { type: "era"; loBlock: number; hiBlock: number }
+  | { type: "style"; style: StyleBucket }
+  | { type: "region"; continent: Continent }
+  | { type: "museum"; sources: string[] };
+
+export function matchesFilter(a: Artifact, filter: PracticeFilter): boolean {
+  switch (filter.type) {
+    case "all":
+      return true;
+    case "era": {
+      const lo = blockOf(a.year_start);
+      const hi = blockOf(a.year_end);
+      return hi >= filter.loBlock && lo <= filter.hiBlock;
+    }
+    case "style":
+      return styleOf(a) === filter.style;
+    case "region":
+      return continentOf(a.lat, a.lng) === filter.continent;
+    case "museum":
+      return filter.sources.includes(a.source);
+  }
+}
+
+export function buildPracticePuzzle(pool: Artifact[], filter: PracticeFilter = { type: "all" }): Puzzle {
+  const filtered = filter.type === "all" ? pool : pool.filter((a) => matchesFilter(a, filter));
   const seed = `practice-${Math.random()}`;
-  return { mode: "practice", date: null, rounds: selectDaily(pool, seed) };
+  return { mode: "practice", date: null, rounds: selectDaily(filtered.length ? filtered : pool, seed) };
 }

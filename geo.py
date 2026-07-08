@@ -71,7 +71,9 @@ GAZETTEER: dict[str, tuple[float, float, str, str]] = {
     "egypt": (26.82, 30.80, "country", "Egypt"),
     "greece": (39.07, 21.82, "country", "Greece"),
     "italy": (42.50, 12.50, "country", "Italy"),
+    "milan": (45.46, 9.19, "site", "Milan, Italy"),
     "france": (46.60, 2.30, "country", "France"),
+    "versailles": (48.80, 2.12, "site", "Versailles, France"),
     "england": (52.50, -1.50, "country", "England"),
     "britain": (52.50, -1.50, "country", "Britain"),
     "united kingdom": (52.50, -1.50, "country", "United Kingdom"),
@@ -90,6 +92,8 @@ GAZETTEER: dict[str, tuple[float, float, str, str]] = {
     "denmark": (56.00, 10.00, "country", "Denmark"),
     "sweden": (60.10, 15.00, "country", "Sweden"),
     "norway": (61.00, 9.00, "country", "Norway"),
+    "iceland": (64.96, -19.02, "country", "Iceland"),
+    "greenland": (71.71, -42.60, "country", "Greenland"),
     "russia": (55.75, 37.62, "country", "Russia"),
     "poland": (52.10, 19.40, "country", "Poland"),
     "hungary": (47.20, 19.50, "country", "Hungary"),
@@ -98,7 +102,10 @@ GAZETTEER: dict[str, tuple[float, float, str, str]] = {
     "türkiye": (39.00, 35.00, "country", "Türkiye"),
     "turkey": (39.00, 35.00, "country", "Türkiye"),
     "iran": (32.40, 53.70, "country", "Iran"),
+    "iranian": (32.40, 53.70, "country", "Iran"),
     "persia": (32.40, 53.70, "culture", "Persia (Iran)"),
+    "armenia": (40.07, 45.04, "country", "Armenia"),
+    "armenian": (40.07, 45.04, "country", "Armenia"),
     "iraq": (33.10, 43.70, "country", "Iraq"),
     "syria": (35.00, 38.50, "country", "Syria"),
     "lebanon": (33.90, 35.90, "country", "Lebanon"),
@@ -142,8 +149,30 @@ GAZETTEER: dict[str, tuple[float, float, str, str]] = {
     "nubia": (21.50, 31.00, "culture", "Nubia (Sudan/Egypt)"),
     "united states": (39.80, -98.60, "country", "United States"),
     "american": (39.80, -98.60, "country", "United States"),
+    # US states — region-level confidence, common in Smithsonian-style
+    # place tags that skip straight to state without naming the country.
+    "wyoming": (43.08, -107.29, "region", "Wyoming, United States"),
+    "connecticut": (41.60, -72.70, "region", "Connecticut, United States"),
+    "massachusetts": (42.41, -71.38, "region", "Massachusetts, United States"),
+    "california": (36.78, -119.42, "region", "California, United States"),
+    "pennsylvania": (40.99, -77.60, "region", "Pennsylvania, United States"),
+    "virginia": (37.43, -78.66, "region", "Virginia, United States"),
+    "ohio": (40.42, -82.91, "region", "Ohio, United States"),
+    "illinois": (40.00, -89.00, "region", "Illinois, United States"),
+    "maryland": (39.05, -76.64, "region", "Maryland, United States"),
+    "south carolina": (33.84, -81.16, "region", "South Carolina, United States"),
+    "north carolina": (35.76, -79.02, "region", "North Carolina, United States"),
+    "louisiana": (30.98, -91.96, "region", "Louisiana, United States"),
+    "texas": (31.97, -99.90, "region", "Texas, United States"),
+    "colorado": (39.06, -105.31, "region", "Colorado, United States"),
+    "montana": (46.88, -110.36, "region", "Montana, United States"),
+    "rocky mountains": (40.00, -105.50, "region", "Rocky Mountains, United States"),
     "canada": (56.10, -106.30, "country", "Canada"),
     "mexico": (23.60, -102.60, "country", "Mexico"),
+    "méxico": (23.60, -102.60, "country", "Mexico"),
+    "bhutan": (27.51, 90.43, "country", "Bhutan"),
+    "laos": (19.86, 102.50, "country", "Laos"),
+    "bangladesh": (23.68, 90.36, "country", "Bangladesh"),
     "guatemala": (15.80, -90.20, "country", "Guatemala"),
     "peru": (-9.20, -75.00, "country", "Peru"),
     "bolivia": (-16.30, -63.60, "country", "Bolivia"),
@@ -243,6 +272,10 @@ PERIOD_TO_PLACE: dict[str, str] = {
     "ptolemaic": "egypt", "dynasty 12": "egypt",
     "gupta": "india", "chola": "india",
     "khmer": "cambodia",
+    "coptic": "egypt", "fatimid": "egypt",
+    "attic": "greece", "hellenistic": "greece",
+    "ottonian": "germany", "carolingian": "france",
+    "gandharan": "pakistan",
 }
 
 AMBIGUOUS_SEP = re.compile(r"\bor\b|/|\bpossibly\b|\bprobably\b", re.IGNORECASE)
@@ -300,9 +333,10 @@ class GeoResolver:
         if best:
             return self._hit(best)
 
-        # 3. period/dynasty implies place
+        # 3. period/dynasty implies place (word-boundary guarded — a plain
+        #    substring check false-positives e.g. "Wyoming" on "ming")
         for period, place in PERIOD_TO_PLACE.items():
-            if period in low:
+            if re.search(rf"(?<![a-z]){re.escape(period)}(?![a-z])", low):
                 r = self._hit(place)
                 r.confidence = "culture"
                 return r

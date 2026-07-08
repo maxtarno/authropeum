@@ -1,0 +1,929 @@
+[
+ {
+  "id": "ld1-1727178583174-1727178602245-0",
+  "version": "",
+  "unitCode": "SAAM",
+  "linkedId": "",
+  "type": "edanmdm",
+  "content": {
+   "freetext": {
+    "date": [
+     {
+      "label": "Date",
+      "content": "ca. 1860s"
+     }
+    ],
+    "name": [
+     {
+      "label": "Artist",
+      "content": "Unidentified"
+     }
+    ],
+    "topic": [
+     {
+      "label": "Topic",
+      "content": "Figure female"
+     }
+    ],
+    "setName": [
+     {
+      "label": "See more items in",
+      "content": "Smithsonian American Art Museum Collection"
+     },
+     {
+      "label": "Department",
+      "content": "Graphic Arts"
+     }
+    ],
+    "creditLine": [
+     {
+      "label": "Credit Line",
+      "content": "Smithsonian American Art Museum, Gift of Charles Isaacs and Carol Nigro"
+     }
+    ],
+    "dataSource": [
+     {
+      "label": "Data Source",
+      "content": "Smithsonian American Art Museum"
+     }
+    ],
+    "identifier": [
+     {
+      "label": "Object number",
+      "content": "2024.33.9"
+     }
+    ],
+    "objectType": [
+     {
+      "label": "Type",
+      "content": "Photography"
+     }
+    ],
+    "objectRights": [
+     {
+      "label": "Restrictions & Rights",
+      "content": "CC0"
+     }
+    ],
+    "physicalDescription": [
+     {
+      "label": "Medium",
+      "content": "salted paper print with applied color"
+     },
+     {
+      "label": "Dimensions",
+      "content": "image: 7 1/2 × 5 1/2 in. (19.1 × 14.0 cm)"
+     }
+    ]
+   },
+   "indexedStructured": {
+    "date": [
+     "1850s",
+     "1860s"
+    ],
+    "topic": [
+     "Figure female"
+    ],
+    "usage_flag": [
+     "permcoll"
+    ],
+    "object_type": [
+     "Photographs"
+    ]
+   },
+   "descriptiveNonRepeating": {
+    "guid": "http://n2t.net/ark:/65665/vk75049a25d-67aa-47b4-bf53-a6867e20acbf",
+    "title": {
+     "label": "Title",
+     "content": "Portrait of a woman standing next to a column"
+    },
+    "record_ID": "saam_2024.33.9",
+    "unit_code": "SAAM",
+    "title_sort": "PORTRAIT OF A WOMAN STANDING NEXT TO A COLUMN",
+    "data_source": "Smithsonian American Art Museum",
+    "record_link": "https://americanart.si.edu/collections/search/artwork/?id=121974",
+    "metadata_usage": {
+     "access": "CC0"
+    }
+   }
+  },
+  "url": "edanmdm:saam_2024.33.9",
+  "hash": "004ca2fe6775e6757665c72ccd5218a4f43cb91c",
+  "docSignature": "a69c9e1bf676fc13de64d5fb8352c6e2",
+  "timestamp": 1727180928,
+  "lastTimeUpdated": 1764931774,
+  "title": "Portrait of a woman standing next to a column"
+ },
+ {
+  "id": "ld1-1643381040022-1643381054474-1",
+  "version": "",
+  "unitCode": "SAAM",
+  "linkedId": "",
+  "type": "edanmdm",
+  "content": {
+   "freetext": {
+    "date": [
+     {
+      "label": "Date",
+      "content": "1799"
+     }
+    ],
+    "name": [
+     {
+      "label": "Artist",
+      "content": "William Sharp, English, born London, England 1749-died London, England 1824"
+     },
+     {
+      "label": "Copy after",
+      "content": "John Trumbull, born Lebanon, CT 1756-died New York City 1843"
+     }
+    ],
+    "topic": [
+     {
+      "label": "Topic",
+      "content": "History\\England"
+     }
+    ],
+    "setName": [
+     {
+      "label": "See more items in",
+      "content": "Smithsonian American Art Museum Collection"
+     },
+     {
+      "label": "Department",
+      "content": "Graphic Arts"
+     }
+    ],
+    "creditLine": [
+     {
+      "label": "Credit Line",
+      "content": "Smithsonian American Art Museum, Bequest of Olin Dows"
+     }
+    ],
+    "dataSource": [
+     {
+      "label": "Data Source",
+      "content": "Smithsonian American Art Museum"
+     }
+    ],
+    "identifier": [
+     {
+      "label": "Object number",
+      "content": "1983.90.173"
+     }
+    ],
+    "objectType": [
+     {
+      "label": "Type",
+      "content": "Graphic Arts-Print"
+     }
+    ],
+    "objectRights": [
+     {
+      "label": "Restrictions & Rights",
+      "content": "CC0"
+     }
+    ],
+    "physicalDescription": [
+     {
+      "label": "Medium",
+      "content": "engraving"
+     },
+     {
+      "label": "Dimensions",
+      "content": "25 5/8 x 34 in. (65.1 x 86.4 cm)"
+     }
+    ]
+   },
+   "indexedStructured": {
+    "date": [
+     "1790s"
+    ],
+    "name": [
+     "Sharp, William",
+     "Trumbull, John"
+    ],
+    "place": [
+     "England"
+    ],
+    "topic": [
+     "History"
+    ],
+    "usage_flag": [
+     "permcoll"
+    ],
+    "geoLocation": [
+     {
+      "L1": {
+       "type": "Continent",
+       "content": "Europe"
+      },
+      "L2": {
+       "type": "Country",
+       "content": "United Kingdom"
+      },
+      "L3": {
+       "type": "Country",
+       "content": "England"
+      }
+     }
+    ],
+    "object_type": [
+     "Graphic arts"
+    ]
+   },
+   "descriptiveNonRepeating": {
+    "guid": "http://n2t.net/ark:/65665/vk75e2a966e-76c4-4e54-999c-75a34b2211e7",
+    "title": {
+     "label": "Title",
+     "content": "The Sortie Made by the Garrison of Gibraltar in the Morning of the 27 of November 1781"
+    },
+    "record_ID": "saam_1983.90.173",
+    "unit_code": "SAAM",
+    "title_sort": "THE SORTIE MADE BY THE GARRISON OF GIBRALTAR IN THE MORNING OF THE 27 OF NOVEMBER 1781",
+    "data_source": "Smithsonian American Art Museum",
+    "record_link": "https://americanart.si.edu/collections/search/artwork/?id=22229",
+    "metadata_usage": {
+     "access": "CC0"
+    }
+   }
+  },
+  "url": "edanmdm:saam_1983.90.173",
+  "hash": "009387953b0d5a3b2edac3dd6ba2e885e5607aa0",
+  "docSignature": "21ac82146385592747c3ae74c12f5a1e",
+  "timestamp": 1663786514,
+  "lastTimeUpdated": 1666639407,
+  "title": "The Sortie Made by the Garrison of Gibraltar in the Morning of the 27 of November 1781"
+ },
+ {
+  "id": "ld1-1643381040022-1643381058802-1",
+  "version": "",
+  "unitCode": "SAAM",
+  "linkedId": "",
+  "type": "edanmdm",
+  "content": {
+   "freetext": {
+    "date": [
+     {
+      "label": "Date",
+      "content": "100 B.C.-100 A.D."
+     }
+    ],
+    "name": [
+     {
+      "label": "Artist",
+      "content": "Unidentified"
+     }
+    ],
+    "setName": [
+     {
+      "label": "See more items in",
+      "content": "Smithsonian American Art Museum Collection"
+     },
+     {
+      "label": "Department",
+      "content": "Decorative Arts"
+     }
+    ],
+    "creditLine": [
+     {
+      "label": "Credit Line",
+      "content": "Smithsonian American Art Museum, Gift of John Gellatly"
+     }
+    ],
+    "dataSource": [
+     {
+      "label": "Data Source",
+      "content": "Smithsonian American Art Museum"
+     }
+    ],
+    "identifier": [
+     {
+      "label": "Object number",
+      "content": "1929.8.175.19"
+     }
+    ],
+    "objectType": [
+     {
+      "label": "Type",
+      "content": "Decorative Arts-Jewelry"
+     }
+    ],
+    "objectRights": [
+     {
+      "label": "Restrictions & Rights",
+      "content": "CC0"
+     }
+    ],
+    "physicalDescription": [
+     {
+      "label": "Medium",
+      "content": "faience and glass"
+     },
+     {
+      "label": "Dimensions",
+      "content": "length: 15 in. (38.0 cm)"
+     }
+    ]
+   },
+   "indexedStructured": {
+    "usage_flag": [
+     "permcoll"
+    ],
+    "object_type": [
+     "Decorative arts"
+    ],
+    "online_media_type": [
+     "Images"
+    ]
+   },
+   "descriptiveNonRepeating": {
+    "guid": "http://n2t.net/ark:/65665/vk780404571-5188-4590-ab8a-af39acc86617",
+    "title": {
+     "label": "Title",
+     "content": "Necklace"
+    },
+    "record_ID": "saam_1929.8.175.19",
+    "unit_code": "SAAM",
+    "title_sort": "NECKLACE",
+    "data_source": "Smithsonian American Art Museum",
+    "record_link": "https://americanart.si.edu/collections/search/artwork/?id=29819",
+    "online_media": {
+     "media": [
+      {
+       "id": "media:SAAM-1929.8.175.19_1",
+       "guid": "http://n2t.net/ark:/65665/bj902eec5f5-91e9-44e2-8c19-591a33181cc4",
+       "type": "Images",
+       "idsId": "SAAM-1929.8.175.19_1",
+       "usage": {
+        "access": "CC0"
+       },
+       "content": "https://ids.si.edu/ids/deliveryService?id=SAAM-1929.8.175.19_1",
+       "thumbnail": "https://ids.si.edu/ids/deliveryService?id=SAAM-1929.8.175.19_1",
+       "altTextAccessibility": "",
+       "extDescrAccessibility": "",
+       "resources": [
+        {
+         "label": "High-resolution TIFF",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1929.8.175.19_1.tif",
+         "width": 2200,
+         "height": 3000,
+         "dimensions": "2200x3000"
+        },
+        {
+         "label": "High-resolution JPEG",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1929.8.175.19_1.jpg",
+         "width": 2200,
+         "height": 3000,
+         "dimensions": "2200x3000"
+        },
+        {
+         "label": "Screen Image",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1929.8.175.19_1_screen"
+        },
+        {
+         "label": "Thumbnail Image",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1929.8.175.19_1_thumb"
+        }
+       ]
+      }
+     ],
+     "mediaCount": 1
+    },
+    "metadata_usage": {
+     "access": "CC0"
+    }
+   }
+  },
+  "url": "edanmdm:saam_1929.8.175.19",
+  "hash": "000cd1d19d96a143f2bd96cb4fa84858412b0aff",
+  "docSignature": "777fc4a42b8b406d476f610dab92ed7f",
+  "timestamp": 1663786513,
+  "lastTimeUpdated": 1757413722,
+  "title": "Necklace"
+ },
+ {
+  "id": "ld1-1643381040022-1643381051993-0",
+  "version": "",
+  "unitCode": "SAAM",
+  "linkedId": "",
+  "type": "edanmdm",
+  "content": {
+   "freetext": {
+    "date": [
+     {
+      "label": "Date",
+      "content": "1863"
+     }
+    ],
+    "name": [
+     {
+      "label": "Artist",
+      "content": "Victor Nehlig, born Paris, France 1830-died New York City 1909"
+     }
+    ],
+    "topic": [
+     {
+      "label": "Topic",
+      "content": "Landscape\\mountain"
+     },
+     {
+      "label": "Topic",
+      "content": "Animal\\horse"
+     },
+     {
+      "label": "Topic",
+      "content": "Ceremony\\procession\\parade"
+     },
+     {
+      "label": "Topic",
+      "content": "Occupation\\religion\\bishop"
+     },
+     {
+      "label": "Topic",
+      "content": "History\\religion\\Crusades"
+     },
+     {
+      "label": "Topic",
+      "content": "Architecture Exterior\\castle"
+     }
+    ],
+    "setName": [
+     {
+      "label": "See more items in",
+      "content": "Smithsonian American Art Museum Collection"
+     },
+     {
+      "label": "Department",
+      "content": "Painting and Sculpture"
+     }
+    ],
+    "creditLine": [
+     {
+      "label": "Credit Line",
+      "content": "Smithsonian American Art Museum, Museum purchase"
+     }
+    ],
+    "dataSource": [
+     {
+      "label": "Data Source",
+      "content": "Smithsonian American Art Museum"
+     }
+    ],
+    "identifier": [
+     {
+      "label": "Object number",
+      "content": "1984.50"
+     }
+    ],
+    "objectType": [
+     {
+      "label": "Type",
+      "content": "Painting"
+     }
+    ],
+    "objectRights": [
+     {
+      "label": "Restrictions & Rights",
+      "content": "CC0"
+     }
+    ],
+    "physicalDescription": [
+     {
+      "label": "Medium",
+      "content": "oil on canvas"
+     },
+     {
+      "label": "Dimensions",
+      "content": "14 7/8 x 22 3/4 in. (37.8 x 57.8 cm.)"
+     }
+    ]
+   },
+   "indexedStructured": {
+    "date": [
+     "1860s"
+    ],
+    "name": [
+     "Nehlig, Victor"
+    ],
+    "topic": [
+     "Bishop",
+     "Crusades",
+     "Architecture",
+     "Procession",
+     "Occupations",
+     "Religion",
+     "Castles",
+     "History",
+     "Parade",
+     "Mountains",
+     "Rites and ceremonies",
+     "Landscapes",
+     "Animals",
+     "Horses"
+    ],
+    "usage_flag": [
+     "permcoll"
+    ],
+    "object_type": [
+     "Paintings"
+    ],
+    "online_media_type": [
+     "Images"
+    ]
+   },
+   "descriptiveNonRepeating": {
+    "guid": "http://n2t.net/ark:/65665/vk75d9e2767-d0e2-4c40-bbf0-914a8d47dd4f",
+    "title": {
+     "label": "Title",
+     "content": "The Departure of the Crusaders"
+    },
+    "record_ID": "saam_1984.50",
+    "unit_code": "SAAM",
+    "title_sort": "THE DEPARTURE OF THE CRUSADERS",
+    "data_source": "Smithsonian American Art Museum",
+    "record_link": "https://americanart.si.edu/collections/search/artwork/?id=18220",
+    "online_media": {
+     "media": [
+      {
+       "id": "media:SAAM-1984.50_2",
+       "guid": "http://n2t.net/ark:/65665/bj9e8d6adc9-6bd3-4c36-ba9c-6bd2babd1f38",
+       "type": "Images",
+       "idsId": "SAAM-1984.50_2",
+       "usage": {
+        "access": "CC0"
+       },
+       "content": "https://ids.si.edu/ids/deliveryService?id=SAAM-1984.50_2",
+       "thumbnail": "https://ids.si.edu/ids/deliveryService?id=SAAM-1984.50_2",
+       "altTextAccessibility": "",
+       "extDescrAccessibility": "",
+       "resources": [
+        {
+         "label": "High-resolution TIFF",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1984.50_2.tif",
+         "width": 3000,
+         "height": 1904,
+         "dimensions": "3000x1904"
+        },
+        {
+         "label": "High-resolution JPEG",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1984.50_2.jpg",
+         "width": 3000,
+         "height": 1904,
+         "dimensions": "3000x1904"
+        },
+        {
+         "label": "Screen Image",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1984.50_2_screen"
+        },
+        {
+         "label": "Thumbnail Image",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1984.50_2_thumb"
+        }
+       ]
+      }
+     ],
+     "mediaCount": 1
+    },
+    "metadata_usage": {
+     "access": "CC0"
+    }
+   }
+  },
+  "url": "edanmdm:saam_1984.50",
+  "hash": "000e738b8c4020d49e04763b14abaeb4767ed99c",
+  "docSignature": "e0f96d08770b40299914a9d9dac3e9ce",
+  "timestamp": 1663786514,
+  "lastTimeUpdated": 1757413722,
+  "title": "The Departure of the Crusaders"
+ },
+ {
+  "id": "ld1-1643381040022-1643381058643-0",
+  "version": "",
+  "unitCode": "SAAM",
+  "linkedId": "",
+  "type": "edanmdm",
+  "content": {
+   "freetext": {
+    "name": [
+     {
+      "label": "Artist",
+      "content": "Unidentified"
+     }
+    ],
+    "setName": [
+     {
+      "label": "See more items in",
+      "content": "Smithsonian American Art Museum Collection"
+     },
+     {
+      "label": "Department",
+      "content": "Decorative Arts"
+     }
+    ],
+    "creditLine": [
+     {
+      "label": "Credit Line",
+      "content": "Smithsonian American Art Museum, Gift of John Gellatly"
+     }
+    ],
+    "dataSource": [
+     {
+      "label": "Data Source",
+      "content": "Smithsonian American Art Museum"
+     }
+    ],
+    "identifier": [
+     {
+      "label": "Object number",
+      "content": "1929.8.171.1"
+     }
+    ],
+    "objectType": [
+     {
+      "label": "Type",
+      "content": "Decorative Arts-Jewelry"
+     }
+    ],
+    "objectRights": [
+     {
+      "label": "Restrictions & Rights",
+      "content": "CC0"
+     }
+    ],
+    "physicalDescription": [
+     {
+      "label": "Medium",
+      "content": "glass, lapis lazuli, and gold"
+     },
+     {
+      "label": "Dimensions",
+      "content": "length: 41 3/4 in. (106.0 cm)"
+     }
+    ]
+   },
+   "indexedStructured": {
+    "usage_flag": [
+     "permcoll"
+    ],
+    "object_type": [
+     "Decorative arts"
+    ],
+    "online_media_type": [
+     "Images"
+    ]
+   },
+   "descriptiveNonRepeating": {
+    "guid": "http://n2t.net/ark:/65665/vk7419d71f3-5d3a-4e85-a4aa-076925f4242e",
+    "title": {
+     "label": "Title",
+     "content": "Necklace"
+    },
+    "record_ID": "saam_1929.8.171.1",
+    "unit_code": "SAAM",
+    "title_sort": "NECKLACE",
+    "data_source": "Smithsonian American Art Museum",
+    "record_link": "https://americanart.si.edu/collections/search/artwork/?id=29537",
+    "online_media": {
+     "media": [
+      {
+       "id": "media:SAAM-1929.8.171.1_1",
+       "guid": "http://n2t.net/ark:/65665/bj9feb27c48-d5bf-47b9-a48e-ea017cb95cee",
+       "type": "Images",
+       "idsId": "SAAM-1929.8.171.1_1",
+       "usage": {
+        "access": "CC0"
+       },
+       "content": "https://ids.si.edu/ids/deliveryService?id=SAAM-1929.8.171.1_1",
+       "thumbnail": "https://ids.si.edu/ids/deliveryService?id=SAAM-1929.8.171.1_1",
+       "altTextAccessibility": "",
+       "extDescrAccessibility": "",
+       "resources": [
+        {
+         "label": "High-resolution TIFF",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1929.8.171.1_1.tif",
+         "width": 2200,
+         "height": 3000,
+         "dimensions": "2200x3000"
+        },
+        {
+         "label": "High-resolution JPEG",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1929.8.171.1_1.jpg",
+         "width": 2200,
+         "height": 3000,
+         "dimensions": "2200x3000"
+        },
+        {
+         "label": "Screen Image",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1929.8.171.1_1_screen"
+        },
+        {
+         "label": "Thumbnail Image",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1929.8.171.1_1_thumb"
+        }
+       ]
+      }
+     ],
+     "mediaCount": 1
+    },
+    "metadata_usage": {
+     "access": "CC0"
+    }
+   }
+  },
+  "url": "edanmdm:saam_1929.8.171.1",
+  "hash": "0012486175b9d2d762fdfe7d4e88b58aa86cc955",
+  "docSignature": "26ba0b2a5a9361be3ebb546a5d916e90",
+  "timestamp": 1663786513,
+  "lastTimeUpdated": 1757413722,
+  "title": "Necklace"
+ },
+ {
+  "id": "ld1-1643381040022-1643381055423-0",
+  "version": "",
+  "unitCode": "SAAM",
+  "linkedId": "",
+  "type": "edanmdm",
+  "content": {
+   "freetext": {
+    "date": [
+     {
+      "label": "Date",
+      "content": "ca. 1890-1900"
+     }
+    ],
+    "name": [
+     {
+      "label": "Artist",
+      "content": "John Henry Twachtman, born Cincinnati, OH 1853-died Gloucester, MA 1902"
+     }
+    ],
+    "topic": [
+     {
+      "label": "Topic",
+      "content": "Landscape\\river"
+     },
+     {
+      "label": "Topic",
+      "content": "Landscape\\Connecticut\\Greenwich"
+     }
+    ],
+    "setName": [
+     {
+      "label": "See more items in",
+      "content": "Smithsonian American Art Museum Collection"
+     },
+     {
+      "label": "Department",
+      "content": "Painting and Sculpture"
+     }
+    ],
+    "creditLine": [
+     {
+      "label": "Credit Line",
+      "content": "Smithsonian American Art Museum, Gift of John Gellatly"
+     }
+    ],
+    "dataSource": [
+     {
+      "label": "Data Source",
+      "content": "Smithsonian American Art Museum"
+     }
+    ],
+    "identifier": [
+     {
+      "label": "Object number",
+      "content": "1929.6.144"
+     }
+    ],
+    "objectType": [
+     {
+      "label": "Type",
+      "content": "Painting"
+     }
+    ],
+    "objectRights": [
+     {
+      "label": "Restrictions & Rights",
+      "content": "CC0"
+     }
+    ],
+    "physicalDescription": [
+     {
+      "label": "Medium",
+      "content": "oil on canvas"
+     },
+     {
+      "label": "Dimensions",
+      "content": "25 1/8 x 34 7/8 in. (63.7 x 88.5 cm)"
+     }
+    ]
+   },
+   "indexedStructured": {
+    "date": [
+     "1900s",
+     "1890s"
+    ],
+    "name": [
+     "Twachtman, John Henry"
+    ],
+    "place": [
+     "Connecticut"
+    ],
+    "topic": [
+     "Landscapes",
+     "Rivers",
+     "Greenwich"
+    ],
+    "usage_flag": [
+     "permcoll"
+    ],
+    "geoLocation": [
+     {
+      "L1": {
+       "type": "Continent",
+       "content": "North America"
+      },
+      "L2": {
+       "type": "Country",
+       "content": "United States"
+      },
+      "L3": {
+       "type": "State",
+       "content": "Connecticut"
+      }
+     }
+    ],
+    "object_type": [
+     "Paintings"
+    ],
+    "online_media_type": [
+     "Images"
+    ]
+   },
+   "descriptiveNonRepeating": {
+    "guid": "http://n2t.net/ark:/65665/vk762311759-4893-40f6-9c4b-d763fe35745c",
+    "title": {
+     "label": "Title",
+     "content": "The Brook, Greenwich, Connecticut"
+    },
+    "record_ID": "saam_1929.6.144",
+    "unit_code": "SAAM",
+    "title_sort": "THE BROOK, GREENWICH, CONNECTICUT",
+    "data_source": "Smithsonian American Art Museum",
+    "record_link": "https://americanart.si.edu/collections/search/artwork/?id=24336",
+    "online_media": {
+     "media": [
+      {
+       "id": "media:SAAM-1929.6.144_1",
+       "guid": "http://n2t.net/ark:/65665/bj9f2d015ea-ff92-4f64-8331-cc9baa442bc0",
+       "type": "Images",
+       "idsId": "SAAM-1929.6.144_1",
+       "usage": {
+        "access": "CC0"
+       },
+       "content": "https://ids.si.edu/ids/deliveryService?id=SAAM-1929.6.144_1",
+       "thumbnail": "https://ids.si.edu/ids/deliveryService?id=SAAM-1929.6.144_1",
+       "altTextAccessibility": "",
+       "extDescrAccessibility": "",
+       "resources": [
+        {
+         "label": "High-resolution TIFF",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1929.6.144_1.tif",
+         "width": 3000,
+         "height": 2166,
+         "dimensions": "3000x2166"
+        },
+        {
+         "label": "High-resolution JPEG",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1929.6.144_1.jpg",
+         "width": 3000,
+         "height": 2166,
+         "dimensions": "3000x2166"
+        },
+        {
+         "label": "Screen Image",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1929.6.144_1_screen"
+        },
+        {
+         "label": "Thumbnail Image",
+         "url": "https://ids.si.edu/ids/download?id=SAAM-1929.6.144_1_thumb"
+        }
+       ]
+      }
+     ],
+     "mediaCount": 1
+    },
+    "metadata_usage": {
+     "access": "CC0"
+    }
+   }
+  },
+  "url": "edanmdm:saam_1929.6.144",
+  "hash": "0012b42414928a26d07e8e1f2d445f6fae9620ca",
+  "docSignature": "9e4d2204a6259286739e34b5d0840f66",
+  "timestamp": 1663786513,
+  "lastTimeUpdated": 1757413722,
+  "title": "The Brook, Greenwich, Connecticut"
+ }
+]

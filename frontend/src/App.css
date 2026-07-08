@@ -110,6 +110,99 @@
   margin-top: 12px;
 }
 
+/* ---------- practice setup ---------- */
+
+.practice-setup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 640px;
+  text-align: center;
+  margin-top: 48px;
+}
+
+.practice-setup h1 {
+  margin: 4px 0 0;
+}
+
+.category-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.category-chip {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.category-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.category-chip-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--card-bg);
+}
+
+/* :hover (0,2,0) otherwise beats the single .category-chip-active class
+   (0,1,0) and repaints the text accent-on-accent — invisible. */
+.category-chip-active:hover {
+  color: var(--card-bg);
+}
+
+.practice-subpicker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  width: 100%;
+}
+
+.practice-option {
+  font-family: var(--sans);
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  border: 1px solid var(--border-strong);
+  background: transparent;
+  color: var(--text-h);
+  cursor: pointer;
+}
+
+.practice-option:hover {
+  border-color: var(--accent);
+}
+
+.practice-option-active {
+  background: var(--accent-wash);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.practice-match-count {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
 /* ---------- game card ---------- */
 
 .game-card {

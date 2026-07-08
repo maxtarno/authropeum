@@ -4,10 +4,14 @@ import {
   blockLabel,
   blockOf,
   buildDailyPuzzle,
+  buildPracticePuzzle,
   continentOf,
+  ERA_PRESETS,
   formatYear,
+  matchesFilter,
   N_BLOCKS,
   selectDaily,
+  styleOf,
 } from "./puzzle";
 
 describe("blockOf", () => {
@@ -152,5 +156,89 @@ describe("buildDailyPuzzle", () => {
     expect(puzzle.mode).toBe("daily");
     expect(puzzle.date).toBe("2026-07-07");
     expect(puzzle.rounds).toHaveLength(10);
+  });
+});
+
+describe("styleOf", () => {
+  it.each([
+    ["Painting", "painting"],
+    ["Oil Paintings", "painting"],
+    ["Sculpture", "sculpture"],
+    ["Drawing and Watercolor", "prints_drawings"],
+    ["Ceramic", "ceramics_glass"],
+    ["Arms and Armor", "metal_jewelry"],
+    ["Textile", "textiles"],
+    ["Photograph", "photography"],
+    ["Bound Volume", "manuscripts_books"],
+    ["Something Unclassifiable", "other"],
+  ])("classification %s -> %s", (classification, expected) => {
+    expect(styleOf(makeArtifact({ classification }))).toBe(expected);
+  });
+});
+
+describe("matchesFilter", () => {
+  const artifact = makeArtifact({
+    source: "aic",
+    lat: 35.68,
+    lng: 139.69, // Tokyo
+    year_start: 1200,
+    year_end: 1250,
+    classification: "Sculpture",
+  });
+
+  it("all always matches", () => {
+    expect(matchesFilter(artifact, { type: "all" })).toBe(true);
+  });
+
+  it("era matches on range overlap", () => {
+    expect(matchesFilter(artifact, { type: "era", loBlock: blockOf(1000), hiBlock: blockOf(1500) })).toBe(true);
+    expect(matchesFilter(artifact, { type: "era", loBlock: blockOf(1600), hiBlock: blockOf(1800) })).toBe(false);
+  });
+
+  it("style matches the coarse bucket", () => {
+    expect(matchesFilter(artifact, { type: "style", style: "sculpture" })).toBe(true);
+    expect(matchesFilter(artifact, { type: "style", style: "painting" })).toBe(false);
+  });
+
+  it("region matches continentOf", () => {
+    expect(matchesFilter(artifact, { type: "region", continent: "asia" })).toBe(true);
+    expect(matchesFilter(artifact, { type: "region", continent: "europe" })).toBe(false);
+  });
+
+  it("museum matches by source", () => {
+    expect(matchesFilter(artifact, { type: "museum", sources: ["aic", "met"] })).toBe(true);
+    expect(matchesFilter(artifact, { type: "museum", sources: ["met"] })).toBe(false);
+  });
+});
+
+describe("buildPracticePuzzle", () => {
+  it("applies the filter before selecting rounds", () => {
+    const pool = [
+      ...makeDiversePool(20),
+      ...Array.from({ length: 5 }, (_, i) =>
+        makeArtifact({ source_id: `special-${i}`, lat: -33, lng: 151, year_start: 1900, year_end: 1900 })
+      ),
+    ];
+    const puzzle = buildPracticePuzzle(pool, { type: "region", continent: "oceania" });
+    expect(puzzle.mode).toBe("practice");
+    for (const a of puzzle.rounds) {
+      expect(continentOf(a.lat, a.lng)).toBe("oceania");
+    }
+  });
+
+  it("falls back to the full pool when nothing matches", () => {
+    const pool = makeDiversePool(20);
+    const puzzle = buildPracticePuzzle(pool, { type: "museum", sources: ["nonexistent-source"] });
+    expect(puzzle.rounds.length).toBeGreaterThan(0);
+  });
+});
+
+describe("ERA_PRESETS", () => {
+  it("covers the full timeline with no gaps", () => {
+    expect(ERA_PRESETS[0].loBlock).toBe(0);
+    expect(ERA_PRESETS[ERA_PRESETS.length - 1].hiBlock).toBe(N_BLOCKS - 1);
+    for (let i = 1; i < ERA_PRESETS.length; i++) {
+      expect(ERA_PRESETS[i].loBlock).toBe(ERA_PRESETS[i - 1].hiBlock);
+    }
   });
 });

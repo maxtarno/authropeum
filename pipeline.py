@@ -3,6 +3,13 @@
     python3 pipeline.py --source cleveland --limit 500
     python3 pipeline.py --source met --highlights
     python3 pipeline.py --source aic --limit 500
+    python3 pipeline.py --source mia --limit 2000
+    python3 pipeline.py --source walters
+    python3 pipeline.py --source smk --limit 2000
+    python3 pipeline.py --source museums_victoria --limit 2000
+    python3 pipeline.py --source vam --limit 1000
+    python3 pipeline.py --source smithsonian --limit 2000 --units saam,nmafa,chndm
+    python3 pipeline.py --source harvard --limit 1000   # needs HARVARD_API_KEY env var
     python3 pipeline.py --fixtures            # offline test with bundled samples
 
 Each live run APPENDS/UPDATES output/artifacts.json (keyed by source:id), so
@@ -25,13 +32,21 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from schema import Artifact, RejectRecord, validate
 from geo import GeoResolver
-from adapters import met, cleveland, aic
+from adapters import met, cleveland, aic, mia, walters, smk, museums_victoria, vam, smithsonian, harvard
 
 OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")
 POOL_PATH = os.path.join(OUT_DIR, "artifacts.json")
 FIXTURES_POOL_PATH = os.path.join(OUT_DIR, "artifacts.fixtures.json")
 
-ADAPTERS = {"met": met, "cleveland": cleveland, "aic": aic}
+ADAPTERS = {
+    "met": met, "cleveland": cleveland, "aic": aic,
+    "mia": mia, "walters": walters, "smk": smk,
+    "museums_victoria": museums_victoria, "vam": vam, "smithsonian": smithsonian,
+    "harvard": harvard,
+}
+
+# Keys the raw record shape might carry an id under, for reject-log messages.
+_ID_KEYS = ("objectID", "id", "ObjectID", "systemNumber", "url")
 
 
 def load_pool(pool_path: str) -> dict[str, dict]:
@@ -48,6 +63,16 @@ def save_pool(pool: dict[str, dict], pool_path: str) -> None:
         json.dump(arts, f, indent=1, ensure_ascii=False)
 
 
+def _guess_id(rec: dict) -> str:
+    """Best-effort id extraction across very differently-shaped raw records,
+    for reject-log readability only — never used for the pool key."""
+    for key in _ID_KEYS:
+        if isinstance(rec, dict) and rec.get(key):
+            return str(rec[key])
+    record_id = (rec.get("content") or {}).get("descriptiveNonRepeating", {}).get("record_ID") if isinstance(rec, dict) else None
+    return record_id or "?"
+
+
 def run(records, adapter, geo: GeoResolver, pool: dict[str, dict],
         rejects: list[str]) -> tuple[int, int]:
     ok = bad = 0
@@ -57,7 +82,7 @@ def run(records, adapter, geo: GeoResolver, pool: dict[str, dict],
             pool[art.uid] = art.to_dict()
             ok += 1
         except RejectRecord as e:
-            rid = rec.get("objectID") or rec.get("id") or "?"
+            rid = _guess_id(rec)
             rejects.append(f"{adapter.__name__}:{rid}\t{e.reason}")
             bad += 1
         except Exception as e:  # malformed record — never kill the run
@@ -73,6 +98,7 @@ def main():
     p.add_argument("--highlights", action="store_true",
                    help="met/cleveland: only star objects (great starter pool)")
     p.add_argument("--aic-dump", help="path to extracted AIC data dump")
+    p.add_argument("--units", help="smithsonian: comma-separated unit codes, e.g. saam,nmafa")
     p.add_argument("--fixtures", action="store_true",
                    help="offline run against bundled sample records")
     args = p.parse_args()
@@ -99,8 +125,13 @@ def main():
             records = cleveland.iter_records(highlights_only=args.highlights, limit=args.limit)
         elif args.aic_dump:
             records = aic.iter_dump(args.aic_dump)
-        else:
+        elif args.source == "aic":
             records = aic.iter_records(limit=args.limit)
+        elif args.source == "smithsonian":
+            units = args.units.split(",") if args.units else None
+            records = smithsonian.iter_records(limit=args.limit, units=units)
+        else:
+            records = adapter.iter_records(limit=args.limit)
         ok, bad = run(records, adapter, geo, pool, rejects)
         print(f"[{args.source:9}] live: {ok} accepted, {bad} rejected")
 
