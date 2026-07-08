@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Artifact } from "./lib/types";
 import { buildDailyPuzzle, buildPracticePuzzle, type Puzzle } from "./lib/puzzle";
+import { resolveSession, type ResumedState } from "./lib/session";
 import GameScreen from "./components/GameScreen";
 import "./App.css";
 
@@ -12,11 +13,19 @@ function App() {
   const [pool, setPool] = useState<Artifact[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
+  const [resumed, setResumed] = useState<ResumedState | null>(null);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}artifacts.json`)
       .then((r) => r.json())
-      .then(setPool)
+      .then((data: Artifact[]) => {
+        setPool(data);
+        const resolved = resolveSession(data, todayStr());
+        if (resolved) {
+          setPuzzle(resolved.puzzle);
+          setResumed(resolved.state);
+        }
+      })
       .catch(() => setError("Couldn't load the artifact pool (public/artifacts.json)."));
   }, []);
 
@@ -34,7 +43,16 @@ function App() {
   if (!pool) return <div className="app-status app-status-loading">Loading…</div>;
 
   if (puzzle) {
-    return <GameScreen puzzle={puzzle} onExit={() => setPuzzle(null)} />;
+    return (
+      <GameScreen
+        puzzle={puzzle}
+        initial={resumed ?? undefined}
+        onExit={() => {
+          setPuzzle(null);
+          setResumed(null);
+        }}
+      />
+    );
   }
 
   return (

@@ -175,6 +175,22 @@
   background: var(--accent);
 }
 
+.game-card-exit {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.game-card-exit:hover {
+  color: var(--accent);
+}
+
 .game-card-body {
   display: grid;
   grid-template-columns: 1fr 1.06fr;

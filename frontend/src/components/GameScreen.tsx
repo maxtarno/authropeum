@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Puzzle } from "../lib/puzzle";
 import { blockOf } from "../lib/puzzle";
 import { roundScore, haversineKm } from "../lib/scoring";
 import type { RoundResult } from "../lib/types";
-import { getStats, recordDailyResult } from "../lib/storage";
+import { getStats, recordDailyResult, type Stats } from "../lib/storage";
+import { clearSession, saveSession, type ResumedState } from "../lib/session";
 import WorldMap, { type Pin } from "./WorldMap";
 import TimelineBlocks from "./TimelineBlocks";
 import RoundCard from "./RoundCard";
@@ -13,6 +14,7 @@ import EndScreen from "./EndScreen";
 interface Props {
   puzzle: Puzzle;
   onExit: () => void;
+  initial?: ResumedState;
 }
 
 function dateLabel(dateStr: string): string {
@@ -23,16 +25,24 @@ function dateLabel(dateStr: string): string {
   });
 }
 
-export default function GameScreen({ puzzle, onExit }: Props) {
-  const [roundIndex, setRoundIndex] = useState(0);
-  const [pin, setPin] = useState<Pin | null>(null);
-  const [block, setBlock] = useState<number | null>(null);
-  const [revealed, setRevealed] = useState(false);
-  const [results, setResults] = useState<RoundResult[]>([]);
+export default function GameScreen({ puzzle, onExit, initial }: Props) {
+  const [roundIndex, setRoundIndex] = useState(initial?.roundIndex ?? 0);
+  const [pin, setPin] = useState<Pin | null>(initial?.pin ?? null);
+  const [block, setBlock] = useState<number | null>(initial?.block ?? null);
+  const [revealed, setRevealed] = useState(initial?.revealed ?? false);
+  const [results, setResults] = useState<RoundResult[]>(initial?.results ?? []);
+  // Caches the one-time completion side effect (recording stats + clearing
+  // the resumable session) so it fires exactly once even across re-renders.
+  const completionStatsRef = useRef<Stats | null>(null);
 
   const artifact = puzzle.rounds[roundIndex];
   const isLastRound = roundIndex === puzzle.rounds.length - 1;
   const done = revealed && isLastRound;
+
+  useEffect(() => {
+    if (done) return; // completion is persisted by clearing, not saving, below
+    saveSession(puzzle, { roundIndex, pin, block, revealed, results });
+  }, [puzzle, roundIndex, pin, block, revealed, results, done]);
 
   function submitGuess() {
     if (!pin || block === null) return;
@@ -50,11 +60,25 @@ export default function GameScreen({ puzzle, onExit }: Props) {
     setRevealed(false);
   }
 
+  function exitAndAbandon() {
+    clearSession();
+    onExit();
+  }
+
   if (done) {
     const dateStr = puzzle.date ?? new Date().toISOString().slice(0, 10);
-    const total = results.reduce((sum, r) => sum + r.score.total, 0);
-    const stats = puzzle.mode === "daily" ? recordDailyResult(dateStr, total) : getStats();
-    return <EndScreen mode={puzzle.mode} dateStr={dateStr} results={results} stats={stats} onExit={onExit} />;
+    if (completionStatsRef.current === null) {
+      clearSession();
+      if (puzzle.mode === "daily") {
+        const total = results.reduce((sum, r) => sum + r.score.total, 0);
+        completionStatsRef.current = recordDailyResult(dateStr, total);
+      } else {
+        completionStatsRef.current = getStats();
+      }
+    }
+    return (
+      <EndScreen mode={puzzle.mode} dateStr={dateStr} results={results} stats={completionStatsRef.current} onExit={onExit} />
+    );
   }
 
   return (
@@ -75,6 +99,9 @@ export default function GameScreen({ puzzle, onExit }: Props) {
               <span key={i} className={`progress-dot${i <= roundIndex ? " progress-dot-filled" : ""}`} />
             ))}
           </div>
+          <button type="button" className="game-card-exit" onClick={exitAndAbandon}>
+            Exit
+          </button>
         </div>
       </header>
 
