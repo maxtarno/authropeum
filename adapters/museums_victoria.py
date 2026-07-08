@@ -27,7 +27,7 @@ from schema import Artifact, RejectRecord
 from geo import GeoResolver
 
 BASE = "https://collections.museumsvictoria.com.au/api/search"
-USER_AGENT = "Mozilla/5.0 (compatible; anthropeum-multi-pipeline/1.0)"
+USER_AGENT = "Mozilla/5.0 (compatible; authropeum-multi-pipeline/1.0)"
 
 # Trailing "s" allowed so decade notation ("1870s") still matches — a plain
 # \b after the digits fails there since "0" and "s" are both word chars.

@@ -1,4 +1,4 @@
-"""Game core, modeled functionally on Anthropeum.
+"""Game core, modeled functionally on Authropeum.
 
 Faithful mechanics:
   * 10 artifacts per daily puzzle.
@@ -12,7 +12,7 @@ Faithful mechanics:
   * Share grid: one emoji per round — 🟩 ≥9000, 🟦 ≥7000, 🟨 ≥5000, 🟥 below.
   * Practice mode = same generator with a random (non-date) seed.
 
-Single-player adaptations (things Anthropeum ties to its player base):
+Single-player adaptations (things Authropeum ties to its player base):
   * No percentile/distribution — the frontend shows personal best / streak.
 
 Usage:

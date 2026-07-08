@@ -4,6 +4,7 @@ import { buildDailyPuzzle, buildPracticePuzzle, type PracticeFilter, type Puzzle
 import { resolveSession, type ResumedState } from "./lib/session";
 import GameScreen from "./components/GameScreen";
 import PracticeSetup from "./components/PracticeSetup";
+import Wordmark from "./components/Wordmark";
 import "./App.css";
 
 function todayStr(): string {
@@ -72,7 +73,9 @@ function App() {
 
   return (
     <div className="mode-select">
-      <p className="eyebrow">Anthropeum — daily artifact game</p>
+      <p className="eyebrow">
+        <Wordmark /> — daily artifact game
+      </p>
       <h1>Guess where and when it was made.</h1>
       <p className="mode-select-sub">
         Objects from museum open-access collections around the world. Pin the map, place the era, meet the answer.

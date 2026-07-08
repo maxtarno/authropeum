@@ -1,4 +1,4 @@
-const KEY = "anthropeum-multi:stats:v1";
+const KEY = "authropeum-multi:stats:v1";
 
 export interface Stats {
   best: number;

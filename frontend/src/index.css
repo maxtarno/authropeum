@@ -12,6 +12,7 @@
   --accent-hover: #9c4327;
   --accent-wash: rgba(181, 80, 47, 0.12);
   --truth: #4f7a52;
+  --gold: #c79a53;
   --shadow: 0 24px 48px -28px rgba(38, 33, 26, 0.35);
 
   --serif: 'Spectral', Georgia, serif;
@@ -79,6 +80,12 @@ a {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text-muted);
+}
+
+/* Au — gold, on the periodic table and here. */
+.wordmark-au {
+  color: var(--gold);
+  font-weight: 600;
 }
 
 ::selection {

@@ -1,6 +1,6 @@
-# Game Spec — functionally modeled on Anthropeum
+# Game Spec — functionally modeled on Authropeum
 
-## The Anthropeum model (what we replicate)
+## The Authropeum model (what we replicate)
 
 | Mechanic | Rule |
 |---|---|
@@ -43,7 +43,7 @@ Implemented in `puzzle.py`: `block_of`, `geo_score` (exponential decay,
 ## Daily selection constraints (`select_daily`)
 
 * ≤3 artifacts per continent bucket
-* ≤3 per era block (prevents the "all Roman stuff" complaint real Anthropeum
+* ≤3 per era block (prevents the "all Roman stuff" complaint real Authropeum
   players have)
 * ≤5 per source museum
 * Caps auto-relax if the pool can't satisfy them.

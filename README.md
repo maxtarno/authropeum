@@ -1,6 +1,6 @@
-# Anthropeum-Multi — data pipeline & game core
+# Authropeum-Multi — data pipeline & game core
 
-A daily artifact-guessing game modeled functionally on Anthropeum, but drawing
+A daily artifact-guessing game modeled functionally on Authropeum, but drawing
 from multiple museums' open access collections, consolidated into one
 standardized artifact format.
 

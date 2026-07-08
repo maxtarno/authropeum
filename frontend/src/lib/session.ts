@@ -1,7 +1,7 @@
 import type { Puzzle } from "./puzzle";
 import type { Artifact, Guess, RoundResult, RoundScore } from "./types";
 
-const KEY = "anthropeum-multi:session:v1";
+const KEY = "authropeum-multi:session:v1";
 
 interface Pin {
   lat: number;

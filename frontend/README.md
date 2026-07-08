@@ -1,4 +1,4 @@
-# Anthropeum-Multi — frontend
+# Authropeum-Multi — frontend
 
 React + Vite client for the daily/practice artifact-guessing game. Reads the
 consolidated pool the pipeline produces (`../output/artifacts.json`) and does

@@ -19,7 +19,7 @@ from schema import Artifact, RejectRecord
 from geo import GeoResolver
 
 BASE = "https://openaccess-api.clevelandart.org/api/artworks/"
-USER_AGENT = "Mozilla/5.0 (compatible; anthropeum-multi-pipeline/1.0)"
+USER_AGENT = "Mozilla/5.0 (compatible; authropeum-multi-pipeline/1.0)"
 
 
 def normalize(rec: dict, geo: GeoResolver) -> Artifact:

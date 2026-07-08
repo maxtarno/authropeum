@@ -10,6 +10,7 @@ import TimelineBlocks from "./TimelineBlocks";
 import RoundCard from "./RoundCard";
 import RevealPanel from "./RevealPanel";
 import EndScreen from "./EndScreen";
+import Wordmark from "./Wordmark";
 
 interface Props {
   puzzle: Puzzle;
@@ -85,7 +86,9 @@ export default function GameScreen({ puzzle, onExit, initial }: Props) {
     <div className="game-card">
       <header className="game-card-header">
         <div className="game-card-brand">
-          <span className="game-card-brand-name">Anthropeum</span>
+          <span className="game-card-brand-name">
+            <Wordmark />
+          </span>
           <span className="game-card-brand-meta">
             {puzzle.mode === "daily" && puzzle.date ? `Daily · ${dateLabel(puzzle.date)}` : "Practice"}
           </span>
