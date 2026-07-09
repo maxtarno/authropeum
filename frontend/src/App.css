@@ -93,6 +93,22 @@
 
 .mode-select h1 {
   margin: 4px 0 0;
+  min-height: 1.3em;
+}
+
+.headline-cycle {
+  animation: headline-fade-in 0.5s ease;
+}
+
+@keyframes headline-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .mode-select-sub {

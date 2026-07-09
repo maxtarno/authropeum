@@ -14,6 +14,14 @@ function todayStr(): string {
   return new Date().toISOString().slice(0, 10);
 }
 
+const HEADLINES = [
+  "Random Knowledge, GO!",
+  "Gemini can't help you now",
+  "Worldliest Citizen",
+  "You wouldn't confuse India and Pakistan",
+  "Do this instead of studying. Hypothetically for the LSATs",
+];
+
 async function hydrate(indexPuzzle: IndexPuzzle): Promise<Puzzle> {
   const byUid = await fetchDetails(indexPuzzle.rounds.map(uidOf));
   return { ...indexPuzzle, rounds: indexPuzzle.rounds.map((a) => byUid.get(uidOf(a))!) };
@@ -26,6 +34,14 @@ function App() {
   const [resumed, setResumed] = useState<ResumedState | null>(null);
   const [showPracticeSetup, setShowPracticeSetup] = useState(false);
   const [preparingPuzzle, setPreparingPuzzle] = useState(false);
+  const [headlineIndex, setHeadlineIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setHeadlineIndex((i) => (i + 1) % HEADLINES.length);
+    }, 3200);
+    return () => clearInterval(id);
+  }, []);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}artifacts-index.json`)
@@ -97,7 +113,9 @@ function App() {
       <p className="eyebrow">
         <Wordmark /> — daily artifact game
       </p>
-      <h1>Guess where and when it was made.</h1>
+      <h1 key={headlineIndex} className="headline-cycle">
+        {HEADLINES[headlineIndex]}
+      </h1>
       <p className="mode-select-sub">
         Objects from museum open-access collections around the world. Pin the map, place the era, meet the answer.
       </p>
