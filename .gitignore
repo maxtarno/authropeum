@@ -7,3 +7,10 @@ frontend/dist/
 .claude/
 output/artifacts.fixtures.json
 output/puzzle-*.json
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
